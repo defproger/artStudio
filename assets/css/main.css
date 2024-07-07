@@ -13,6 +13,11 @@ a {
     text-decoration: none;
 }
 
+*::selection {
+    background: rgba(255, 255, 255, 0.4);
+    color: white;
+}
+
 body {
     background: #000;
     color: #fff;
@@ -134,7 +139,6 @@ body.fixed {
     position: static !important;
     transform-style: flat !important;
     transform: none !important;
-
 }
 
 #slinky svg {
@@ -327,7 +331,7 @@ body.fixed {
 #mainscreen h1 {
     display: block;
     margin: auto;
-    margin-top: 350px;
+    margin-top: 460px;
     text-align: center;
 
     font-size: 166px;
@@ -339,6 +343,9 @@ body.fixed {
     opacity: 0;
 
     animation: textShow 3s ease-in-out 6.6s forwards;
+
+    position: relative;
+    z-index: 10;
 }
 
 @keyframes textShow {
@@ -357,3 +364,68 @@ body.fixed {
     }
 }
 
+/*header*/
+
+.animhr {
+    display: block;
+    border: 0;
+    height: 4px;
+    background: #F9C04E;
+    box-shadow: 65vw 0 25vw -25vw #CB4D40 inset;
+    animation: animahr 10s infinite alternate;
+}
+
+@keyframes animahr {
+    50% {
+        background: #CB4D40;
+        box-shadow: 75vw 0 25vw -25vw #5E94AF inset;
+    }
+}
+
+header {
+    width: 100%;
+    background: #000;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+
+    font-size: 24px;
+    color: white;
+
+}
+
+header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header a {
+    color: white;
+    padding: 15px 0;
+}
+
+header h1 {
+    font-size: 24px;
+    letter-spacing: 5px;
+}
+
+header nav {
+    display: flex;
+    align-items: center;
+    gap: 90px;
+}
+
+header nav a:nth-child(1) {
+    color: #417E78;
+}
+
+header nav a:nth-child(2) {
+    color: #C15E57;
+}
+
+header nav a:nth-child(3) {
+    color: #B6A546;
+}
+
+header nav a:nth-child(4) {
+    color: #90AFA0;
+}
