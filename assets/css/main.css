@@ -5,6 +5,10 @@
     outline: none;
 }
 
+li {
+    list-style: none;
+}
+
 a {
     text-decoration: none;
 }
@@ -34,6 +38,7 @@ body.fixed {
 }
 
 #preloader {
+    font-family: 'Girassol', sans-serif;
     width: 100%;
     height: 100vh;
     position: fixed;
@@ -124,6 +129,14 @@ body.fixed {
     overflow: hidden;
 }
 
+#slinky {
+    display: block;
+    position: static !important;
+    transform-style: flat !important;
+    transform: none !important;
+
+}
+
 #slinky svg {
     width: 110%;
     height: auto;
@@ -133,6 +146,14 @@ body.fixed {
     transform: translate(0, 0);
     z-index: 1;
     opacity: 0;
+}
+
+#slinky .layer {
+    position: absolute !important;
+    top: 0 !important;
+    left: 0 !important;
+    width: 100vw !important;
+    height: 100% !important;
 }
 
 #slinky svg:nth-child(2) {
@@ -317,7 +338,7 @@ body.fixed {
     letter-spacing: 0;
     opacity: 0;
 
-    animation: textShow 3s ease-in-out 7s forwards;
+    animation: textShow 3s ease-in-out 6.6s forwards;
 }
 
 @keyframes textShow {
@@ -335,3 +356,4 @@ body.fixed {
         transform: translateX(0);
     }
 }
+

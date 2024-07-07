@@ -218,6 +218,10 @@ $(document).ready(function () {
                 "animation-timing-function": "ease"
             });
         });
+
+        setTimeout(function () {
+            $('#slinky').parallax();
+        }, 6000);
     }, settings.deleteTime * 1000);
 });
 
