@@ -50,7 +50,7 @@ $(document).ready(function () {
         this.offset = 0;
         this.x = 0;
         this.y = 0;
-        this.delay = 0; // Убираем случайную задержку
+        this.delay = 0;
         this.params = {
             velocity_x: 1,
             velocity_y: 1,
@@ -62,7 +62,7 @@ $(document).ready(function () {
             decay: 0,
             growth: 0,
             color: "255,255,255",
-            parabola_offset: 0 // Добавляем параметр для отклонения
+            parabola_offset: 0
         };
     };
 
@@ -209,6 +209,15 @@ $(document).ready(function () {
         ctx.clearRect(0, 0, 1000, 1000);
         $("#preloader").remove();
         $("body").removeClass("fixed");
+
+        $("#slinky svg").each(function (index) {
+            let delay = ($("#slinky svg").length - 1 - index) * 0.2;
+            let animationName = "slinkyStart" + (index + 1);
+            $(this).css({
+                "animation": "5s " + delay + "s forwards " + animationName,
+                "animation-timing-function": "ease"
+            });
+        });
     }, settings.deleteTime * 1000);
 });
 

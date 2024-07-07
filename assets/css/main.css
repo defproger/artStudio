@@ -12,9 +12,13 @@ a {
 body {
     background: #000;
     color: #fff;
-    font-family: 'Girassol', sans-serif;
+    font-family: 'Goudy Old Style', sans-serif;
     width: 100%;
     min-height: 100vh;
+}
+
+.heading_text {
+    font-family: 'Engravers MT', sans-serif;
 }
 
 .container {
@@ -131,60 +135,49 @@ body.fixed {
     opacity: 0;
 }
 
-#slinky svg:nth-child(1) {
-    animation: slinkyStart1 3s ease;
-}
-
 #slinky svg:nth-child(2) {
-    transform: translate(-3px, 20px);
-    animation: slinkyStart2 3s ease 0.1s;
+    transform: translate(-3px, 25px);
 }
 
 #slinky svg:nth-child(3) {
-    transform: translate(-6px, 40px);
-    animation: slinkyStart3 3s ease 0.2s;
+    transform: translate(-6px, 50px);
 }
 
 #slinky svg:nth-child(4) {
-    transform: translate(-9px, 60px);
-    animation: slinkyStart4 3s ease 0.3s;
+    transform: translate(-9px, 75px);
 }
 
 #slinky svg:nth-child(5) {
-    transform: translate(-12px, 80px);
-    animation: slinkyStart5 3s ease 0.4s;
+    transform: translate(-12px, 100px);
 }
 
 #slinky svg:nth-child(6) {
-    transform: translate(-15px, 100px);
-    animation: slinkyStart6 3s ease 0.5s;
+    transform: translate(-15px, 125px);
 }
 
 #slinky svg:nth-child(7) {
-    transform: translate(-18px, 120px);
-    animation: slinkyStart7 3s ease 0.6s;
+    transform: translate(-18px, 150px);
 }
 
 #slinky svg:nth-child(8) {
-    transform: translate(-21px, 140px);
-    animation: slinkyStart8 3s ease 0.7s;
+    transform: translate(-21px, 175px);
 }
 
 #slinky svg:nth-child(9) {
-    transform: translate(-24px, 160px);
-    animation: slinkyStart9 3s ease 0.8s;
+    transform: translate(-24px, 200px);
 }
 
 @keyframes slinkyStart1 {
     0% {
         opacity: 0;
-        transform: translate(24px, -160px);
+        transform: translate(36px, -240px);
     }
     60% {
         opacity: 1;
         transform: translate(-3px, 20px);
     }
     100% {
+        opacity: 1;
         transform: translate(0, 0);
     }
 }
@@ -192,98 +185,105 @@ body.fixed {
 @keyframes slinkyStart2 {
     0% {
         opacity: 0;
-        transform: translate(21px, -140px);
+        transform: translate(31.5px, -210px);
     }
     60% {
         opacity: 1;
         transform: translate(-6px, 40px);
     }
     100% {
-        transform: translate(-3px, 20px);
+        opacity: 1;
+        transform: translate(-3px, 25px);
     }
 }
 
 @keyframes slinkyStart3 {
     0% {
         opacity: 0;
-        transform: translate(18px, -120px);
+        transform: translate(27px, -180px);
     }
     60% {
         opacity: 1;
         transform: translate(-9px, 60px);
     }
     100% {
-        transform: translate(-6px, 40px);
+        opacity: 1;
+        transform: translate(-6px, 50px);
     }
 }
 
 @keyframes slinkyStart4 {
     0% {
         opacity: 0;
-        transform: translate(15px, -100px);
+        transform: translate(22.5px, -150px);
     }
     60% {
         opacity: 1;
         transform: translate(-12px, 80px);
     }
     100% {
-        transform: translate(-9px, 60px);
+        opacity: 1;
+        transform: translate(-9px, 75px);
     }
 }
 
 @keyframes slinkyStart5 {
     0% {
         opacity: 0;
-        transform: translate(12px, -80px);
+        transform: translate(18px, -120px);
     }
     60% {
         opacity: 1;
         transform: translate(-15px, 100px);
     }
     100% {
-        transform: translate(-12px, 80px);
+        opacity: 1;
+        transform: translate(-12px, 100px);
     }
 }
 
 @keyframes slinkyStart6 {
     0% {
         opacity: 0;
-        transform: translate(9px, -60px);
+        transform: translate(13.5px, -90px);
     }
     60% {
         opacity: 1;
         transform: translate(-18px, 120px);
     }
     100% {
-        transform: translate(-15px, 100px);
+        opacity: 1;
+        transform: translate(-15px, 125px);
     }
 }
 
 @keyframes slinkyStart7 {
     0% {
         opacity: 0;
-        transform: translate(6px, -40px);
+        transform: translate(9px, -60px);
     }
     60% {
         opacity: 1;
         transform: translate(-21px, 140px);
     }
     100% {
-        transform: translate(-18px, 120px);
+        opacity: 1;
+        transform: translate(-18px, 150px);
     }
 }
 
 @keyframes slinkyStart8 {
     0% {
         opacity: 0;
-        transform: translate(3px, -20px);
+        transform: translate(4.5px, -30px);
     }
     60% {
         opacity: 1;
         transform: translate(-24px, 160px);
     }
     100% {
-        transform: translate(-21px, 140px);
+        opacity: 1;
+        transform: translate(-21px, 175px);
     }
 }
 
@@ -297,6 +297,41 @@ body.fixed {
         transform: translate(-27px, 180px);
     }
     100% {
-        transform: translate(-24px, 160px);
+        opacity: 1;
+        transform: translate(-24px, 200px);
+    }
+}
+
+
+#mainscreen h1 {
+    display: block;
+    margin: auto;
+    margin-top: 350px;
+    text-align: center;
+
+    font-size: 166px;
+    font-weight: 500;
+    line-height: 199.14px;
+    width: fit-content;
+    white-space: nowrap;
+    letter-spacing: 0;
+    opacity: 0;
+
+    animation: textShow 3s ease-in-out 7s forwards;
+}
+
+@keyframes textShow {
+    0% {
+        opacity: 0;
+        letter-spacing: 60px;
+        transform: translateX(-330px);
+    }
+    20% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 1;
+        letter-spacing: 0;
+        transform: translateX(0);
     }
 }

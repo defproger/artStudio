@@ -2,3 +2,12 @@
     font-family: 'Girassol';
     src: url('../fonts/Girassol.ttf') format('truetype');
 }
+@font-face {
+    font-family: 'Engravers MT';
+    src: url('../fonts/engravers-mt.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Goudy Old Style';
+    src: url('../fonts/goudy-old-style-regular.ttf') format('truetype');
+}
