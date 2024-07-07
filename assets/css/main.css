@@ -35,6 +35,23 @@ body {
     margin: auto;
 }
 
+.slideIn {
+    opacity: 0;
+    transform: translate(0, 60%);
+    transition: 1s;
+}
+
+.slideIn2 {
+    opacity: 0;
+    transform: translate(0, 60%);
+    transition: 1.5s;
+}
+
+.slideIn.show {
+    opacity: 1;
+    transform: translate(0, 0);
+}
+
 /*preloader*/
 body.fixed {
     height: 100vh;
@@ -390,6 +407,19 @@ header {
     font-size: 24px;
     color: white;
 
+    opacity: 0;
+    animation: headerShow 2s ease 11s forwards;
+}
+
+@keyframes headerShow {
+    0% {
+        opacity: 0;
+        transform: translateY(-100%);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
 }
 
 header .container {
@@ -428,4 +458,51 @@ header nav a:nth-child(3) {
 
 header nav a:nth-child(4) {
     color: #90AFA0;
+}
+
+
+/*author screen*/
+
+#author {
+    display: flex;
+    gap: 90px;
+    margin-top: -165px;
+}
+
+#author img {
+    width: 565px;
+}
+
+#author .texts {
+    font-size: 36px;
+    font-weight: 400;
+    line-height: 43.2px;
+    text-align: justify;
+    margin-top: 120px;
+}
+
+#author .texts .big {
+    font-size: 128px;
+    font-weight: 500;
+    line-height: 43.21px;
+}
+
+#author .texts p {
+    margin-bottom: 45px;
+}
+
+#author .red {
+    color: #CB4D40;
+}
+
+#author .green {
+    color: #B6A546;
+}
+
+#author .yellow {
+    color: #9B61B5;
+}
+
+#author .purple {
+    color: #417E78;
 }
