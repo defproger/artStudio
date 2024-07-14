@@ -43,8 +43,8 @@ body {
 
 .slideIn2 {
     opacity: 0;
-    transform: translate(0, 60%);
-    transition: 1.5s;
+    transform: translate(0, 30%);
+    transition: 0.7s;
 }
 
 .slideIn.show {
@@ -505,4 +505,286 @@ header nav a:nth-child(4) {
 
 #author .purple {
     color: #417E78;
+}
+
+.underline-btn-container {
+    position: relative;
+}
+
+.underline-btn {
+    float: right;
+    font-size: 40px;
+    font-weight: 400;
+
+    color: transparent;
+    background: linear-gradient(90deg, #BEA052 0%, #AF4947 46.5%, #264A7A 100%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    text-decoration: none;
+    position: relative;
+    display: inline-block;
+    padding: 10px 0;
+    overflow: hidden;
+}
+
+.underline-btn::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 12.5px;
+    width: 100%;
+    height: 1.5px;
+    background: linear-gradient(90deg, #BEA052 0%, #AF4947 46.5%, #264A7A 100%);
+    transition: transform 0.3s;
+}
+
+.underline-btn:hover::before {
+    transform: translateY(10px);
+}
+
+@keyframes gradient-animation {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+.underline-btn {
+    background-size: 200% 200%;
+    animation: gradient-animation 10s ease infinite;
+}
+
+/*collections*/
+#collections {
+    margin-top: 300px;
+}
+
+#collections > .container > .heading_text {
+    font-size: 171px
+}
+
+.patterns {
+    display: flex;
+    gap: 35px;
+    margin-top: 60px;
+}
+
+.pattern-block {
+    width: 256px;
+    height: 256px;
+    position: relative;
+    overflow: hidden;
+}
+
+.pattern-block img {
+    position: absolute;
+    height: auto;
+}
+
+.pattern-block:nth-child(1) > img {
+    top: 0;
+    left: 0;
+    width: 100%;
+}
+
+.pattern-block:nth-child(2) > img {
+    bottom: 0;
+    left: 0;
+    width: 272px;
+}
+
+.pattern-block:nth-child(3) > img {
+    top: 0;
+    left: 0;
+    width: 409px;
+}
+
+.pattern-block:nth-child(4) > img {
+    top: -8px;
+    left: 0;
+    width: 438.5px;
+}
+
+/*.pattern-block:nth-child(1) {*/
+/*    transform-origin: 0 0;*/
+/*    transform: rotate(10deg);*/
+/*}*/
+
+.collection_name {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: fit-content;
+}
+
+.collection_serie {
+    width: fit-content;
+    display: block;
+    margin-top: 400px;
+}
+
+.collections > .container > .collection_name {
+    margin-top: 400px;
+}
+
+.collection_name h2, .collection_serie h2 {
+    font-size: 40px;
+    width: fit-content;
+}
+
+.collection_serie h2 {
+    margin-left: 35px;
+}
+
+.collection_name h3 {
+    margin-bottom: 10px;
+}
+
+.collection_name p, .collection_serie p {
+    font-size: 20px;
+    letter-spacing: 20px;
+}
+
+.collection_serie p {
+    margin-left: 35px;
+}
+
+
+.collection__under_text {
+    margin-top: 60px;
+    max-width: 500px;
+    font-size: 16px;
+}
+
+.pattern_line {
+    position: relative;
+    width: 100%;
+    height: 2000px;
+    z-index: -1;
+    overflow: hidden;
+
+    margin-top: -400px;
+}
+
+.pattern_line img {
+    position: absolute;
+    width: auto;
+    height: 790px;
+
+    transform: rotate(-23.24deg);
+
+    top: 540px;
+    right: -20%;
+}
+
+.collection_flex {
+    display: flex;
+    gap: 150px;
+    margin-bottom: 100px;
+}
+
+.collection_flex:nth-child(1) {
+    margin-top: -580px;
+}
+
+.collection_flex .ball {
+    width: 502px;
+    height: 502px;
+    background: url("../img/patterns/small.png") no-repeat;
+    background-size: cover;
+    color: #000;
+
+    border-radius: 50%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.collection_flex.first .ball {
+    background: #000;
+    color: #fff;
+}
+
+.collection_flex .texts > p {
+    margin-left: 170px;
+    margin-top: 140px;
+    font-size: 24px;
+}
+
+.collection_flex.first .texts > p {
+    margin-left: 170px;
+    margin-top: -100px;
+    font-size: 24px;
+}
+
+.collection_flex .collection_name h2 {
+    font-size: 64px;
+    font-weight: 400;
+    line-height: 76.81px;
+}
+
+.collection_flex .collection_name h3 {
+    font-family: 'Girassol';
+    font-size: 36px;
+    font-weight: 400;
+    line-height: 42.98px;
+}
+
+.collection_flex .collection_name p {
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: 1.21em;
+}
+
+.collection_flex .collection_name p span {
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: 0.18em;
+}
+
+.collection_flex .collection_name p:nth-of-type(2) {
+    margin-left: -10px;
+}
+
+.collection_flex .texts > p .big {
+    font-size: 57px;
+}
+
+.collection_flex .underline-btn-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 10px;
+}
+
+.collection_flex .underline-btn-container span {
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: 1.21em;
+    color: #C15E57;
+    text-align: right;
+}
+
+.collection_flex .underline-btn-container span.yellow {
+    color: #B6A546;
+}
+
+.collection_flex.right .ball {
+    margin-left: 260px;
+}
+
+.collection_flex.right .texts > p {
+    margin-left: 0;
+    max-width: 600px;
+    margin-top: 120px;
 }
