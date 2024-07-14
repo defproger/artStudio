@@ -156,6 +156,7 @@ body.fixed {
     position: static !important;
     transform-style: flat !important;
     transform: none !important;
+    height: 1000px;
 }
 
 #slinky svg {
@@ -788,3 +789,154 @@ header nav a:nth-child(4) {
     max-width: 600px;
     margin-top: 120px;
 }
+
+/*quote screen*/
+#quote {
+    height: 1000px;
+}
+
+#quotes_slinky {
+    height: 1000px;
+    left: -820px;
+    z-index: -1;
+}
+
+#quotes_slinky .layer svg {
+    /*width: 110%;*/
+    height: auto;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transform: translate(0, 0);
+}
+
+#quotes_slinky .layer:nth-child(2) svg {
+    transform: translate(-3px, 25px);
+}
+
+#quotes_slinky .layer:nth-child(3) svg {
+    transform: translate(-6px, 50px);
+}
+
+#quotes_slinky .layer:nth-child(4) svg {
+    transform: translate(-9px, 75px);
+}
+
+#quotes_slinky .layer:nth-child(5) svg {
+    transform: translate(-12px, 100px);
+}
+
+#quotes_slinky .layer:nth-child(6) svg {
+    transform: translate(-15px, 125px);
+}
+
+#quotes_slinky .layer:nth-child(7) svg {
+    transform: translate(-18px, 150px);
+}
+
+#quotes_slinky .layer:nth-child(8) svg {
+    transform: translate(-21px, 175px);
+}
+
+#quotes_slinky .layer:nth-child(9) svg {
+    transform: translate(-24px, 200px);
+}
+
+
+.quote_container {
+    display: flex;
+    justify-content: center;
+    gap: 320px;
+    align-items: center;
+    margin-top: -710px;
+}
+
+.quote_container img {
+    width: 380px;
+    height: 380px;
+}
+
+.quote {
+    position: relative;
+    font-size: 40px;
+    font-weight: 400;
+    line-height: 48.01px;
+
+    max-width: 630px;
+    margin-right: 70px;
+}
+
+.quote::before,
+.quote::after {
+    font-size: 128px;
+    font-weight: 400;
+    line-height: 153.63px;
+    position: absolute;
+    top: -0.5em;
+}
+
+.quote::before {
+    content: '“';
+    color: #B6A546;
+    left: -0.7em;
+}
+
+.quote::after {
+    content: '”';
+    color: #90AFA0;
+    right: -0.4em;
+    top: 0.6em;
+}
+
+.quote_container span {
+    display: block;
+    margin-top: 40px;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: 1.21em;
+}
+
+#quote .underline-btn-container {
+    margin-top: 192px;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    padding: 0 110px;
+}
+
+#quote .underline-btn-container p {
+    font-family: 'Engravers MT';
+    font-size: 48px;
+    font-weight: 500;
+    line-height: 55.9px;
+    text-align: left;
+}
+
+#quote .after_quote {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 320px;
+    margin-bottom: 230px;
+}
+
+#quote .after_quote h1 {
+    font-family: 'Engravers MT';
+    font-size: 317px;
+    font-weight: 500;
+    line-height: 369.16px;
+    text-align: left;
+    background: linear-gradient(90deg, #BEA052 0%, #AF4947 46.5%, #264A7A 100%);
+    -webkit-background-clip: text;
+    color: transparent;
+    animation: gradient-animation 5s infinite;
+}
+
+#quote .after_quote span {
+    display: block;
+    font-family: Engravers MT;
+    font-size: 44px;
+    margin-top: -44px;
+}
+
