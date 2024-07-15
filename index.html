@@ -334,6 +334,66 @@
     </div>
 </div>
 
+<div id="gallery">
+    <div class="gallery_top"></div>
+    <div class="gallery_body">
+        <div class="container">
+            <div class="filter_wrapper">
+                <div class="filter">
+                    <button class="filter_button" id="">
+                        <span>
+                            FILTER
+                        </span>
+                        <span class="filter_burger">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                        </span>
+                    </button>
+                    <div class="filter_popup closed">
+                        <div class="popup_header">
+                            <h2>FILTER</h2>
+                            <button class="close-button">
+                                <span></span>
+                                <span></span>
+                            </button>
+                        </div>
+                        <div class="filter_categories">
+                            <label class="custom-checkbox">
+                                <input type="checkbox" checked>
+                                <span class="checkmark"></span>
+                                <p>sold.</p>
+                            </label>
+                            <label class="custom-checkbox">
+                                <input type="checkbox">
+                                <span class="checkmark"></span>
+                                <p>available.</p>
+                            </label>
+                            <label class="custom-checkbox">
+                                <input type="checkbox">
+                                <span class="checkmark"></span>
+                                <p>in private collection.</p>
+                            </label>
+                            <label class="custom-checkbox">
+                                <input type="checkbox">
+                                <span class="checkmark"></span>
+                                <p>sold in auction.</p>
+                            </label>
+                        </div>
+                    </div>
+                    <div class="chosen_filters">
+                        <button class="chosen_filter">
+                            <div class="cross"></div>
+                            <span>sold.</span>
+                        </button>
+                    </div>
+                </div>
+                <span>GALLERY</span>
+            </div>
+        </div>
+    </div>
+    <div class="gallery_bottom"></div>
+</div>
 
 <script src="assets/js/jquery.min.js"></script>
 <script src="assets/js/dat.gui.min.js"></script>
@@ -343,5 +403,6 @@
     $('#quotes_slinky').parallax();
 </script>
 <script src="assets/js/slideIn.js"></script>
+<script src="assets/js/filters.js"></script>
 </body>
 </html>
