@@ -1311,6 +1311,130 @@ header nav a:nth-child(4) {
     -webkit-text-fill-color: transparent;
 }
 
+/*draw for me*/
+#drawForMe {
+    position: relative;
+    margin-top: -100px;
+}
+
+#drawForMe h1 {
+    font-family: 'Engravers MT';
+    font-size: 171px;
+    font-weight: 500;
+    line-height: 199.14px;
+    text-align: right;
+
+    margin-bottom: 140px;
+}
+
+#drawForMe p {
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 28.8px;
+    max-width: 660px;
+}
+
+#drawForMe p:first-of-type {
+    margin-bottom: 150px;
+}
+
+#drawForMe .big {
+    font-size: 48px;
+    line-height: 57.61px;
+}
+
+.slider-wrapper {
+    position: relative;
+    margin-top: 100px;
+
+    height: 530px;
+
+    margin-bottom: 250px;
+}
+
+.text-container {
+    position: absolute;
+    top: 57px;
+    max-height: 150px;
+    color: #000;
+    z-index: 10;
+    width: 660px;
+
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 28.8px;
+}
+
+.text-container .big {
+    font-size: 48px;
+    font-weight: 400;
+    line-height: 57.61px;
+}
+
+.white-block {
+    width: 100vw;
+    right: 0;
+    top: 0;
+    height: 250px;
+    background: white;
+    position: absolute;
+    border-top-right-radius: 200px;
+    border-bottom-right-radius: 200px;
+}
+
+.text-slide {
+    display: none;
+    opacity: 0;
+    transition: opacity 0.5s;
+}
+
+.text-slide.active {
+    display: block;
+    opacity: 1;
+}
+
+
+.slider-container {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 750px;
+    height: 750px;
+    right: 0;
+    top: -222px;
+    overflow: hidden;
+}
+
+.swiper-container {
+    width: 100%;
+    height: 100%;
+}
+
+.swiper-slide {
+    display: flex !important;
+    justify-content: center;
+    align-items: center;
+}
+
+.swiper-slide img {
+    max-width: 100%;
+    max-height: 100%;
+    border-radius: 10px;
+}
+
+.swiper-button-next, .swiper-button-prev {
+    margin-top: 150px !important;
+    color: #fff !important;
+}
+
+.swiper-pagination-bullet-active {
+    background: #fff !important;
+}
+
+.swiper-pagination {
+    bottom: -20px !important;
+}
 
 /*contacts*/
 #contacts {
