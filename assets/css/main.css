@@ -1310,3 +1310,160 @@ header nav a:nth-child(4) {
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
+
+
+/*contacts*/
+#contacts {
+    margin-top: 250px;
+}
+
+#contacts h1 {
+    font-family: 'Engravers MT';
+    font-size: 171px;
+    font-weight: 500;
+    line-height: 199.14px;
+}
+
+.contacts {
+    margin-top: 170px;
+    margin-bottom: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 100px;
+}
+
+.contact {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 100px;
+}
+
+.contact img {
+    max-width: 444px;
+}
+
+.contact-data {
+    width: 900px;
+}
+
+.contact-data.email a {
+    font-size: 64px;
+    font-style: italic;
+    font-weight: 400;
+    line-height: 76.81px;
+    color: #fff;
+}
+
+.contact-data.adress a {
+    font-size: 48px;
+    font-weight: 400;
+    line-height: 57.61px;
+    color: #A7A7A7;
+}
+
+.contact-data.adress span {
+    display: block;
+    font-size: 48px;
+    font-weight: 400;
+    line-height: 57.61px;
+    text-align: left;
+
+    color: #fff;
+}
+
+.contact-data .underline-btn-container {
+    display: flex;
+    gap: 100px;
+}
+
+.contact-data .underline-btn {
+    float: left;
+    font-size: 64px;
+}
+
+/*footer*/
+footer {
+    width: 1000px;
+    background: #F6EDED;
+    color: #535353;
+
+    margin: auto;
+}
+
+footer nav {
+    width: 100%;
+    background: black;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    padding-bottom: 12px;
+
+}
+
+footer nav a {
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 28.8px;
+    letter-spacing: 0.2em;
+}
+
+footer nav a:nth-child(1) {
+    background: #417E78;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+footer nav a:nth-child(2) {
+    background: #C15E57;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+footer nav a:nth-child(3) {
+    background: #B6A546;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+footer nav a:nth-child(4) {
+    background: #90AFA0;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.footer_body {
+    padding: 150px 70px 50px;
+}
+
+.footer_texts {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.footer_texts a {
+    color: #535353;
+}
+
+.footer_texts:nth-child(1) {
+    margin-bottom: 20px;
+}
+
+.footer_texts:last-child {
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 23.61px;
+    letter-spacing: -0.1em;
+
+    color: #E2E2E2;
+}
+
+.footer_texts button {
+    color: #E2E2E2;
+    background: none;
+    border: none;
+    text-decoration: underline;
+}
