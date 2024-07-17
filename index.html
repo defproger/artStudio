@@ -8,7 +8,7 @@
     <title>Art Studio</title>
     <link rel="stylesheet" href="./assets/css/fonts.css">
     <link rel="stylesheet" href="./assets/css/main.css">
-    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+    <link rel="stylesheet" href="assets/css/swiper-bundle.min.css">
 </head>
 <body class="fixed">
 <div id="preloader">
@@ -524,45 +524,9 @@
 <script src="assets/js/dat.gui.min.js"></script>
 <script src="assets/js/jquery.parallax.js"></script>
 <script src="assets/js/preloader.js"></script>
-<script>
-    $('#quotes_slinky').parallax();
-</script>
+<script src="assets/js/parallax.js"></script>
 <script src="assets/js/slideIn.js"></script>
 <script src="assets/js/filters.js"></script>
-<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
-<script>
-    document.addEventListener('DOMContentLoaded', function () {
-        var swiper = new Swiper('.swiper-container', {
-            centeredSlides: true,
-            slidesPerView: 1,
-            navigation: {
-                nextEl: '.swiper-button-next',
-                prevEl: '.swiper-button-prev',
-            },
-            pagination: {
-                el: '.swiper-pagination',
-                clickable: true,
-            },
-            on: {
-                slideChange: function () {
-                    var activeIndex = swiper.activeIndex;
-                    var textSlides = document.querySelectorAll('.text-slide');
-                    textSlides.forEach(function (slide, index) {
-                        if (index === activeIndex) {
-                            slide.classList.add('active');
-                        } else {
-                            slide.classList.remove('active');
-                        }
-                    });
-                },
-            },
-        });
-
-        var textSlides = document.querySelectorAll('.text-slide');
-        if (textSlides.length > 0) {
-            textSlides[0].classList.add('active');
-        }
-    });
-</script>
+<script src="assets/js/swiper-bundle.min.js"></script>
 </body>
 </html>
