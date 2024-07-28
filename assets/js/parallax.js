@@ -6,12 +6,6 @@ $(window).on('scroll', function () {
     $('.pattern_line').css('transform', 'translate3d(0px, -' + (scrollTop - wHeight) * 0.75 + 'px , 0px)');
 });
 
-$(window).on('scroll', function () {
-    let wHeight = $(window).height() - 100;
-    let scrollTop = $(window).scrollTop() - 100;
-    $('.after_quote').css('transform', 'translate3d(0px, -' + (scrollTop - wHeight) * 0.75 + 'px , 0px)');
-});
-
 function smoothScrollTo(element, duration) {
     const targetPosition = element.getBoundingClientRect().top;
     const startPosition = window.pageYOffset;

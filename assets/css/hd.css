@@ -1,0 +1,132 @@
+@media screen and (max-width: 1600px) {
+    .container {
+        width: 1200px;
+    }
+
+    #mainscreen h1 {
+        margin-top: 300px;
+        font-size: 123px;
+    }
+
+    #mainscreen {
+        height: 1260px;
+    }
+
+    #author .texts {
+        font-size: 24px;
+        margin-top: 80px;
+    }
+
+    #author .texts .big {
+        font-size: 78px;
+    }
+
+    #author img {
+        width: 520px;
+    }
+
+    #collections > .container > .heading_text {
+        font-size: 125px;
+    }
+
+    .pattern-block {
+        width: 200px;
+        height: 200px;
+    }
+
+    .pattern-block:nth-child(2) > img {
+        width: 212px;
+    }
+
+    .pattern-block:nth-child(3) > img {
+        width: 319px;
+    }
+
+    .pattern-block:nth-child(4) > img {
+        width: 343.5px;
+    }
+
+    .collection_flex .ball {
+        width: 402px;
+        height: 402px;
+    }
+
+    .collection_flex {
+        gap: 70px;
+    }
+
+    .collection_flex .collection_name h2 {
+        font-size: 54px;
+        line-height: 65px;
+    }
+
+    .collection_flex .collection_name h3 {
+        font-size: 30px;
+        line-height: 35px;
+    }
+
+    .collection_flex .collection_name p {
+        font-size: 16px;
+    }
+
+    .collection_flex .collection_name p:nth-of-type(2) {
+        margin-left: -1px;
+    }
+
+    .collection_flex .photo img {
+        width: 500px;
+    }
+
+    .collection_flex.right .ball {
+        margin-left: 160px;
+    }
+
+    .collection_flex.right .texts > p {
+        margin-top: 40px;
+        max-width: 460px;
+    }
+
+    .collection_flex .texts > p {
+        margin-left: 80px;
+        margin-top: 80px;
+    }
+
+    .underline-btn {
+        font-size: 30px;
+    }
+
+    .collection_flex.right {
+        margin-bottom: 240px;
+    }
+
+    .collection_flex .dots {
+        top: 2800px;
+    }
+
+    .collection_flex .underline-btn-container span {
+        letter-spacing: 0.71em;
+    }
+
+    .pattern_line img {
+        height: 580px;
+        top: 620px;
+    }
+
+    .collection_serie {
+        margin-top: 270px;
+    }
+
+    .pattern_line {
+        height: 1920px;
+    }
+
+    #quote .after_quote {
+        margin-top: 260px;
+    }
+
+    #quote .after_quote h1 {
+        font-size: 237px;
+    }
+
+
+}

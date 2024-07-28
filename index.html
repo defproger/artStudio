@@ -8,18 +8,20 @@
     <title>Art Studio</title>
     <link rel="stylesheet" href="./assets/css/fonts.css">
     <link rel="stylesheet" href="./assets/css/main.css">
+    <link rel="stylesheet" href="./assets/css/hd.css">
     <link rel="stylesheet" href="assets/css/swiper-bundle.min.css">
 </head>
 <body class="fixed">
 <div id="preloader">
     <div class="preloader__text">discover art</div>
     <canvas height="720" width="1000" id="canvas"></canvas>
+    <div id="preloader_bar"></div>
 </div>
 
 <header>
     <div class="container">
         <a href="index.html">
-            <h1>Elena salova</h1>
+            <h1>Elena Salova</h1>
         </a>
         <nav>
             <a href="#">collections.</a>
@@ -350,7 +352,51 @@
                     <span class="slideIn">A</span>
                     <span class="slideIn slideLeft">R</span>
                     <span class="slideIn slideLeft1">T</span>
-                    <span class="slideIn slideLeft2">.</span>
+                    <span class="slideIn slideLeft2">
+                        <svg width="52" height="51" viewBox="0 0 52 51" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <mask id="mask0_50_2248" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="0" y="0"
+                                  width="52" height="51">
+                                <path d="M25.4688 0.0996094C32.6921 0.0996094 38.8319 2.52458 43.8882 7.37451C48.9445 12.2244 51.4727 18.2611 51.4727 25.4844C51.4727 32.5013 48.9445 38.4863 43.8882 43.4395C38.8319 48.3926 32.8984 50.8691 26.0879 50.8691C19.2773 50.8691 13.3439 48.341 8.2876 43.2847C3.23128 38.2284 0.703125 32.2949 0.703125 25.4844C0.703125 18.777 3.12809 12.8952 7.97803 7.83887C12.9312 2.67936 18.7614 0.0996094 25.4688 0.0996094Z"
+                                      fill="white"/>
+                            </mask>
+                            <g mask="url(#mask0_50_2248)">
+                                <path d="M24.4512 6.19498C28.5254 5.25899 32.5869 7.80299 33.5229 11.8772C34.4589 15.9513 31.9149 20.0128 27.8407 20.9488C23.7666 21.8848 19.705 19.3408 18.7691 15.2666C17.8331 11.1925 20.3771 7.13096 24.4512 6.19498Z"
+                                      fill="#B6A546"/>
+                                <path d="M22.1527 44.0085C26.2269 43.0725 30.2884 45.6165 31.2244 49.6906C32.1604 53.7648 29.6164 57.8263 25.5422 58.7623C21.468 59.6983 17.4065 57.1543 16.4705 53.0801C15.5346 49.006 18.0786 44.9444 22.1527 44.0085Z"
+                                      fill="#264A7A"/>
+                                <path d="M49.4323 26.6803C53.5065 25.7443 57.568 28.2883 58.504 32.3625C59.44 36.4367 56.896 40.4982 52.8218 41.4342C48.7476 42.3702 44.6861 39.8262 43.7501 35.752C42.8142 31.6778 45.3582 27.6163 49.4323 26.6803Z"
+                                      fill="#FE76AC"/>
+                                <path d="M10.7227 20.5741C10.4849 24.7477 6.9088 27.9382 2.73528 27.7004C-1.43825 27.4626 -4.62879 23.8866 -4.391 19.713C-4.15321 15.5395 -0.577135 12.349 3.59639 12.5867C7.76992 12.8245 10.9605 16.4006 10.7227 20.5741Z"
+                                      fill="#C15E57"/>
+                                <path d="M-0.145671 49.4385C1.1039 45.4493 5.35073 43.2284 9.3399 44.478C13.3291 45.7276 15.5499 49.9744 14.3004 53.9636C13.0508 57.9527 8.80397 60.1736 4.8148 58.924C0.825638 57.6745 -1.39524 53.4276 -0.145671 49.4385Z"
+                                      fill="#417E78"/>
+                                <path d="M17.1194 16.5739C21.1935 15.6379 25.2551 18.1819 26.1911 22.2561C27.127 26.3302 24.583 30.3917 20.5089 31.3277C16.4347 32.2637 12.3732 29.7197 11.4372 25.6456C10.5012 21.5714 13.0452 17.5099 17.1194 16.5739Z"
+                                      fill="#264A7A"/>
+                                <path d="M66.5891 39.1015C66.3513 43.275 62.7752 46.4656 58.6017 46.2278C54.4281 45.99 51.2376 42.4139 51.4754 38.2404C51.7132 34.0668 55.2893 30.8763 59.4628 31.1141C63.6363 31.3519 66.8269 34.928 66.5891 39.1015Z"
+                                      fill="#C15E57"/>
+                                <path d="M32.1657 42.9315C34.4924 39.4586 39.194 38.5294 42.6669 40.8561C46.1398 43.1828 47.0691 47.8843 44.7423 51.3572C42.4156 54.8302 37.7141 55.7594 34.2412 53.4327C30.7682 51.106 29.839 46.4044 32.1657 42.9315Z"
+                                      fill="#5E94AF"/>
+                                <path d="M43.5251 29.8512C45.0528 33.7423 43.1368 38.1352 39.2457 39.6628C35.3545 41.1905 30.9617 39.2745 29.434 35.3834C27.9063 31.4922 29.8223 27.0994 33.7135 25.5717C37.6046 24.0441 41.9974 25.96 43.5251 29.8512Z"
+                                      fill="#F9C04E"/>
+                                <path d="M31.79 -1.75136C33.3177 2.1398 31.4017 6.53262 27.5106 8.0603C23.6194 9.58798 19.2266 7.672 17.6989 3.78085C16.1712 -0.110304 18.0872 -4.50313 21.9784 -6.03081C25.8695 -7.55848 30.2623 -5.64251 31.79 -1.75136Z"
+                                      fill="#F9C04E"/>
+                                <path d="M64.3448 54.2848C65.8724 58.1759 63.9565 62.5688 60.0653 64.0964C56.1742 65.6241 51.7813 63.7081 50.2537 59.817C48.726 55.9258 50.642 51.533 54.5331 50.0053C58.4243 48.4776 62.8171 50.3936 64.3448 54.2848Z"
+                                      fill="#FE76AC"/>
+                                <path d="M6.6861 37.6237C10.7603 36.6877 14.8218 39.2317 15.7578 43.3059C16.6938 47.38 14.1498 51.4415 10.0756 52.3775C6.00143 53.3135 1.93991 50.7695 1.00392 46.6954C0.0679402 42.6212 2.61194 38.5597 6.6861 37.6237Z"
+                                      fill="#FE76AC"/>
+                                <path d="M33.0237 37.6237C37.0979 36.6877 41.1594 39.2317 42.0954 43.3059C43.0314 47.38 40.4874 51.4415 36.4132 52.3775C32.3391 53.3135 28.2776 50.7695 27.3416 46.6954C26.4056 42.6212 28.9496 38.5597 33.0237 37.6237Z"
+                                      fill="#FE76AC"/>
+                                <path d="M36.4744 49.4049C36.1322 53.5712 32.4773 56.6712 28.3111 56.329C24.1448 55.9868 21.0448 52.332 21.387 48.1657C21.7292 43.9994 25.384 40.8994 29.5503 41.2416C33.7165 41.5838 36.8166 45.2387 36.4744 49.4049Z"
+                                      fill="#C15E57"/>
+                                <path d="M36.4744 49.4049C36.1322 53.5712 32.4773 56.6712 28.3111 56.329C24.1448 55.9868 21.0448 52.332 21.387 48.1657C21.7292 43.9994 25.384 40.8994 29.5503 41.2416C33.7165 41.5838 36.8166 45.2387 36.4744 49.4049Z"
+                                      fill="#C15E57"/>
+                                <path d="M46.1267 14.6648C43.2466 11.6351 43.3678 6.84412 46.3976 3.96396C49.4274 1.08379 54.2183 1.20508 57.0985 4.23486C59.9787 7.26463 59.8574 12.0556 56.8276 14.9357C53.7978 17.8159 49.0069 17.6946 46.1267 14.6648Z"
+                                      fill="#417E78"/>
+                                <path d="M15.2466 0.733336C19.3503 -0.0629536 23.3226 2.61827 24.1189 6.72203C24.9152 10.8258 22.234 14.798 18.1302 15.5943C14.0265 16.3906 10.0542 13.7094 9.2579 9.60564C8.46161 5.50189 11.1428 1.52962 15.2466 0.733336Z"
+                                      fill="#5E94AF"/>
+                            </g>
+                        </svg>
+                    </span>
                 </h1>
                 <p class="slideIn slideIn2">ELENA SALOVA</p>
             </div>
@@ -450,106 +496,106 @@
     <div class="gallery_bottom"></div>
 </div>
 
-<div id="drawForMe">
-    <div class="dots" data-num="15"></div>
-    <div class="container">
-        <h1>Draw<br>for me</h1>
-        <p><span class="big">V</span>ipsum dolor sit amet, consectetur adipiscing elit. Praesent at cursus magna, at dap
-            bus
-            eros. Aliquam tincidunt tortor eu placerat vehicula. Curabitur feugiat faucibus mauris id ullamcorper. </p>
-        <p><span class="big">Z</span>ipsum dolor sit amet, consectetur adipiscing elit. Praesent at cursus magna, at dap
-            bus
-            eros. Aliquam tincidunt tortor eu placerat vehicula. Curabitur feugiat faucibus mauris id unt tortor eu
-            placerat
-            vehicula. Curabitur feugiat faucibus mauris id ullamcorper. </p>
+<!--<div id="drawForMe">-->
+<!--    <div class="dots" data-num="15"></div>-->
+<!--    <div class="container">-->
+<!--        <h1>Draw<br>for me</h1>-->
+<!--        <p><span class="big">V</span>ipsum dolor sit amet, consectetur adipiscing elit. Praesent at cursus magna, at dap-->
+<!--            bus-->
+<!--            eros. Aliquam tincidunt tortor eu placerat vehicula. Curabitur feugiat faucibus mauris id ullamcorper. </p>-->
+<!--        <p><span class="big">Z</span>ipsum dolor sit amet, consectetur adipiscing elit. Praesent at cursus magna, at dap-->
+<!--            bus-->
+<!--            eros. Aliquam tincidunt tortor eu placerat vehicula. Curabitur feugiat faucibus mauris id unt tortor eu-->
+<!--            placerat-->
+<!--            vehicula. Curabitur feugiat faucibus mauris id ullamcorper. </p>-->
 
 
-        <div class="slider-wrapper">
-            <div class="white-block"></div>
-            <div class="text-container">
-                <div class="text-slide active">Текст для первого слайда. Lorem ipsum dolor sit amet, consectetur
-                    adipiscing
-                    elit. Praesent at cursus magna, at dapibus eros.
-                </div>
-                <div class="text-slide">Текст для второго слайда. Aliquam tincidunt tortor eu placerat vehicula.
-                    Curabitur
-                    feugiat faucibus mauris id ullamcorper.
-                </div>
-            </div>
+<!--        <div class="slider-wrapper">-->
+<!--            <div class="white-block"></div>-->
+<!--            <div class="text-container">-->
+<!--                <div class="text-slide active">Текст для первого слайда. Lorem ipsum dolor sit amet, consectetur-->
+<!--                    adipiscing-->
+<!--                    elit. Praesent at cursus magna, at dapibus eros.-->
+<!--                </div>-->
+<!--                <div class="text-slide">Текст для второго слайда. Aliquam tincidunt tortor eu placerat vehicula.-->
+<!--                    Curabitur-->
+<!--                    feugiat faucibus mauris id ullamcorper.-->
+<!--                </div>-->
+<!--            </div>-->
 
-            <div class="slider-container">
-                <div class="swiper-container">
-                    <div class="swiper-wrapper">
-                        <div class="swiper-slide">
-                            <img src="/assets/img/slide.jpg" alt="Image 1">
-                        </div>
-                        <div class="swiper-slide">
-                            <img src="/assets/img/slide.jpg" alt="Image 2">
-                        </div>
-                    </div>
-                    <div class="swiper-button-next"></div>
-                    <div class="swiper-button-prev"></div>
-                    <div class="swiper-pagination"></div>
-                </div>
+<!--            <div class="slider-container">-->
+<!--                <div class="swiper-container">-->
+<!--                    <div class="swiper-wrapper">-->
+<!--                        <div class="swiper-slide">-->
+<!--                            <img src="/assets/img/slide.jpg" alt="Image 1">-->
+<!--                        </div>-->
+<!--                        <div class="swiper-slide">-->
+<!--                            <img src="/assets/img/slide.jpg" alt="Image 2">-->
+<!--                        </div>-->
+<!--                    </div>-->
+<!--                    <div class="swiper-button-next"></div>-->
+<!--                    <div class="swiper-button-prev"></div>-->
+<!--                    <div class="swiper-pagination"></div>-->
+<!--                </div>-->
 
-            </div>
-        </div>
-    </div>
-</div>
+<!--            </div>-->
+<!--        </div>-->
+<!--    </div>-->
+<!--</div>-->
 
-<div id="contacts" class="container">
-    <h1>Contacts</h1>
-    <div class="contacts">
-        <div class="contact">
-            <img src="/assets/img/patterns/c1.png" alt="">
-            <div class="contact-data email">
-                <a href="mailto:elena.salova@gmail.com">elena.salova@gmail.com</a>
-            </div>
-        </div>
-        <div class="contact">
-            <img src="/assets/img/patterns/c2.png" alt="">
+<!--<div id="contacts" class="container">-->
+<!--    <h1>Contacts</h1>-->
+<!--    <div class="contacts">-->
+<!--        <div class="contact">-->
+<!--            <img src="/assets/img/patterns/c1.png" alt="">-->
+<!--            <div class="contact-data email">-->
+<!--                <a href="mailto:elena.salova@gmail.com">elena.salova@gmail.com</a>-->
+<!--            </div>-->
+<!--        </div>-->
+<!--        <div class="contact">-->
+<!--            <img src="/assets/img/patterns/c2.png" alt="">-->
 
-            <div class="contact-data adress">
-                <a href="tel:34627327237">+34 627 327 237</a>
-                <span>Curabitur feugiat faudcibus mauris id unt tortor eu placerat. </span>
-            </div>
+<!--            <div class="contact-data adress">-->
+<!--                <a href="tel:34627327237">+34 627 327 237</a>-->
+<!--                <span>Curabitur feugiat faudcibus mauris id unt tortor eu placerat. </span>-->
+<!--            </div>-->
 
-        </div>
-        <div class="contact">
-            <img src="/assets/img/patterns/c3.png" alt="">
+<!--        </div>-->
+<!--        <div class="contact">-->
+<!--            <img src="/assets/img/patterns/c3.png" alt="">-->
 
-            <div class="contact-data">
-                <div class="underline-btn-container">
-                    <a href="#" class="underline-btn slideIn">my instagram.</a>
-                    <a href="#" class="underline-btn slideIn">my saatchi.</a>
-                </div>
-                <div class="underline-btn-container">
-                    <a href="#" class="underline-btn slideIn">my whatsapp.</a>
-                </div>
-            </div>
-        </div>
-    </div>
-</div>
+<!--            <div class="contact-data">-->
+<!--                <div class="underline-btn-container">-->
+<!--                    <a href="#" class="underline-btn slideIn">my instagram.</a>-->
+<!--                    <a href="#" class="underline-btn slideIn">my saatchi.</a>-->
+<!--                </div>-->
+<!--                <div class="underline-btn-container">-->
+<!--                    <a href="#" class="underline-btn slideIn">my whatsapp.</a>-->
+<!--                </div>-->
+<!--            </div>-->
+<!--        </div>-->
+<!--    </div>-->
+<!--</div>-->
 
-<footer>
-    <nav>
-        <a href="#">collections.</a>
-        <a href="#">gallery.</a>
-        <a href="#">draw for me.</a>
-        <a href="#">contacts.</a>
-    </nav>
-    <div class="footer_body">
-        <div class="footer_texts">
-            <a href="#">Privacy</a>
-            <span>All Rights Reserved</span>
-            <span>2024</span>
-        </div>
-        <div class="footer_texts">
-            <span>Designed and Developed by <br>PavLo Chsitiakov  and  Andrii Bondarenko</span>
-            <button>totop</button>
-        </div>
-    </div>
-</footer>
+<!--<footer>-->
+<!--    <nav>-->
+<!--        <a href="#">collections.</a>-->
+<!--        <a href="#">gallery.</a>-->
+<!--        <a href="#">draw for me.</a>-->
+<!--        <a href="#">contacts.</a>-->
+<!--    </nav>-->
+<!--    <div class="footer_body">-->
+<!--        <div class="footer_texts">-->
+<!--            <a href="#">Privacy</a>-->
+<!--            <span>All Rights Reserved</span>-->
+<!--            <span>2024</span>-->
+<!--        </div>-->
+<!--        <div class="footer_texts">-->
+<!--            <span>Designed and Developed by <br>PavLo Chsitiakov  and  Andrii Bondarenko</span>-->
+<!--            <button>totop</button>-->
+<!--        </div>-->
+<!--    </div>-->
+<!--</footer>-->
 
 <script src="assets/js/jquery.min.js"></script>
 <script src="assets/js/dat.gui.min.js"></script>

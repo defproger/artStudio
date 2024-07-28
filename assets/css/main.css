@@ -143,12 +143,23 @@ body {
     transform: translate(0, 0);
 }
 
-
 .dots {
     position: relative;
     width: 100%;
     height: 100%;
     z-index: -1;
+
+    opacity: 0;
+    animation: dotsShow 5s ease-in-out 6.6s forwards;
+}
+
+@keyframes dotsShow {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
 }
 
 .dot {
@@ -267,6 +278,16 @@ body.fixed {
         opacity: 0;
         transform: translate(-50%, -50%) scale(0.75);
     }
+}
+
+#preloader_bar {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0;
+    height: 8px;
+    background-color: white;
+    z-index: 1002;
 }
 
 /*mainscreen*/
@@ -1080,8 +1101,8 @@ header nav a:hover {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-top: 5450px;
-    margin-bottom: -5330px;
+    margin-top: 320px;
+    margin-bottom: 230px;
 }
 
 #quote .after_quote h1 {

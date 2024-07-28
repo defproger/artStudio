@@ -16,13 +16,13 @@ $(document).ready(function () {
 
     var settings = {
         travel_time: 3, // Время прохождения от левого до правого края в секундах
-        speed_multiplier: 0.8, // Множитель скорости
+        speed_multiplier: 0.69, // Множитель скорости
         narrow_width: 1.4, // Ширина для заужения краев
         narrow_factor: 5.2, // Фактор заужения (чем больше, тем сильнее заужение)
         velocity_x: 0, // горизонтальная скорость
         y_center: 300, // вертикальная координата центра
         velocity_y: 2, // вертикальная скорость
-        particles: 500, // количество частиц
+        particles: 200, // количество частиц
         maxradius: 6, // максимальный радиус
         irregColors: true, // использование нерегулярных цветов
         decay: true, // включение угасания
@@ -32,14 +32,16 @@ $(document).ready(function () {
         opacMax: 0.42, // максимальная непрозрачность
         opacMin: 0.01, // минимальная непрозрачность
         opacSeed: 74, // случайная величина для непрозрачности
-        colorPct: 4, // процент цветов
+        colorPct: 10, // количество цветов
         parabola_h: 557, // вершина параболы по горизонтали
         parabola_a: -0.001, // форма параболы
         parabola_offset_range: 150, // диапазон отклонения параболы
         initial_particles: -5, // начальное количество частиц
-        endTime: 5, // время окончания
+        endTime: 5.5, // время окончания
         // deleteTime: 6.5, // время удаления
         deleteTime: 0.1, // время удаления
+        fade_start_pct: 0.8, // процент пути, с которого начинается угасание непрозрачности
+        fade_duration: 0.5 // время потери непрозрачности в секундах
     };
 
     // Запрет на создание новых шариков через 5 секунд
@@ -90,16 +92,34 @@ $(document).ready(function () {
         if (settings.irregColors) {
             switch (Math.ceil(Math.random() * settings.colorPct)) {
                 case 1:
-                    this.params.color = "65, 126, 120";
+                    this.params.color = "176, 140, 122";
                     break;
                 case 2:
-                    this.params.color = "203, 77, 64";
+                    this.params.color = "65, 126, 120";
                     break;
                 case 3:
-                    this.params.color = "144, 175, 160";
+                    this.params.color = "193, 94, 87";
                     break;
                 case 4:
+                    this.params.color = "144, 175, 160";
+                    break;
+                case 5:
+                    this.params.color = "128, 109, 144";
+                    break;
+                case 6:
                     this.params.color = "135, 157, 176";
+                    break;
+                case 7:
+                    this.params.color = "194, 164, 84";
+                    break;
+                case 8:
+                    this.params.color = "203, 77, 64";
+                    break;
+                case 9:
+                    this.params.color = "177, 118, 231";
+                    break;
+                case 10:
+                    this.params.color = "175, 139, 122";
                     break;
                 default:
                     this.params.color = "177, 118, 231";
@@ -131,6 +151,13 @@ $(document).ready(function () {
             this.params.x_offset +
             t * this.params.velocity_x * settings.speed_multiplier;
         this.y = a * Math.pow(this.x - h, 2) + k + offset * narrowWidth;
+
+        // Проверяем, достиг ли шарик момента начала угасания
+        var travelPct = this.x / 1000;
+        if (travelPct > settings.fade_start_pct) {
+            var fadeProgress = (travelPct - settings.fade_start_pct) / (settings.fade_duration / settings.travel_time);
+            this.params.opacity = Math.max(settings.opacMax * (1 - fadeProgress), settings.opacMin);
+        }
 
         if (this.params.opacity > settings.opacMax) {
             this.params.decay *= -1;
@@ -204,6 +231,18 @@ $(document).ready(function () {
         }
     })();
 
+    const bar = document.getElementById('preloader_bar');
+
+    // время заполнения прогресс-бара
+    bar.style.transition = 'width 5.5s ease-in';
+    bar.style.width = '100%';
+
+    // время спрятать прогресс-бар
+    bar.addEventListener('transitionend', () => {
+        bar.style.transition = 'bottom 1s ease';
+        bar.style.bottom = '-8px';
+    });
+
     // Останавливаем анимацию и очищаем контекст через 10 секунд
     setTimeout(function () {
         cancelAnimationFrame(animId);
@@ -225,24 +264,3 @@ $(document).ready(function () {
         }, 6000);
     }, settings.deleteTime * 1000);
 });
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
