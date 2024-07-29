@@ -1448,13 +1448,16 @@ header nav a:hover {
     margin-bottom: 8px;
 }
 
-.gallery_block span {
+.gallery_block > span {
     font-size: 24px;
     font-weight: 400;
     line-height: 28.8px;
+
+    display: block;
+    margin-bottom: 175px;
 }
 
-.first_block_background {
+.gallery_active_background {
     position: absolute;
     background: #E9E9E9;
     height: 100%;
@@ -1465,6 +1468,72 @@ header nav a:hover {
     border-top-right-radius: 46px;
     border-bottom-right-radius: 46px;
     z-index: -1;
+
+    opacity: 0;
+    transition: .3s;
+}
+
+.gallery_block:nth-child(even) .gallery_active_background {
+    left: 0;
+    border-radius: 46px 0 0 46px;
+}
+
+.gallery_block:hover .gallery_active_background {
+    opacity: 1;
+}
+
+.gallery_block button {
+    display: block;
+    position: absolute;
+    background: none;
+    border: none;
+    cursor: pointer;
+
+
+    padding: 35px;
+
+    width: calc(50vw - 410px);
+    transform: translateX(calc((50vw - 790px) * -1));
+    background: black;
+
+    margin-top: -140px;
+    height: 120px;
+    overflow: hidden;
+}
+
+.gallery_block .button-ball {
+    display: block;
+    width: 250px;
+    height: 250px;
+    background: #F9C04E;
+    border-radius: 50%;
+    position: absolute;
+    z-index: -1;
+    transform: translate(-35px, -35px);
+}
+
+.gallery_block button span {
+    display: block;
+    float: right;
+
+    font-size: 20px;
+    line-height: 24px;
+    color: #fff;
+    font-weight: 700;
+    letter-spacing: 1.06em;
+    text-align: left;
+
+    max-width: 320px;
+
+    text-transform: uppercase;
+}
+
+.gallery_block:nth-child(even) button span {
+    float: left;
+}
+
+.gallery_block:nth-child(even) button {
+    transform: translateX(calc((50vw - 700px)));
 }
 
 

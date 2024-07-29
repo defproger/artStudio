@@ -58,3 +58,32 @@ document.addEventListener('DOMContentLoaded', function () {
         });
     }
 });
+
+
+const ballColors = ['#417E78', '#FE76AC', '#264A7A', '#C4A556'];
+
+function getRandomColor() {
+    return ballColors[Math.floor(Math.random() * ballColors.length)];
+}
+
+function random(min, max) {
+    let rand = min + Math.random() * (max + 1 - min);
+    return Math.floor(rand);
+}
+
+function createRandomBall() {
+    const buttons = document.querySelectorAll('.gallery_block button');
+    buttons.forEach((button) => {
+        let minX = -150;
+        let maxX = button.clientWidth - 100;
+        let minY = -250;
+        let maxY = 35;
+        let ball = button.querySelector('.button-ball');
+        ball.style.backgroundColor = getRandomColor();
+        ball.style.transform = `translate(${random(minX, maxX)}px, ${random(minY, maxY)}px)`;
+
+        console.log(minX, maxX, minY, maxY);
+    });
+}
+
+createRandomBall();
