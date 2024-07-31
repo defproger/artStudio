@@ -128,5 +128,73 @@
         font-size: 237px;
     }
 
+    .filter_categories {
+        grid-template-columns: 1fr;
+        grid-gap: 30px 40px;
+    }
+
+    .popup_header {
+        margin-bottom: 50px;
+    }
+
+    .gallery_block {
+        padding: 30px 0 35px;
+        display: flex;
+        flex-direction: column;
+        justify-content: end;
+    }
+
+    .gallery_block img {
+        object-fit: contain;
+    }
+
+    .gallery_image_container {
+        margin-bottom: 20px;
+    }
+
+    .gallery_block:nth-child(even) {
+        align-items: end;
+    }
+
+    .gallery_block h1 {
+        height: 120px;
+        font-size: 48px;
+        line-height: 56.81px;
+    }
+
+    .gallery_block p {
+        font-size: 27px;
+    }
+
+    .gallery_block > span {
+        font-size: 20px;
+        margin-bottom: 130px;
+    }
+
+
+    .gallery_block button {
+        padding: 26px;
+        width: calc(50vw - 310px);
+        transform: translateX(calc((50vw - 590px) * -1));
+        background: black;
+        margin-top: -100px;
+        height: 100px;
+        overflow: hidden;
+    }
+
+    .gallery_block:nth-child(even) button {
+        transform: translateX(calc((50vw - 590px)));
+    }
+
+    .gallery_block button span {
+        font-size: 18px;
+        line-height: 20px;
+        letter-spacing: 0.7em;
+        max-width: 240px;
+    }
+
+    .gallery {
+        margin-top: 30px;
+    }
 
 }
