@@ -237,4 +237,46 @@
         height: 1010px;
     }
 
+    #contacts h1 {
+        font-size: 130px;
+        line-height: 150px;
+    }
+
+    .contacts {
+        margin-top: 130px;
+        margin-bottom: 150px;
+        gap: 75px;
+    }
+
+    .contact {
+        gap: 75px;
+    }
+
+    .contact img {
+        max-width: 333px;
+    }
+
+    .contact-data {
+        width: 650px;
+    }
+
+    .contact-data.email a {
+        font-size: 48px;
+        line-height: 67px;
+    }
+
+    .contact-data.adress a, .contact-data.adress span {
+        font-size: 36px;
+        line-height: 42px;
+    }
+
+
+    .contact-data .underline-btn-container {
+        gap: 75px;
+    }
+
+    .contact-data .underline-btn {
+        font-size: 46px;
+    }
+
 }
