@@ -1425,9 +1425,7 @@ header nav a:hover {
     width: auto;
     height: 100%;
     max-height: 600px;
-    max-width: 95%;
-
-    margin-bottom: 70px;
+    max-width: 100%;
 }
 
 .gallery_block h1 {
@@ -1536,6 +1534,32 @@ header nav a:hover {
     transform: translateX(calc((50vw - 700px)));
 }
 
+.gallery_image_container {
+    position: relative;
+    margin-bottom: 70px;
+    max-width: 95%;
+    cursor: none;
+}
+
+.gallery_block .magnifier {
+    position: absolute;
+    width: 155px;
+    height: 155px;
+
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    background: black;
+    pointer-events: none;
+    display: flex;
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+    z-index: 10;
+}
+
+.gallery_image_container:hover .magnifier {
+    opacity: 1;
+}
 
 .controls {
     margin: auto;

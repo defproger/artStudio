@@ -87,3 +87,12 @@ function createRandomBall() {
 }
 
 createRandomBall();
+
+document.querySelectorAll('.gallery_image_container').forEach(block => {
+    const magnifier = block.querySelector('.magnifier');
+    block.addEventListener('mousemove', e => {
+        const rect = block.getBoundingClientRect();
+        magnifier.style.left = `${e.clientX - rect.left - 77}px`;
+        magnifier.style.top = `${e.clientY - rect.top - 77}px`;
+    });
+});
