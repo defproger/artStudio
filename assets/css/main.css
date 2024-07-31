@@ -18,6 +18,13 @@ a {
     color: white;
 }
 
+#gallery ::selection,
+.text-container ::selection,
+.footer_body ::selection {
+    background: rgba(0, 0, 0, 0.3) !important;
+    color: black !important;
+}
+
 body {
     background: #000;
     color: #fff;
@@ -1829,30 +1836,27 @@ footer nav a {
     font-weight: 400;
     line-height: 28.8px;
     letter-spacing: 0.2em;
+    transition: .3s;
 }
 
 footer nav a:nth-child(1) {
-    background: #417E78;
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
+    color: #417E78;
 }
 
 footer nav a:nth-child(2) {
-    background: #C15E57;
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
+    color: #C15E57;
 }
 
 footer nav a:nth-child(3) {
-    background: #B6A546;
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
+    color: #B6A546;
 }
 
 footer nav a:nth-child(4) {
-    background: #90AFA0;
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
+    color: #90AFA0;
+}
+
+footer nav a:hover {
+    color: #fff;
 }
 
 .footer_body {
