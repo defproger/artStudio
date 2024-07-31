@@ -217,9 +217,21 @@
         max-width: 500px;
     }
 
+    #drawForMe .big, .text-container .big {
+        font-size: 35px;
+        line-height: 43px;
+    }
+
     .text-container {
         width: 500px;
         font-size: 20px;
         line-height: 24px;
     }
+
+    .slider-container {
+        width: 660px;
+        height: 700px;
+    }
+
+
 }

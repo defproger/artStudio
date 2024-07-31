@@ -1678,14 +1678,16 @@ header nav a:hover {
 }
 
 .text-slide {
+    position: absolute;
     display: none;
     opacity: 0;
-    transition: opacity 0.5s;
+    transition: opacity 0.5s, transform 0.5s;
 }
 
 .text-slide.active {
     display: block;
     opacity: 1;
+    transform: translateX(0);
 }
 
 

@@ -11,14 +11,34 @@ document.addEventListener('DOMContentLoaded', function () {
             clickable: true,
         },
         on: {
-            slideChange: function () {
+            slideChangeTransitionStart: function () {
                 var activeIndex = swiper.activeIndex;
+                var previousIndex = swiper.previousIndex;
                 var textSlides = document.querySelectorAll('.text-slide');
+
+                var direction = activeIndex > previousIndex ? 'next' : 'prev';
+
                 textSlides.forEach(function (slide, index) {
+                    if (index === previousIndex) {
+                        slide.style.transition = 'opacity 0.5s, transform 0.5s';
+                        slide.style.transform = direction === 'next' ? 'translateX(-60%)' : 'translateX(60%)';
+                        slide.style.opacity = 0;
+                        setTimeout(function () {
+                            slide.classList.remove('active');
+                            slide.style.display = 'none';
+                            slide.style.transform = 'translateX(0)';
+                        }, 500);
+                    }
                     if (index === activeIndex) {
                         slide.classList.add('active');
-                    } else {
-                        slide.classList.remove('active');
+                        slide.style.display = 'block';
+                        slide.style.transition = 'none';
+                        slide.style.transform = direction === 'next' ? 'translateX(60%)' : 'translateX(-60%)';
+                        setTimeout(function () {
+                            slide.style.transition = 'opacity 0.5s, transform 0.5s';
+                            slide.style.transform = 'translateX(0)';
+                            slide.style.opacity = 1;
+                        }, 10);
                     }
                 });
             },
@@ -28,5 +48,7 @@ document.addEventListener('DOMContentLoaded', function () {
     var textSlides = document.querySelectorAll('.text-slide');
     if (textSlides.length > 0) {
         textSlides[0].classList.add('active');
+        textSlides[0].style.display = 'block';
+        textSlides[0].style.opacity = 1;
     }
 });
