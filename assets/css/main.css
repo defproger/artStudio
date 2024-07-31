@@ -1508,6 +1508,7 @@ header nav a:hover {
     position: absolute;
     z-index: -1;
     transform: translate(-35px, -35px);
+    transition: 1.5s ease-in-out;
 }
 
 .gallery_block button span {

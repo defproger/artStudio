@@ -82,7 +82,10 @@ function createRandomBall() {
         ball.style.backgroundColor = getRandomColor();
         ball.style.transform = `translate(${random(minX, maxX)}px, ${random(minY, maxY)}px)`;
 
-        console.log(minX, maxX, minY, maxY);
+        button.addEventListener('mouseenter', () => {
+            ball.style.transform = `translate(${random(minX, maxX)}px, ${random(minY, maxY)}px)`;
+            ball.style.backgroundColor = getRandomColor();
+        });
     });
 }
 
