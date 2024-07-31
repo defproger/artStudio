@@ -223,7 +223,7 @@
     }
 
     .text-container {
-        width: 500px;
+        width: 470px;
         font-size: 20px;
         line-height: 24px;
     }
@@ -233,5 +233,8 @@
         height: 700px;
     }
 
+    #drawForMe .dots {
+        height: 1010px;
+    }
 
 }

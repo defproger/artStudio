@@ -20,7 +20,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
                 textSlides.forEach(function (slide, index) {
                     if (index === previousIndex) {
-                        slide.style.transition = 'opacity 0.5s, transform 0.5s';
+                        slide.style.transition = 'opacity 0.3s ease-in-out, transform 0.6s ease';
                         slide.style.transform = direction === 'next' ? 'translateX(-60%)' : 'translateX(60%)';
                         slide.style.opacity = 0;
                         setTimeout(function () {
@@ -35,7 +35,7 @@ document.addEventListener('DOMContentLoaded', function () {
                         slide.style.transition = 'none';
                         slide.style.transform = direction === 'next' ? 'translateX(60%)' : 'translateX(-60%)';
                         setTimeout(function () {
-                            slide.style.transition = 'opacity 0.5s, transform 0.5s';
+                            slide.style.transition = 'opacity 0.3s ease-in-out, transform 0.6s ease';
                             slide.style.transform = 'translateX(0)';
                             slide.style.opacity = 1;
                         }, 10);
