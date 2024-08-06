@@ -1921,6 +1921,7 @@ header nav a:hover {
 #drawForMe .callback-form {
     margin-top: -340px;
 }
+
 /*contacts*/
 #contacts {
     margin-top: 250px;
@@ -1991,6 +1992,65 @@ header nav a:hover {
 .contact-data .underline-btn {
     float: left;
     font-size: 64px;
+}
+
+/*callbackScreen*/
+#callbackForm {
+    display: flex;
+    gap: 150px;
+    align-items: end;
+    justify-content: end;
+
+    margin-bottom: 75px;
+    margin-top: 400px;
+}
+
+#callbackForm h1 {
+    font-family: Engravers MT;
+    font-size: 160px;
+    font-weight: 500;
+    line-height: 180px;
+    text-align: left;
+    color: white;
+    width: min-content;
+
+}
+
+#callbackForm h1 span {
+    background: linear-gradient(90deg, #BEA052 0%, #AF4947 46.5%, #264A7A 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+#callbackForm .callback-form {
+    position: relative;
+    width: 660px;
+}
+
+#callback_form_slinky {
+    height: 1000px;
+    width: 100%;
+    position: absolute;
+    top: -660px;
+    left: -90px;
+    z-index: -1;
+}
+
+#callback_form_slinky .layer svg {
+    /*width: 110%;*/
+    height: auto;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transform: translate(0, 0);
+}
+
+#callback_form_slinky .layer:nth-child(2) svg {
+    transform: translate(10px, 18px);
+}
+
+#callback_form_slinky .layer:nth-child(3) svg {
+    transform: translate(20px, 37px);
 }
 
 /*footer*/

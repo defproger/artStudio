@@ -1,5 +1,6 @@
 $('#quotes_slinky').parallax();
 $('#gallery_form_slinky').parallax();
+$('#callback_form_slinky').parallax();
 
 $(window).on('scroll', function () {
     let wHeight = $(window).height() - 100;
