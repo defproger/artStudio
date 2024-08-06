@@ -1,0 +1,38 @@
+@media screen and (max-width: 1200px) {
+    .container {
+        width: 320px;
+    }
+
+    #mainscreen h1 {
+        font-size: 64px;
+        font-weight: 500;
+        line-height: 74.53px;
+        text-align: left;
+        white-space: wrap;
+        animation: textScale 3s ease-in-out 6.6s forwards;
+    }
+
+    @keyframes textScale {
+        0% {
+            opacity: 0;
+            transform: scale(1.2);
+        }
+        60% {
+            opacity: 1;
+        }
+        100% {
+            opacity: 1;
+            transform: scale(1);
+        }
+    }
+
+    #slinky .layer {
+        left: 80px !important;
+        width: 330vw !important;
+    }
+
+    #mainscreen .dots {
+        width: 100%;
+        left: 0;
+    }
+}

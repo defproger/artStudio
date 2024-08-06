@@ -20,7 +20,8 @@ a {
 
 #gallery ::selection,
 .text-container ::selection,
-.footer_body ::selection {
+.footer_body ::selection,
+.form.black .hidden_input input::selection {
     background: rgba(0, 0, 0, 0.3) !important;
     color: black !important;
 }
@@ -1905,7 +1906,9 @@ header nav a:hover {
 }
 
 .form.black {
+    position: relative;
     width: fit-content;
+    z-index: 10;
 }
 
 .form.black .hidden_input {
