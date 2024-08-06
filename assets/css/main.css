@@ -1611,6 +1611,8 @@ header nav a:hover {
 
 #gallery .callback-form {
     margin-top: 180px;
+    position: relative;
+    height: 640px;
 }
 
 .form h1 {
@@ -1718,6 +1720,32 @@ header nav a:hover {
     50% {
         border-color: black;
     }
+}
+
+
+#gallery_form_slinky {
+    height: 1000px;
+    right: -810px;
+    top: -130px;
+    margin-bottom: -1000px;
+    z-index: -1;
+}
+
+#gallery_form_slinky .layer svg {
+    /*width: 110%;*/
+    height: auto;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transform: translate(0, 0);
+}
+
+#gallery_form_slinky .layer:nth-child(2) svg {
+    transform: translate(10px, 18px);
+}
+
+#gallery_form_slinky .layer:nth-child(3) svg {
+    transform: translate(20px, 37px);
 }
 
 /*draw for me*/
@@ -1856,6 +1884,43 @@ header nav a:hover {
     bottom: -20px !important;
 }
 
+.form.black .input {
+    padding: 30px;
+    border-bottom: 1px solid white;
+}
+
+.form.black input {
+    color: white;
+    width: 500px;
+}
+
+.form.black p {
+    text-align: center;
+    color: #575757;
+
+    max-width: 440px !important;
+
+    margin: auto;
+    margin-top: 50px;
+}
+
+.form.black {
+    width: fit-content;
+}
+
+.form.black .hidden_input {
+    background: white;
+    padding: 38px 50px;
+}
+
+.form.black .hidden_input input {
+    color: black;
+    width: 560px;
+}
+
+#drawForMe .callback-form {
+    margin-top: -340px;
+}
 /*contacts*/
 #contacts {
     margin-top: 250px;
