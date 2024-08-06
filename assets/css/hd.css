@@ -279,4 +279,25 @@
         font-size: 46px;
     }
 
+    .form.black .input {
+        padding: 20px;
+    }
+
+    form.black input {
+        width: 410px !important;
+    }
+
+    .form input, .form .hidden_input input {
+        font-size: 18px;
+        letter-spacing: 0.29em;
+    }
+
+    .form button {
+        font-size: 35px;
+    }
+
+    #callbackForm h1 {
+        font-size: 100px;
+        line-height: 120px;
+    }
 }
