@@ -3,6 +3,14 @@
         width: 320px;
     }
 
+    .pc {
+        display: none;
+    }
+
+    .mobile {
+        display: block;
+    }
+
     #mainscreen h1 {
         font-size: 64px;
         font-weight: 500;
@@ -58,4 +66,166 @@
         line-height: 48.01px;
 
     }
+
+    #collections > .container > .heading_text {
+
+        font-size: 70px;
+        line-height: 81.52px;
+        text-align: left;
+    }
+
+    #collections > .container > .heading_text > span {
+        font-size: 66px;
+        font-weight: 500;
+        line-height: 45.54px;
+
+    }
+
+    .patterns {
+        flex-direction: column;
+        gap: 50px;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .pattern-block {
+        width: 256px;
+        height: 256px;
+    }
+
+    .pattern-block:nth-child(1) > picture img {
+        left: -49px;
+        width: 119%;
+    }
+
+    .pattern-block:nth-child(2) > picture img {
+        width: 322px;
+    }
+
+    .pattern-block:nth-child(3) > picture img {
+        width: 304px;
+        left: -50px;
+    }
+
+    .pattern-block:nth-child(4) > picture img {
+        width: 318.5px;
+    }
+
+    .collection_serie h2 {
+        margin-left: 0;
+    }
+
+    .collection_serie p {
+        margin-left: 0;
+    }
+
+    .collection_flex {
+        flex-direction: column;
+        gap: 40px;
+    }
+
+    .collection_flex .photo img {
+        width: 100%;
+    }
+
+    .collection_flex .ball {
+        width: 310px;
+        height: 310px;
+    }
+
+    .collection_flex.right .ball {
+        margin: 0;
+    }
+
+    .collection_flex.right {
+        flex-direction: column-reverse;
+        margin-bottom: 80px;
+    }
+
+    .collection_flex:not(.first) .ball {
+        margin: 0;
+    }
+
+    .pattern_line {
+        height: 2050px;
+    }
+
+    .collection__under_text {
+        margin-top: 40px;
+        max-width: 90%;
+    }
+
+    .pattern_line img {
+        height: 480px;
+        top: 400px;
+        right: -50%;
+    }
+
+    .collection_flex:nth-child(1) {
+        margin-top: -2600px;
+    }
+
+    .collection_flex .collection_name h2 {
+        font-size: 36px;
+        line-height: 43.21px;
+    }
+
+    .collection_flex .collection_name h3 {
+        font-size: 20px;
+        line-height: 23.88px;
+    }
+
+    .collection_flex .collection_name p {
+        font-size: 12px;
+        line-height: 14.4px;
+        letter-spacing: 1.21em;
+    }
+
+    .collection_flex .collection_name p span {
+        font-size: 12px;
+        line-height: 14.4px;
+        letter-spacing: 0.18em;
+    }
+
+    .collection_flex .collection_name p:nth-of-type(2) {
+        margin-left: -5px;
+    }
+
+    .collection_flex .underline-btn-container {
+        margin-top: 40px;
+    }
+
+    #collections {
+        width: 100%;
+        overflow: hidden;
+    }
+
+    .collection_flex > p {
+        font-size: 24px;
+        font-weight: 400;
+        line-height: 28.8px;
+        text-align: justify;
+    }
+
+    .collection_flex > p .big {
+        font-size: 48px;
+        font-weight: 400;
+        line-height: 57.61px;
+    }
+
+    .collection_flex > .underline-btn-container {
+        margin-top: 0;
+        justify-content: end;
+    }
+
+    .collection_flex .underline-btn-container span.yellow {
+        text-align: left;
+    }
+
+    .collection_flex .dots {
+        width: 100%;
+        top: 4820px;
+        height: 300px;
+    }
+
 }

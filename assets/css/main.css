@@ -202,6 +202,10 @@ body {
     }
 }
 
+.mobile {
+    display: none;
+}
+
 /*preloader*/
 body.fixed {
     height: 100vh;
@@ -760,30 +764,30 @@ header nav a:hover {
     overflow: hidden;
 }
 
-.pattern-block img {
+.pattern-block picture img {
     position: absolute;
     height: auto;
 }
 
-.pattern-block:nth-child(1) > img {
+.pattern-block:nth-child(1) > picture img {
     top: 0;
     left: 0;
     width: 100%;
 }
 
-.pattern-block:nth-child(2) > img {
+.pattern-block:nth-child(2) > picture img {
     bottom: 0;
     left: 0;
     width: 272px;
 }
 
-.pattern-block:nth-child(3) > img {
+.pattern-block:nth-child(3) > picture img {
     top: 0;
     left: 0;
     width: 409px;
 }
 
-.pattern-block:nth-child(4) > img {
+.pattern-block:nth-child(4) > picture img {
     top: -8px;
     left: 0;
     width: 438.5px;

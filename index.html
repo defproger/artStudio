@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="./assets/css/fonts.css">
     <link rel="stylesheet" href="./assets/css/main.css">
     <link rel="stylesheet" href="./assets/css/hd.css">
+    <link rel="stylesheet" href="./assets/css/mobile.css">
     <link rel="stylesheet" href="assets/css/swiper-bundle.min.css">
     <link rel="stylesheet" href="assets/css/jquery-ui.css">
 </head>
@@ -149,20 +150,33 @@
 <div id="collections">
     <div class="container">
         <h1 class="heading_text slideIn">SERIES
-            COLLECTIONS</h1>
+            <span class="pc">COLLECTIONS</span>
+            <span class="mobile">COLLE CTIONS</span></h1>
 
         <div class="patterns">
             <div class="pattern-block slideIn slideLeft">
-                <img src="assets/img/patterns/pt1.png" alt="">
+                <picture>
+                    <source media="(max-width: 1199px)" srcset="assets/img/patterns/pt1_mobile.png">
+                    <img src="assets/img/patterns/pt1.png" alt="Pattern"/>
+                </picture>
             </div>
             <div class="pattern-block slideIn slideLeft1">
-                <img src="assets/img/patterns/pt2.png" alt="">
+                <picture>
+                    <source media="(max-width: 1199px)" srcset="assets/img/patterns/pt2_mobile.png">
+                    <img src="assets/img/patterns/pt2.png" alt="Pattern"/>
+                </picture>
             </div>
             <div class="pattern-block slideIn slideLeft2">
-                <img src="assets/img/patterns/pt3.png" alt="">
+                <picture>
+                    <source media="(max-width: 1199px)" srcset="assets/img/patterns/pt3_mobile.png">
+                    <img src="assets/img/patterns/pt3.png" alt="Pattern"/>
+                </picture>
             </div>
             <div class="pattern-block slideIn slideLeft3">
-                <img src="assets/img/patterns/pt4.png" alt="">
+                <picture>
+                    <source media="(max-width: 1199px)" srcset="assets/img/patterns/pt4_mobile.png">
+                    <img src="assets/img/patterns/pt4.png" alt="Pattern"/>
+                </picture>
             </div>
         </div>
 
@@ -191,7 +205,8 @@
                         <p><span>1’3’’</span> X<span>1’6’’</span></p>
                     </div>
                 </div>
-                <p class="slideIn"><span class="big">G</span>ipsum dolor sit amet, consectetur adipiscing elit. Praesent
+                <p class="slideIn pc"><span class="big">G</span>ipsum dolor sit amet, consectetur adipiscing elit.
+                    Praesent
                     at cursus
                     magna, at dap bus eros. Aliquam tincidunt tortor eu placerat vehicula. Curabitur feugiat faucibus
                     mauris id ullamcorper. Praesent elit arcu, venenatis ac finibus sit amet, lacinia nec nulla.
@@ -201,16 +216,33 @@
                 <img class="slideIn" src="assets/img/collections/cl1.jpg" alt="">
                 <div class="underline-btn-container">
                     <span class="slideIn slideIn2">SOLD</span>
-                    <a href="#" class="underline-btn slideIn">read more.</a>
+                    <a href="#" class="underline-btn slideIn pc">read more.</a>
                 </div>
             </div>
+            <p class="slideIn mobile"><span class="big">G</span>ipsum dolor sit amet, consectetur adipiscing elit.
+                Praesent
+                at cursus
+                magna, at dap bus eros. Aliquam tincidunt tortor eu placerat vehicula. Curabitur feugiat faucibus
+                mauris id ullamcorper. Praesent elit arcu, venenatis ac finibus sit amet, lacinia nec nulla.
+                Pellentesque cursus nibh eu ante lacinia, nec fringilla magna varius. </p>
+            <div class="underline-btn-container mobile">
+                <a href="#" class="underline-btn slideIn">read more.</a>
+            </div>
+
         </div>
 
         <div class="collection_flex right">
+            <div class="underline-btn-container mobile">
+                <a href="#" class="underline-btn slideIn">read more.</a>
+            </div>
+            <p class="slideIn mobile"><span class="big">V</span>ipsum dolor sit amet, consectetur adipiscing elit.
+                Praesent at cursus
+                magna, at dap bus eros. Aliquam tincidunt tortor eu placerat vehicula. Curabitur feugiat faucibus
+                mauris id ullamcorper. </p>
             <div class="photo">
                 <img src="assets/img/collections/cl2.jpg" class="slideIn slideIn2" alt="">
                 <div class="underline-btn-container">
-                    <a href="#" class="underline-btn slideIn">read more.</a>
+                    <a href="#" class="underline-btn slideIn pc">read more.</a>
                     <span class="yellow slideIn slideIn2">IN PRIVATE<br>COLLECTION</span>
                 </div>
             </div>
@@ -224,7 +256,8 @@
                         <p>1’3’’X1’6’’</p>
                     </div>
                 </div>
-                <p><span class="big">V</span>ipsum dolor sit amet, consectetur adipiscing elit. Praesent at cursus
+                <p class="slideIn pc"><span class="big">V</span>ipsum dolor sit amet, consectetur adipiscing elit.
+                    Praesent at cursus
                     magna, at dap bus eros. Aliquam tincidunt tortor eu placerat vehicula. Curabitur feugiat faucibus
                     mauris id ullamcorper. </p>
             </div>
@@ -240,7 +273,8 @@
                         <p>1’3’’X1’6’’</p>
                     </div>
                 </div>
-                <p class="slideIn"><span class="big">Z</span>ipsum dolor sit amet, consectetur adipiscing elit. Praesent
+                <p class="slideIn pc"><span class="big">Z</span>ipsum dolor sit amet, consectetur adipiscing elit.
+                    Praesent
                     at cursus
                     magna, at dap bus eros. Aliquam tincidunt tortor eu placerat vehicula. Curabitur feugiat faucibus
                     mauris id ullamcorper. </p>
@@ -249,8 +283,16 @@
                 <img src="assets/img/collections/cl3.jpg" class="slideIn slideIn2" alt="">
                 <div class="underline-btn-container">
                     <a href="#" class="underline-btn slideIn slideIn2">buy art.</a>
-                    <a href="#" class="underline-btn slideIn">read more.</a>
+                    <a href="#" class="underline-btn slideIn pc">read more.</a>
                 </div>
+            </div>
+            <p class="slideIn mobile"><span class="big">Z</span>ipsum dolor sit amet, consectetur adipiscing elit.
+                Praesent
+                at cursus
+                magna, at dap bus eros. Aliquam tincidunt tortor eu placerat vehicula. Curabitur feugiat faucibus
+                mauris id ullamcorper.</p>
+            <div class="underline-btn-container mobile">
+                <a href="#" class="underline-btn slideIn">read more.</a>
             </div>
         </div>
     </div>

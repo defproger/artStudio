@@ -5,7 +5,12 @@ $('#callback_form_slinky').parallax();
 $(window).on('scroll', function () {
     let wHeight = $(window).height() - 100;
     let scrollTop = $(window).scrollTop() - 100;
-    $('.pattern_line').css('transform', 'translate3d(0px, -' + (scrollTop - wHeight) * 0.75 + 'px , 0px)');
+
+    let screenWidth = $(window).width();
+
+    let coefficient = screenWidth < 1200 ? 0.35 : 0.75;
+
+    $('.pattern_line').css('transform', 'translate3d(0px, -' + (scrollTop - wHeight) * coefficient + 'px , 0px)');
 });
 
 function smoothScrollTo(element, duration) {
@@ -38,16 +43,16 @@ function smoothScrollTo(element, duration) {
 // });
 
 // Функция для замедления скролла
-  function slowScroll(event) {
+function slowScroll(event) {
     event.preventDefault();
 
     const scrollMultiplier = 0.5;
     const scrollY = window.scrollY;
     const newScrollY = scrollY + event.deltaY * scrollMultiplier;
     window.scrollTo({
-      top: newScrollY,
-      behavior: 'auto'
+        top: newScrollY,
+        behavior: 'auto'
     });
-  }
+}
 
-  window.addEventListener('wheel', slowScroll, { passive: false });
+window.addEventListener('wheel', slowScroll, {passive: false});
