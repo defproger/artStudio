@@ -203,7 +203,7 @@ body {
 }
 
 .mobile {
-    display: none;
+    display: none !important;
 }
 
 /*preloader*/

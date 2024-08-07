@@ -4,11 +4,11 @@
     }
 
     .pc {
-        display: none;
+        display: none !important;
     }
 
     .mobile {
-        display: block;
+        display: block !important;
     }
 
     #mainscreen h1 {
@@ -198,6 +198,7 @@
     #collections {
         width: 100%;
         overflow: hidden;
+        z-index: 2;
     }
 
     .collection_flex > p {
@@ -228,4 +229,91 @@
         height: 300px;
     }
 
+    .quote_container {
+        flex-direction: column;
+        gap: 200px;
+        align-items: start;
+        justify-content: start;
+        margin-top: -444px;
+    }
+
+    .quote_container img {
+        width: 225px;
+        height: 225px;
+    }
+
+    #quotes_slinky {
+        left: -1860px;
+    }
+
+    #quote {
+        position: relative;
+        margin-top: -470px;
+    }
+
+    .quote {
+        position: relative;
+        font-size: 24px;
+        font-weight: 400;
+        line-height: 28.8px;
+        max-width: 98%;
+        text-align: justify;
+        margin-right: 0;
+    }
+
+    .quote_container span {
+        margin-top: 20px;
+    }
+
+    .quote::before {
+        display: none;
+    }
+
+    .quote::after {
+        right: 0;
+        top: -90px;
+
+        font-size: 96px;
+    }
+
+    #quote .underline-btn-container {
+        margin-top: 122px;
+        flex-direction: column;
+        padding: 0;
+        gap: 90px;
+    }
+
+    #quote .underline-btn-container p {
+        font-size: 32px;
+        line-height: 37.27px;
+
+    }
+
+    #quote .dots {
+        width: 100%;
+        height: 210px;
+        top: 1210px;
+    }
+
+    #quote .after_quote {
+        margin-top: 170px;
+    }
+
+    #quote .after_quote h1 {
+        font-size: 109px;
+        line-height: 126.94px;
+        letter-spacing: -22px;
+    }
+
+    #quote .after_quote svg {
+        width: 25px;
+        height: 25px;
+    }
+
+    #quote .after_quote p {
+        font-size: 10px;
+        line-height: 12px;
+        letter-spacing: 1.21em;
+        margin-top: -14px;
+    }
 }
