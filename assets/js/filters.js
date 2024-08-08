@@ -1,9 +1,14 @@
 document.addEventListener('DOMContentLoaded', function () {
-    const filterButton = document.getElementById('filterButton');
-    const filterPopup = document.getElementById('filterPopup');
-    const closeButton = document.getElementById('closeButton');
-    const filterCheckboxes = document.querySelectorAll('.filter-checkbox');
-    const chosenFilters = document.getElementById('chosenFilters');
+    let screenWidth = $(window).width();
+    let popupElement = screenWidth > 1200 ? 'filterPopup' : 'filterPopupMobile';
+    let closeElement = screenWidth > 1200 ? 'closeButton' : 'closeButtonMobile';
+    let checkBoxElement = screenWidth > 1200 ? '.filter-checkbox' : '.filter-checkbox-mobile';
+
+    let filterButton = document.getElementById('filterButton');
+    let filterPopup = document.getElementById(popupElement);
+    let closeButton = document.getElementById(closeElement);
+    let filterCheckboxes = document.querySelectorAll(checkBoxElement);
+    let chosenFilters = document.getElementById('chosenFilters');
 
     filterButton.addEventListener('click', function () {
         filterPopup.classList.remove('closed');
@@ -39,7 +44,7 @@ document.addEventListener('DOMContentLoaded', function () {
             filterButton.classList.add('removing');
             setTimeout(() => {
                 filterButton.remove();
-                document.querySelector(`.filter-checkbox[value="${value}"]`).checked = false;
+                document.querySelector(`${checkBoxElement}[value="${value}"]`).checked = false;
             }, 500);
         });
         chosenFilters.appendChild(filterButton);
@@ -74,9 +79,10 @@ function random(min, max) {
 function createRandomBall() {
     const buttons = document.querySelectorAll('.gallery_block button');
     buttons.forEach((button) => {
-        let minX = -150;
-        let maxX = button.clientWidth - 100;
-        let minY = -250;
+        let screenWidth = $(window).width();
+        let minX = screenWidth > 1200 ? -150 : -100;
+        let maxX = button.clientWidth - (screenWidth > 1200 ? 100 : 70);
+        let minY = screenWidth > 1200 ? -250 : -100;
         let maxY = 35;
         let ball = button.querySelector('.button-ball');
         ball.style.backgroundColor = getRandomColor();

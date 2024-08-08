@@ -21,12 +21,12 @@ a {
 #gallery ::selection,
 .text-container ::selection,
 .footer_body ::selection,
-.form.black .hidden_input input::selection {
+.form.black .hidden_input textarea::selection {
     background: rgba(0, 0, 0, 0.3) !important;
     color: black !important;
 }
 
-#gallery .hidden_input input::selection {
+#gallery .hidden_input textarea::selection {
     background: rgba(255, 255, 255, 0.4) !important;
     color: white !important;
 }
@@ -1635,7 +1635,7 @@ header nav a:hover {
     width: fit-content;
 }
 
-.form input, .form .hidden_input input {
+.form input, .form .hidden_input textarea {
     border: none;
     background: none;
 
@@ -1691,7 +1691,7 @@ header nav a:hover {
     display: none;
 }
 
-.form .hidden_input input {
+.form .hidden_input textarea {
     font-size: 15px;
     font-weight: 400;
     line-height: 18px;
@@ -1920,7 +1920,7 @@ header nav a:hover {
     padding: 38px 50px;
 }
 
-.form.black .hidden_input input {
+.form.black .hidden_input textarea {
     color: black;
     width: 560px;
 }
