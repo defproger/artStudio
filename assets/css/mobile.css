@@ -524,4 +524,18 @@
         height: 610px;
         margin-bottom: -310px;
     }
+
+    footer {
+        width: 320px;
+
+    }
+
+    footer nav {
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
+
+    .footer_body {
+        padding: 50px 15px;
+    }
 }
