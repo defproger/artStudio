@@ -607,4 +607,37 @@
     .menu_popup nav a:hover {
         color: #fff;
     }
+
+    #callbackForm {
+        display: flex;
+        flex-direction: column;
+    }
+
+    #callbackForm h1 {
+        font-family: Engravers MT;
+        font-size: 64px;
+        font-weight: 500;
+        line-height: 74.53px;
+    }
+
+    #callbackForm .callback-form {
+        width: 100%;
+    }
+
+    #callback_form_slinky {
+        top: -722px;
+        left: -92px;
+    }
+
+    .form.black .input {
+        padding-right: 0;
+    }
+
+    form.black input {
+        width: 235px !important;
+    }
+
+    form.black .hidden_input textarea {
+        width: 100%;
+    }
 }
