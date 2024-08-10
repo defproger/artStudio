@@ -764,5 +764,9 @@
         max-width: 310px;
     }
 
+    #preloader canvas {
+        top: 250px;
+    }
+
 
 }
