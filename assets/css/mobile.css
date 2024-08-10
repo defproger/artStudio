@@ -640,4 +640,56 @@
     form.black .hidden_input textarea {
         width: 100%;
     }
+
+    #contacts h1 {
+        font-size: 32px;
+        line-height: 37.27px;
+    }
+
+    .contacts {
+        margin-top: 90px;
+        margin-bottom: -240px;
+        gap: 40px;
+    }
+
+    .contact img {
+        max-width: auto;
+        height: 100px;
+    }
+
+    .contact {
+        flex-direction: column;
+        width: 100%;
+        gap: 20px;
+        align-items: start;
+        justify-content: start;
+    }
+
+    .contact:nth-child(2) {
+        align-items: end;
+    }
+
+    .contact-data.email a {
+        font-size: 32px;
+        line-height: 35px;
+    }
+
+    .contact-data.adress a, .contact-data.adress span {
+        font-size: 20px;
+        line-height: 24px;
+    }
+
+    .contact-data {
+        width: 80%;
+    }
+
+    .contact-data .underline-btn-container {
+        gap: 24px;
+    }
+    
+    .contact-data .underline-btn {
+        font-size: 23.5px;
+    }
+
+
 }
