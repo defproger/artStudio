@@ -359,7 +359,7 @@
     }
 
     #gallery {
-        padding: 750px 0;
+        padding: 750px 0 100px;
         margin-top: -500px;
     }
 
@@ -638,7 +638,7 @@
     }
 
     form.black .hidden_input textarea {
-        width: 100%;
+        width: 100% !important;
     }
 
     #contacts h1 {
@@ -686,9 +686,82 @@
     .contact-data .underline-btn-container {
         gap: 24px;
     }
-    
+
     .contact-data .underline-btn {
         font-size: 23.5px;
+    }
+
+    #drawForMe {
+        margin-top: -70px;
+    }
+
+    #drawForMe h1 {
+        font-size: 32px;
+        line-height: 37.27px;
+        margin-bottom: 80px;
+    }
+
+    #drawForMe p:first-of-type {
+        margin-bottom: 70px;
+    }
+
+    #drawForMe .callback-form {
+        margin-top: -410px;
+    }
+
+    .white-block {
+        width: 200vw;
+        left: -60vw;
+        height: 270px;
+        border-top-right-radius: 0;
+        border-bottom-right-radius: 0;
+    }
+
+    .text-container {
+        width: 100%;
+    }
+
+    .slider-container {
+        width: 100%;
+        height: auto;
+        top: -422px;
+        overflow: initial;
+    }
+
+    #drawForMe .dots {
+        height: 608px;
+    }
+
+    .slider-wrapper {
+        margin-top: 500px;
+    }
+
+    #contacts {
+        margin-top: 200px;
+    }
+
+
+    .swiper-button-prev, .swiper-rtl .swiper-button-next {
+        margin-top: 490px !important;
+        padding: 10px;
+    }
+
+    .swiper-button-next, .swiper-rtl .swiper-button-prev {
+        margin-top: 490px !important;
+        padding: 10px;
+    }
+
+    .swiper-pagination {
+        bottom: -290px !important;
+        z-index: 0 !important;
+    }
+
+    .swiper-container {
+        width: 150%;
+    }
+
+    .swiper-slide img {
+        max-width: 310px;
     }
 
 
