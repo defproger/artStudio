@@ -1,0 +1,105 @@
+/* Mobile Styles */
+@media (max-width: 768px) {
+    .gallery-container {
+        padding: 10px;
+    }
+
+    .confirm-button:hover{
+        letter-spacing: 10px;
+    }
+
+    .back-button-group {
+        display: none;
+    }
+
+    .arrow-link, .arrow-link-footer {
+        width: 10%;
+    }
+    .black-square {
+        position: absolute;
+        width: 102%;
+        height: 24%;
+        background-color: black;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -153%);
+        z-index: 0;
+        transition: 2s;
+    }
+
+    .artist-name {
+        font-size: .8em;
+        letter-spacing: 15px;
+        margin-top: 10%;
+        text-align: center;
+    }
+
+    .main-content {
+        flex-direction: column;
+    }
+
+    .main-image {
+        max-width: 80%;
+        margin: 0 auto 20px;
+    }
+
+    .painting-info {
+        max-width: 100%;
+        text-align: center;
+        margin-left: 0;
+    }
+
+    .painting-title {
+        font-size: 2em;
+        margin-bottom: 10%;
+    }
+
+    .painting-description {
+        font-size: 1em;
+        margin-bottom: 10%;
+    }
+
+    .painting-dimensions{
+        margin-bottom: 10%;
+    }
+
+    .more-like-this {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .see-more {
+        width: 100%;
+        font-size: 1em;
+        letter-spacing: 3px;
+        margin-bottom: 20px;
+    }
+
+    .similar-paintings {
+        align-items: center;
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .similar-painting {
+        max-width: 80%;
+        margin-bottom: 20px;
+    }
+
+    footer {
+        padding: 10% 5%;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .arrow-link-footer {
+        width: 50%;
+        margin-right: 0px;
+        margin-bottom: 10px;
+    }
+
+    .privacy-policy {
+        margin-bottom: 10px;
+    }
+}

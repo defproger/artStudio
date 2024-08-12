@@ -36,11 +36,18 @@ function smoothScrollTo(element, duration) {
     requestAnimationFrame(animation);
 }
 
-//todo for links
-// document.addEventListener('DOMContentLoaded', (event) => {
-//     const targetElement = document.getElementById('gallery');
-//     smoothScrollTo(targetElement, 2000);
-// });
+function longLoad() {
+    $('.link').on('click', function () {
+        var target = this.hash,
+            $target = $(target);
+
+        $('html, body').animate({
+            'scrollTop': $target.offset().top
+        }, 1000)
+    });
+}
+
+longLoad();
 
 // Функция для замедления скролла
 function slowScroll(event) {

@@ -1,0 +1,11 @@
+.container{
+	    font-family: "Goudy Old Style", sans-serif;
+	width: 95%;
+	padding: 5% 2%;
+	text-align: center;
+	margin: 0 auto;
+}
+
+.title-privacy{
+	font-weight: bold;
+}
