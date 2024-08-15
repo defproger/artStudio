@@ -93,10 +93,10 @@ $(document).ready(function () {
 
     function sendFormData(form) {
         const emailValue = form.find('input[name="mail"]').val();
-        const messageValue = form.find('input[name="message"]').val();
+        const messageValue = form.find('textarea[name="message"]').val();
 
         $.ajax({
-            url: 'your-server-endpoint', // Замените на реальный URL вашего сервера
+            url: '/app/form.php',
             method: 'POST',
             data: {
                 email: emailValue,
