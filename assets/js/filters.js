@@ -10,6 +10,94 @@ document.addEventListener('DOMContentLoaded', function () {
     let filterCheckboxes = document.querySelectorAll(checkBoxElement);
     let chosenFilters = document.getElementById('chosenFilters');
 
+    const galleryBlocks = document.querySelectorAll('.gallery_block');
+    const galleryContainer = document.querySelector('.gallery');
+    const controlsContainer = document.querySelector('.controls');
+    const itemsPerPage = 4;
+    let currentPage = 1;
+    let totalPages = Math.ceil(galleryBlocks.length / itemsPerPage);
+
+    // Показ первых 4 картин
+    showGalleryPage(currentPage);
+
+    // Функция для отображения элементов галереи по странице
+    function showGalleryPage(page) {
+        galleryBlocks.forEach((block, index) => {
+            block.style.display = 'none'; // Скрываем все элементы
+        });
+
+        let visibleBlocks = document.querySelectorAll('.gallery_block.filtered');
+        if (visibleBlocks.length === 0) {
+            visibleBlocks = galleryBlocks; // Если нет фильтрации, показываем все элементы
+        }
+
+        visibleBlocks.forEach((block, index) => {
+            if (index >= (page - 1) * itemsPerPage && index < page * itemsPerPage) {
+                block.style.display = 'block';
+            }
+        });
+
+        updateControls(visibleBlocks.length);
+    }
+
+    // Обновление кнопок управления (SEE MORE и PAGE NAVIGATION)
+    function updateControls(visibleBlocksCount) {
+        controlsContainer.innerHTML = '';
+
+        if (currentPage > 1) {
+            const prevControl = document.createElement('div');
+            prevControl.classList.add('previous');
+            prevControl.innerHTML = `<h4>PREVIOUS PAGE</h4>
+                                     <div class="control"><span>SEE MORE</span></div>`;
+            prevControl.addEventListener('click', () => {
+                currentPage--;
+                showGalleryPage(currentPage);
+            });
+            controlsContainer.appendChild(prevControl);
+        }
+
+        if (currentPage < Math.ceil(visibleBlocksCount / itemsPerPage)) {
+            const nextControl = document.createElement('div');
+            nextControl.classList.add('next');
+            nextControl.innerHTML = `<h4>NEXT PAGE</h4>
+                                     <div class="control"><span>SEE MORE</span></div>`;
+            nextControl.addEventListener('click', () => {
+                currentPage++;
+                showGalleryPage(currentPage);
+            });
+            controlsContainer.appendChild(nextControl);
+        }
+    }
+
+    // Фильтрация галереи по data-status
+    function filterGallery() {
+        let activeFilters = Array.from(document.querySelectorAll(`${checkBoxElement}:checked`)).map(cb => cb.value.replace('.', ''));
+        galleryBlocks.forEach(block => {
+            const status = block.getAttribute('data-status');
+            if (activeFilters.length === 0 || activeFilters.includes(status)) {
+                block.classList.add('filtered');
+            } else {
+                block.classList.remove('filtered');
+            }
+        });
+        currentPage = 1; // Сбрасываем на первую страницу после фильтрации
+        showGalleryPage(currentPage);
+    }
+
+    // Навешиваем обработчик на фильтры
+    filterCheckboxes.forEach(function (checkbox) {
+        checkbox.addEventListener('change', filterGallery);
+    });
+
+    // Добавляем функционал кнопки для перехода на страницу арт-работы
+    galleryBlocks.forEach(function (block) {
+        block.querySelector('button').addEventListener('click', function () {
+            const artId = block.getAttribute('data-id');
+            window.location.href = `artwork_info.php?id=${artId}`;
+        });
+    });
+
+    // Открытие и закрытие фильтров
     filterButton.addEventListener('click', function () {
         filterPopup.classList.remove('closed');
         setTimeout(() => {
@@ -24,9 +112,10 @@ document.addEventListener('DOMContentLoaded', function () {
         }, 500);
     });
 
+    // Добавление и удаление выбранных фильтров
     filterCheckboxes.forEach(function (checkbox) {
         checkbox.addEventListener('change', function () {
-            const value = this.value;
+            const value = this.value.replace('.', '');
             if (this.checked) {
                 addFilter(value);
             } else {
@@ -44,10 +133,12 @@ document.addEventListener('DOMContentLoaded', function () {
             filterButton.classList.add('removing');
             setTimeout(() => {
                 filterButton.remove();
-                document.querySelector(`${checkBoxElement}[value="${value}"]`).checked = false;
+                document.querySelector(`${checkBoxElement}[value="${value}."]`).checked = false;
+                filterGallery();
             }, 500);
         });
         chosenFilters.appendChild(filterButton);
+        filterGallery();
     }
 
     function removeFilter(value) {
@@ -58,6 +149,7 @@ document.addEventListener('DOMContentLoaded', function () {
                 parentButton.classList.add('removing');
                 setTimeout(() => {
                     parentButton.remove();
+                    filterGallery();
                 }, 500);
             }
         });
