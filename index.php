@@ -1,3 +1,6 @@
+<?php
+require './app/db.php';
+?>
 <!doctype html>
 <html lang="en">
 <head>
@@ -29,7 +32,7 @@
                 <span></span>
             </span>
         </button>
-        <a href="index.html">
+        <a href="index.php">
             <h1 class="pc">Elena Salova</h1>
             <h1 class="mobile">Elena S.</h1>
         </a>
@@ -126,7 +129,7 @@
             <span class="big">L</span>orem ipsum dolor sit amet, consectetur adipiscing elit. Donec sodales velit eu
             consequat rhoncus. Nunc rutrum
             arcu nec maximus sagittis. Nunc at libero sed mi fringilla tristique nec non leo. Donec maximus <span
-                class="red">accumsan tortor</span>,
+                    class="red">accumsan tortor</span>,
             nec placerat nulla ultrices non. Integer eget enim ac purus rhoncus lacinia. In lorem eros, sollicitudin sed
             scelerisque nec, pellentesque quis sem.
         </p>
@@ -143,7 +146,7 @@
             condimentum. Ut venenatis porttitor eros, eu auctor nisi vehicula at. Suspendisse id porta velit. Sed
             efficitur,
             libero id efficitur lacinia, velit nunc mollis elit, nec bibendum orci felis quis nibh. <span
-                class="purple">Integer et</span>
+                    class="purple">Integer et</span>
             rhoncus
             turpis.
             Phas
@@ -508,94 +511,33 @@
                 <span class="pc">GALLERY</span>
             </div>
             <div class="gallery">
-                <div class="gallery_block">
-                    <div class="gallery_image_container">
-                        <img src="/assets/img/works/1.jpg" alt="">
-                        <div class="magnifier">
-                            <svg width="71" height="71" viewBox="0 0 71 71" fill="none"
-                                 xmlns="http://www.w3.org/2000/svg">
-                                <path d="M32.4305 56.1501C45.3171 56.1501 55.7638 45.7034 55.7638 32.8167C55.7638 19.9301 45.3171 9.4834 32.4305 9.4834C19.5439 9.4834 9.09717 19.9301 9.09717 32.8167C9.09717 45.7034 19.5439 56.1501 32.4305 56.1501Z"
-                                      stroke="white" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
-                                <path d="M68.3799 65.9854L50.5698 49.6182" stroke="white" stroke-width="3"
-                                      stroke-linecap="round" stroke-linejoin="round"/>
-                            </svg>
+                <?php
+                $arts = db_getAll('gallery');
+                foreach ($arts as $art):?>
+                    <div class="gallery_block" data-id="<?= $art['id'] ?>" data-status="<?= $art['status'] ?>">
+                        <div class="gallery_image_container">
+                            <img src="/assets/img/works/<?= $art['image'] ?>" alt="">
+                            <div class="magnifier">
+                                <svg width="71" height="71" viewBox="0 0 71 71" fill="none"
+                                     xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M32.4305 56.1501C45.3171 56.1501 55.7638 45.7034 55.7638 32.8167C55.7638 19.9301 45.3171 9.4834 32.4305 9.4834C19.5439 9.4834 9.09717 19.9301 9.09717 32.8167C9.09717 45.7034 19.5439 56.1501 32.4305 56.1501Z"
+                                          stroke="white" stroke-width="3" stroke-linecap="round"
+                                          stroke-linejoin="round"/>
+                                    <path d="M68.3799 65.9854L50.5698 49.6182" stroke="white" stroke-width="3"
+                                          stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>
+                            </div>
                         </div>
+                        <h1><?= $art['name'] ?></h1>
+                        <p><?= $art['type'] ?></p>
+                        <span><?= $art['size'] ?></span>
+                        <button>
+                            <span class="button-ball"></span>
+                            <span><?= $art['status'] ?></span>
+                        </button>
+                        <div class="gallery_active_background"></div>
                     </div>
-                    <h1>The visit <br>of an animal Painting</h1>
-                    <p>oil on canvas</p>
-                    <span>130 W x 160 H x 1 D cm</span>
-                    <button>
-                        <span class="button-ball"></span>
-                        <span>IN PRIVATE COLLECTION</span>
-                    </button>
-                    <div class="gallery_active_background"></div>
-                </div>
-                <div class="gallery_block">
-                    <div class="gallery_image_container">
-                        <img src="/assets/img/works/2.jpg" alt="">
-                        <div class="magnifier">
-                            <svg width="71" height="71" viewBox="0 0 71 71" fill="none"
-                                 xmlns="http://www.w3.org/2000/svg">
-                                <path d="M32.4305 56.1501C45.3171 56.1501 55.7638 45.7034 55.7638 32.8167C55.7638 19.9301 45.3171 9.4834 32.4305 9.4834C19.5439 9.4834 9.09717 19.9301 9.09717 32.8167C9.09717 45.7034 19.5439 56.1501 32.4305 56.1501Z"
-                                      stroke="white" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
-                                <path d="M68.3799 65.9854L50.5698 49.6182" stroke="white" stroke-width="3"
-                                      stroke-linecap="round" stroke-linejoin="round"/>
-                            </svg>
-                        </div>
-                    </div>
-                    <h1>The destruction <br> Painting</h1>
-                    <p>oil on canvas</p>
-                    <span>130 W x 160 H x 1 D cm</span>
-                    <button>
-                        <span class="button-ball"></span>
-                        <span>SOLD</span>
-                    </button>
-                    <div class="gallery_active_background"></div>
-                </div>
-                <div class="gallery_block">
-                    <div class="gallery_image_container">
-                        <img src="/assets/img/works/5.jpg" alt="">
-                        <div class="magnifier">
-                            <svg width="71" height="71" viewBox="0 0 71 71" fill="none"
-                                 xmlns="http://www.w3.org/2000/svg">
-                                <path d="M32.4305 56.1501C45.3171 56.1501 55.7638 45.7034 55.7638 32.8167C55.7638 19.9301 45.3171 9.4834 32.4305 9.4834C19.5439 9.4834 9.09717 19.9301 9.09717 32.8167C9.09717 45.7034 19.5439 56.1501 32.4305 56.1501Z"
-                                      stroke="white" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
-                                <path d="M68.3799 65.9854L50.5698 49.6182" stroke="white" stroke-width="3"
-                                      stroke-linecap="round" stroke-linejoin="round"/>
-                            </svg>
-                        </div>
-                    </div>
-                    <h1>The visit <br>of an animal Painting</h1>
-                    <p>oil on canvas</p>
-                    <span>130 W x 160 H x 1 D cm</span>
-                    <button>
-                        <span class="button-ball"></span>
-                        <span>IN PRIVATE COLLECTION</span>
-                    </button>
-                    <div class="gallery_active_background"></div>
-                </div>
-                <div class="gallery_block">
-                    <div class="gallery_image_container">
-                        <img src="/assets/img/works/4.jpg" alt="">
-                        <div class="magnifier">
-                            <svg width="71" height="71" viewBox="0 0 71 71" fill="none"
-                                 xmlns="http://www.w3.org/2000/svg">
-                                <path d="M32.4305 56.1501C45.3171 56.1501 55.7638 45.7034 55.7638 32.8167C55.7638 19.9301 45.3171 9.4834 32.4305 9.4834C19.5439 9.4834 9.09717 19.9301 9.09717 32.8167C9.09717 45.7034 19.5439 56.1501 32.4305 56.1501Z"
-                                      stroke="white" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
-                                <path d="M68.3799 65.9854L50.5698 49.6182" stroke="white" stroke-width="3"
-                                      stroke-linecap="round" stroke-linejoin="round"/>
-                            </svg>
-                        </div>
-                    </div>
-                    <h1>The Bird</h1>
-                    <p>oil on canvas</p>
-                    <span>130 W x 160 H x 1 D cm</span>
-                    <button>
-                        <span class="button-ball"></span>
-                        <span>available</span>
-                    </button>
-                    <div class="gallery_active_background"></div>
-                </div>
+                <?php endforeach; ?>
             </div>
             <div class="controls">
                 <h4>THIS IS END, but</h4>

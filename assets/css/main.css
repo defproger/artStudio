@@ -36,6 +36,7 @@ body {
     color: #fff;
     font-family: 'Goudy Old Style', sans-serif;
     width: 100%;
+    overflow: hidden;
     min-height: 100vh;
 }
 
