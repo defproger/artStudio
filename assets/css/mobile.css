@@ -439,20 +439,17 @@
         height: 160px;
     }
 
-    .gallery_block:nth-child(even) {
+    .gallery_block.even-visible {
         align-items: start;
-    }
-
-    .gallery_block:nth-child(even) {
         text-align: left;
     }
 
-    .gallery_block:nth-child(even) .gallery_active_background {
+    .gallery_block.even-visible .gallery_active_background {
         left: -50px;
         border-radius: 202px 0 0 20px;
     }
 
-    .gallery_block:nth-child(even) button {
+    .gallery_block.even-visible button {
         transform: translateX(calc((50vw - 190px)));
     }
 

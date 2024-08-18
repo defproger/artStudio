@@ -152,10 +152,6 @@
         margin-bottom: 20px;
     }
 
-    .gallery_block:nth-child(even) {
-        align-items: end;
-    }
-
     .gallery_block h1 {
         height: 120px;
         font-size: 48px;
@@ -182,15 +178,20 @@
         overflow: hidden;
     }
 
-    .gallery_block:nth-child(even) button {
-        transform: translateX(calc((50vw - 590px)));
-    }
 
     .gallery_block button span {
         font-size: 18px;
         line-height: 20px;
         letter-spacing: 0.7em;
         max-width: 240px;
+    }
+
+    .gallery_block.even-visible {
+        align-items: end;
+    }
+
+    .gallery_block.even-visible button {
+        transform: translateX(calc((50vw - 590px)));
     }
 
     .gallery {

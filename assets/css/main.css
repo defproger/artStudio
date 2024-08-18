@@ -1435,10 +1435,6 @@ header nav a:hover {
     position: relative;
 }
 
-.gallery_block:nth-child(even) {
-    text-align: right;
-}
-
 .gallery_block img {
     width: auto;
     height: 100%;
@@ -1487,11 +1483,6 @@ header nav a:hover {
 
     opacity: 0;
     transition: .3s;
-}
-
-.gallery_block:nth-child(even) .gallery_active_background {
-    left: 0;
-    border-radius: 46px 0 0 46px;
 }
 
 .gallery_block:hover .gallery_active_background {
@@ -1545,14 +1536,6 @@ header nav a:hover {
     text-transform: uppercase;
 }
 
-.gallery_block:nth-child(even) button span {
-    float: left;
-}
-
-.gallery_block:nth-child(even) button {
-    transform: translateX(calc((50vw - 700px)));
-}
-
 .gallery_image_container {
     position: relative;
     margin-bottom: 70px;
@@ -1574,6 +1557,23 @@ header nav a:hover {
     opacity: 0;
     transition: opacity 0.3s ease-in-out;
     z-index: 10;
+}
+
+.gallery_block.even-visible {
+    text-align: right;
+}
+
+.gallery_block.even-visible .gallery_active_background {
+    left: 0;
+    border-radius: 46px 0 0 46px;
+}
+
+.gallery_block.even-visible button span {
+    float: left;
+}
+
+.gallery_block.even-visible button {
+    transform: translateX(calc((50vw - 700px)));
 }
 
 .gallery_image_container:hover .magnifier {
