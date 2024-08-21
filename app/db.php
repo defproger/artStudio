@@ -1,11 +1,12 @@
 <?php
+require_once 'init.php';
 function db_getConnection()
 {
-    $user = 'user';
-    $password = 'pass';
-    $db = 'base';
-    $host = 'db';
-    $port = '3306';
+    $user = SETTINGS['db_user'];
+    $password = SETTINGS['db_password'];
+    $db = SETTINGS['db_name'];
+    $host = SETTINGS['db_host'];
+    $port = SETTINGS['db_port'];
 
     static $dbh = null;
     if ($dbh != null) return $dbh;
