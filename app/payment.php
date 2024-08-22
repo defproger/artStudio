@@ -53,8 +53,8 @@ $transaction->setAmount($amount)
     ->setInvoiceNumber(uniqid());
 
 $redirectUrls = new RedirectUrls();
-$redirectUrls->setReturnUrl("https://" . SETTINGS['domain'] . "/complete.php?id=1")
-    ->setCancelUrl("https://" . SETTINGS['domain'] . "/canceled.php?id=1");
+$redirectUrls->setReturnUrl("https://" . SETTINGS['domain'] . "/completeOrder.php?id=1")
+    ->setCancelUrl("https://" . SETTINGS['domain'] . "/cancelOrder.php?id=1");
 
 $payment = new Payment();
 $payment->setIntent('sale')
