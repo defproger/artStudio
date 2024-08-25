@@ -1,4 +1,6 @@
 <?php
+ini_set('display_errors', 0);
+header('Content-Type: application/json');
 require_once 'init.php';
 require 'vendor/autoload.php';
 
@@ -66,7 +68,7 @@ try {
     $payment->create($apiContext);
 
     $approvalUrl = $payment->getApprovalLink();
-    echo "Ссылка для оплаты: <a href='{$approvalUrl}'>{$approvalUrl}</a>";
+    echo json_encode(["payment_url" => $approvalUrl]);
 } catch (Exception $ex) {
-    echo "Произошла ошибка: " . $ex->getMessage();
+    echo json_encode(["error" => $ex]);
 }

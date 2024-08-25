@@ -48,7 +48,7 @@ if (!$art) {
 
         <div class="payment-form">
 
-            <form>
+            <form id="payment-form">
                 <div class="input-group">
                     <label for="email"><span class="red-xmast">*</span>YOUR EMAIL</label>
                     <input type="email" id="email" name="email" required>
@@ -79,9 +79,8 @@ if (!$art) {
                 <div class="payment-method">
                     <p class="button-text"><span class="red-xmast">*</span>METHOD</p>
                     <div class="methods">
-                        <a href="#" type="button">Apple Pay</a>
-                        <a href="#" type="button">Card</a>
-                        <a href="#" type="button">Google Pay</a>
+                        <a href="#" id="paypal_pay" type="button" class="method-btn" data-method="PayPal" disabled>PayPal</a>
+                        <a href="#" id="card_pay" type="button" class="method-btn" data-method="Card" disabled>Card</a>
                     </div>
                 </div>
             </form>
@@ -94,11 +93,9 @@ if (!$art) {
             <p class="euro">EURO</p>
         </div>
 
-        <a href="#" class="btn-back">
-            <div type="submit" class="confirm-button">CONFIRM</div>
+        <a href="#" id="paybtn" class="btn-back" style="pointer-events: none;">
+            <div class="confirm-button">CONFIRM</div>
         </a>
-
-
     </div>
 
     <div class="certificate">
@@ -118,5 +115,6 @@ if (!$art) {
     <p>All Rights Reserved</p>
     <p>© 2024</p>
 </footer>
+<script src="assets/js/payments.js"></script>
 </body>
 </html>
