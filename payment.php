@@ -79,8 +79,8 @@ if (!$art) {
                 <div class="payment-method">
                     <p class="button-text"><span class="red-xmast">*</span>METHOD</p>
                     <div class="methods">
-                        <a href="#" id="paypal_pay" type="button" class="method-btn" data-method="PayPal" disabled>PayPal</a>
-                        <a href="#" id="card_pay" type="button" class="method-btn" data-method="Card" disabled>Card</a>
+                        <a href="#" id="paypal_pay" type="button" class="method-btn" data-method="paypal" disabled>PayPal</a>
+                        <a href="#" id="card_pay" type="button" class="method-btn" data-method="card" disabled>Card</a>
                     </div>
                 </div>
             </form>

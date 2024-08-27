@@ -15,14 +15,16 @@ create table payments
 (
     id      int auto_increment
         primary key,
-    art_id  int          not null,
-    email   varchar(255) not null,
-    name    varchar(255) not null,
-    phone   varchar(30)  not null,
-    address varchar(255) not null,
-    message text         null,
-    method  varchar(20)  not null comment 'paypal
-credit_card'
+    art_id  int                            not null,
+    email   varchar(255)                   not null,
+    name    varchar(255)                   not null,
+    phone   varchar(30)                    not null,
+    address varchar(255)                   not null,
+    message text                           null,
+    method  varchar(20)                    not null comment 'paypal,credit_card',
+    pay_id  varchar(255)                   null,
+    status  varchar(255) default 'created' null,
+    hash    varchar(255)                   null
 );
 
 INSERT INTO gallery (id, name, image, type, size, description, status, price) VALUES (1, 'The destruction Painting', '1.jpg', 'OIL ON CANVAS', '130 W x 160 H x 1 D cm', 'Sit amet, consectetur adipiscing elit. Praesent at cursus magna, at dapibus eros. Aliquam tincidunt tortor eu placerat vehicula. Curabitur feugiat faucibus mauris id ullamcorper.', 'available', 5000);

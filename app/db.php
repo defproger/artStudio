@@ -74,7 +74,7 @@ function db_update($table, $id, $arr)
     $stmt->execute(array_values($arr));
 }
 
-function cryptpass($pass)
+function cryptHash($pass)
 {
-    return hash('sha256', $pass . 'crypto');
+    return hash('sha256', $pass . 'ElenaSalovaWork');
 }
