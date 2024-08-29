@@ -1,3 +1,20 @@
+<?php
+require_once 'app/db.php';
+if (!empty($_GET['id']) && !empty($_GET['token'])) {
+    list($id, $hash) = explode('_', $_GET['id'], 2);
+    $payment = query("select * from payments where id = :id and hash = :hash and pay_id = :token", [
+        'id' => $id,
+        'hash' => $hash,
+        'token' => $_GET['token']
+    ]);
+
+    if (!empty($payment['id']) && $payment['status'] == 'created') {
+        db_update('payments', $payment['id'], [
+            'status' => 'completed'
+        ]);
+    }
+}
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
