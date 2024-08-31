@@ -53,7 +53,7 @@ longLoad();
 function slowScroll(event) {
     event.preventDefault();
 
-    const scrollMultiplier = 0.5;
+    const scrollMultiplier = 0.35;
     const scrollY = window.scrollY;
     const newScrollY = scrollY + event.deltaY * scrollMultiplier;
     window.scrollTo({
