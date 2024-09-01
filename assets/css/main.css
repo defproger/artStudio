@@ -841,6 +841,14 @@ header nav a:hover {
     font-size: 16px;
 }
 
+.collection-tab-content {
+    display: none;
+}
+
+.collection-tab-content.active {
+    display: block;
+}
+
 .pattern_line {
     position: relative;
     width: 100%;
@@ -894,8 +902,20 @@ header nav a:hover {
     align-items: center;
 }
 
+#collection2 .ball {
+    background: url("../img/patterns/small_blue.png") no-repeat;
+}
+
+#collection3 .ball {
+    background: url("../img/patterns/small_green.png") no-repeat;
+}
+
+#collection4 .ball {
+    background: url("../img/patterns/small_pink.png") no-repeat;
+}
+
 .collection_flex.first .ball {
-    background: #000;
+    background: #000 !important;
     color: #fff;
 }
 

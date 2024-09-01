@@ -165,25 +165,25 @@ require './app/db.php';
             <span class="mobile">COLLE CTIONS</span></h1>
 
         <div class="patterns">
-            <div class="pattern-block slideIn slideLeft">
+            <div class="pattern-block slideIn slideLeft collection-tab-button" data-tab="collection1">
                 <picture>
                     <source media="(max-width: 1199px)" srcset="assets/img/patterns/pt1_mobile.png">
                     <img src="assets/img/patterns/pt1.png" alt="Pattern"/>
                 </picture>
             </div>
-            <div class="pattern-block slideIn slideLeft1">
+            <div class="pattern-block slideIn slideLeft1 collection-tab-button" data-tab="collection2">
                 <picture>
                     <source media="(max-width: 1199px)" srcset="assets/img/patterns/pt2_mobile.png">
                     <img src="assets/img/patterns/pt2.png" alt="Pattern"/>
                 </picture>
             </div>
-            <div class="pattern-block slideIn slideLeft2">
+            <div class="pattern-block slideIn slideLeft2 collection-tab-button" data-tab="collection3">
                 <picture>
                     <source media="(max-width: 1199px)" srcset="assets/img/patterns/pt3_mobile.png">
                     <img src="assets/img/patterns/pt3.png" alt="Pattern"/>
                 </picture>
             </div>
-            <div class="pattern-block slideIn slideLeft3">
+            <div class="pattern-block slideIn slideLeft3 collection-tab-button" data-tab="collection4">
                 <picture>
                     <source media="(max-width: 1199px)" srcset="assets/img/patterns/pt4_mobile.png">
                     <img src="assets/img/patterns/pt4.png" alt="Pattern"/>
@@ -205,7 +205,313 @@ require './app/db.php';
         <img src="assets/img/patterns/big.png" alt="">
     </div>
 
-    <div class="container">
+    <div id="collection1" class="container collection-tab-content active">
+        <div class="collection_flex first">
+            <div class="texts">
+                <div class="ball slideIn slideIn2">
+                    <div class="collection_name">
+                        <h2>Open</h2>
+                        <h3>oil on canvas</h3>
+                        <p>40 X 5<span>0</span></p>
+                        <p><span>1’3’’</span> X<span>1’6’’</span></p>
+                    </div>
+                </div>
+                <p class="slideIn pc"><span class="big">G</span>ipsum dolor sit amet, consectetur adipiscing elit.
+                    Praesent
+                    at cursus
+                    magna, at dap bus eros. Aliquam tincidunt tortor eu placerat vehicula. Curabitur feugiat faucibus
+                    mauris id ullamcorper. Praesent elit arcu, venenatis ac finibus sit amet, lacinia nec nulla.
+                    Pellentesque cursus nibh eu ante lacinia, nec fringilla magna varius. </p>
+            </div>
+            <div class="photo">
+                <img class="slideIn" src="assets/img/collections/cl1.jpg" alt="">
+                <div class="underline-btn-container">
+                    <span class="slideIn slideIn2">SOLD</span>
+                    <a href="#" class="underline-btn slideIn pc">read more.</a>
+                </div>
+            </div>
+            <p class="slideIn mobile"><span class="big">G</span>ipsum dolor sit amet, consectetur adipiscing elit.
+                Praesent
+                at cursus
+                magna, at dap bus eros. Aliquam tincidunt tortor eu placerat vehicula. Curabitur feugiat faucibus
+                mauris id ullamcorper. Praesent elit arcu, venenatis ac finibus sit amet, lacinia nec nulla.
+                Pellentesque cursus nibh eu ante lacinia, nec fringilla magna varius. </p>
+            <div class="underline-btn-container mobile">
+                <a href="#" class="underline-btn slideIn">read more.</a>
+            </div>
+
+        </div>
+
+        <div class="collection_flex right">
+            <div class="underline-btn-container mobile">
+                <a href="#" class="underline-btn slideIn">read more.</a>
+            </div>
+            <p class="slideIn mobile"><span class="big">V</span>ipsum dolor sit amet, consectetur adipiscing elit.
+                Praesent at cursus
+                magna, at dap bus eros. Aliquam tincidunt tortor eu placerat vehicula. Curabitur feugiat faucibus
+                mauris id ullamcorper. </p>
+            <div class="photo">
+                <img src="assets/img/collections/cl2.jpg" class="slideIn slideIn2" alt="">
+                <div class="underline-btn-container">
+                    <a href="#" class="underline-btn slideIn pc">read more.</a>
+                    <span class="yellow slideIn slideIn2">IN PRIVATE<br>COLLECTION</span>
+                </div>
+            </div>
+            <div class="dots" data-num="10"></div>
+            <div class="texts">
+                <div class="ball slideIn slideIn2">
+                    <div class="collection_name">
+                        <h2 class="heading_text">Hope</h2>
+                        <h3 class="heading_text">oil on canvas</h3>
+                        <p>40 X 50</p>
+                        <p>1’3’’X1’6’’</p>
+                    </div>
+                </div>
+                <p class="slideIn pc"><span class="big">V</span>ipsum dolor sit amet, consectetur adipiscing elit.
+                    Praesent at cursus
+                    magna, at dap bus eros. Aliquam tincidunt tortor eu placerat vehicula. Curabitur feugiat faucibus
+                    mauris id ullamcorper. </p>
+            </div>
+        </div>
+
+        <div class="collection_flex">
+            <div class="texts">
+                <div class="ball slideIn slideIn2">
+                    <div class="collection_name">
+                        <h2 class="heading_text">Gate</h2>
+                        <h3 class="heading_text">oil on canvas</h3>
+                        <p>40 X 50</p>
+                        <p>1’3’’X1’6’’</p>
+                    </div>
+                </div>
+                <p class="slideIn pc"><span class="big">Z</span>ipsum dolor sit amet, consectetur adipiscing elit.
+                    Praesent
+                    at cursus
+                    magna, at dap bus eros. Aliquam tincidunt tortor eu placerat vehicula. Curabitur feugiat faucibus
+                    mauris id ullamcorper. </p>
+            </div>
+            <div class="photo">
+                <img src="assets/img/collections/cl3.jpg" class="slideIn slideIn2" alt="">
+                <div class="underline-btn-container">
+                    <a href="#" class="underline-btn slideIn slideIn2">buy art.</a>
+                    <a href="#" class="underline-btn slideIn pc">read more.</a>
+                </div>
+            </div>
+            <p class="slideIn mobile"><span class="big">Z</span>ipsum dolor sit amet, consectetur adipiscing elit.
+                Praesent
+                at cursus
+                magna, at dap bus eros. Aliquam tincidunt tortor eu placerat vehicula. Curabitur feugiat faucibus
+                mauris id ullamcorper.</p>
+            <div class="underline-btn-container mobile">
+                <a href="#" class="underline-btn slideIn">read more.</a>
+            </div>
+        </div>
+    </div>
+    <div id="collection2" class="container collection-tab-content">
+        <div class="collection_flex first">
+            <div class="texts">
+                <div class="ball slideIn slideIn2">
+                    <div class="collection_name">
+                        <h2>Open</h2>
+                        <h3>oil on canvas</h3>
+                        <p>40 X 5<span>0</span></p>
+                        <p><span>1’3’’</span> X<span>1’6’’</span></p>
+                    </div>
+                </div>
+                <p class="slideIn pc"><span class="big">G</span>ipsum dolor sit amet, consectetur adipiscing elit.
+                    Praesent
+                    at cursus
+                    magna, at dap bus eros. Aliquam tincidunt tortor eu placerat vehicula. Curabitur feugiat faucibus
+                    mauris id ullamcorper. Praesent elit arcu, venenatis ac finibus sit amet, lacinia nec nulla.
+                    Pellentesque cursus nibh eu ante lacinia, nec fringilla magna varius. </p>
+            </div>
+            <div class="photo">
+                <img class="slideIn" src="assets/img/collections/cl1.jpg" alt="">
+                <div class="underline-btn-container">
+                    <span class="slideIn slideIn2">SOLD</span>
+                    <a href="#" class="underline-btn slideIn pc">read more.</a>
+                </div>
+            </div>
+            <p class="slideIn mobile"><span class="big">G</span>ipsum dolor sit amet, consectetur adipiscing elit.
+                Praesent
+                at cursus
+                magna, at dap bus eros. Aliquam tincidunt tortor eu placerat vehicula. Curabitur feugiat faucibus
+                mauris id ullamcorper. Praesent elit arcu, venenatis ac finibus sit amet, lacinia nec nulla.
+                Pellentesque cursus nibh eu ante lacinia, nec fringilla magna varius. </p>
+            <div class="underline-btn-container mobile">
+                <a href="#" class="underline-btn slideIn">read more.</a>
+            </div>
+
+        </div>
+
+        <div class="collection_flex right">
+            <div class="underline-btn-container mobile">
+                <a href="#" class="underline-btn slideIn">read more.</a>
+            </div>
+            <p class="slideIn mobile"><span class="big">V</span>ipsum dolor sit amet, consectetur adipiscing elit.
+                Praesent at cursus
+                magna, at dap bus eros. Aliquam tincidunt tortor eu placerat vehicula. Curabitur feugiat faucibus
+                mauris id ullamcorper. </p>
+            <div class="photo">
+                <img src="assets/img/collections/cl2.jpg" class="slideIn slideIn2" alt="">
+                <div class="underline-btn-container">
+                    <a href="#" class="underline-btn slideIn pc">read more.</a>
+                    <span class="yellow slideIn slideIn2">IN PRIVATE<br>COLLECTION</span>
+                </div>
+            </div>
+            <div class="dots" data-num="10"></div>
+            <div class="texts">
+                <div class="ball slideIn slideIn2">
+                    <div class="collection_name">
+                        <h2 class="heading_text">Hope</h2>
+                        <h3 class="heading_text">oil on canvas</h3>
+                        <p>40 X 50</p>
+                        <p>1’3’’X1’6’’</p>
+                    </div>
+                </div>
+                <p class="slideIn pc"><span class="big">V</span>ipsum dolor sit amet, consectetur adipiscing elit.
+                    Praesent at cursus
+                    magna, at dap bus eros. Aliquam tincidunt tortor eu placerat vehicula. Curabitur feugiat faucibus
+                    mauris id ullamcorper. </p>
+            </div>
+        </div>
+
+        <div class="collection_flex">
+            <div class="texts">
+                <div class="ball slideIn slideIn2">
+                    <div class="collection_name">
+                        <h2 class="heading_text">Gate</h2>
+                        <h3 class="heading_text">oil on canvas</h3>
+                        <p>40 X 50</p>
+                        <p>1’3’’X1’6’’</p>
+                    </div>
+                </div>
+                <p class="slideIn pc"><span class="big">Z</span>ipsum dolor sit amet, consectetur adipiscing elit.
+                    Praesent
+                    at cursus
+                    magna, at dap bus eros. Aliquam tincidunt tortor eu placerat vehicula. Curabitur feugiat faucibus
+                    mauris id ullamcorper. </p>
+            </div>
+            <div class="photo">
+                <img src="assets/img/collections/cl3.jpg" class="slideIn slideIn2" alt="">
+                <div class="underline-btn-container">
+                    <a href="#" class="underline-btn slideIn slideIn2">buy art.</a>
+                    <a href="#" class="underline-btn slideIn pc">read more.</a>
+                </div>
+            </div>
+            <p class="slideIn mobile"><span class="big">Z</span>ipsum dolor sit amet, consectetur adipiscing elit.
+                Praesent
+                at cursus
+                magna, at dap bus eros. Aliquam tincidunt tortor eu placerat vehicula. Curabitur feugiat faucibus
+                mauris id ullamcorper.</p>
+            <div class="underline-btn-container mobile">
+                <a href="#" class="underline-btn slideIn">read more.</a>
+            </div>
+        </div>
+    </div>
+    <div id="collection3" class="container collection-tab-content">
+        <div class="collection_flex first">
+            <div class="texts">
+                <div class="ball slideIn slideIn2">
+                    <div class="collection_name">
+                        <h2>Open</h2>
+                        <h3>oil on canvas</h3>
+                        <p>40 X 5<span>0</span></p>
+                        <p><span>1’3’’</span> X<span>1’6’’</span></p>
+                    </div>
+                </div>
+                <p class="slideIn pc"><span class="big">G</span>ipsum dolor sit amet, consectetur adipiscing elit.
+                    Praesent
+                    at cursus
+                    magna, at dap bus eros. Aliquam tincidunt tortor eu placerat vehicula. Curabitur feugiat faucibus
+                    mauris id ullamcorper. Praesent elit arcu, venenatis ac finibus sit amet, lacinia nec nulla.
+                    Pellentesque cursus nibh eu ante lacinia, nec fringilla magna varius. </p>
+            </div>
+            <div class="photo">
+                <img class="slideIn" src="assets/img/collections/cl1.jpg" alt="">
+                <div class="underline-btn-container">
+                    <span class="slideIn slideIn2">SOLD</span>
+                    <a href="#" class="underline-btn slideIn pc">read more.</a>
+                </div>
+            </div>
+            <p class="slideIn mobile"><span class="big">G</span>ipsum dolor sit amet, consectetur adipiscing elit.
+                Praesent
+                at cursus
+                magna, at dap bus eros. Aliquam tincidunt tortor eu placerat vehicula. Curabitur feugiat faucibus
+                mauris id ullamcorper. Praesent elit arcu, venenatis ac finibus sit amet, lacinia nec nulla.
+                Pellentesque cursus nibh eu ante lacinia, nec fringilla magna varius. </p>
+            <div class="underline-btn-container mobile">
+                <a href="#" class="underline-btn slideIn">read more.</a>
+            </div>
+
+        </div>
+
+        <div class="collection_flex right">
+            <div class="underline-btn-container mobile">
+                <a href="#" class="underline-btn slideIn">read more.</a>
+            </div>
+            <p class="slideIn mobile"><span class="big">V</span>ipsum dolor sit amet, consectetur adipiscing elit.
+                Praesent at cursus
+                magna, at dap bus eros. Aliquam tincidunt tortor eu placerat vehicula. Curabitur feugiat faucibus
+                mauris id ullamcorper. </p>
+            <div class="photo">
+                <img src="assets/img/collections/cl2.jpg" class="slideIn slideIn2" alt="">
+                <div class="underline-btn-container">
+                    <a href="#" class="underline-btn slideIn pc">read more.</a>
+                    <span class="yellow slideIn slideIn2">IN PRIVATE<br>COLLECTION</span>
+                </div>
+            </div>
+            <div class="dots" data-num="10"></div>
+            <div class="texts">
+                <div class="ball slideIn slideIn2">
+                    <div class="collection_name">
+                        <h2 class="heading_text">Hope</h2>
+                        <h3 class="heading_text">oil on canvas</h3>
+                        <p>40 X 50</p>
+                        <p>1’3’’X1’6’’</p>
+                    </div>
+                </div>
+                <p class="slideIn pc"><span class="big">V</span>ipsum dolor sit amet, consectetur adipiscing elit.
+                    Praesent at cursus
+                    magna, at dap bus eros. Aliquam tincidunt tortor eu placerat vehicula. Curabitur feugiat faucibus
+                    mauris id ullamcorper. </p>
+            </div>
+        </div>
+
+        <div class="collection_flex">
+            <div class="texts">
+                <div class="ball slideIn slideIn2">
+                    <div class="collection_name">
+                        <h2 class="heading_text">Gate</h2>
+                        <h3 class="heading_text">oil on canvas</h3>
+                        <p>40 X 50</p>
+                        <p>1’3’’X1’6’’</p>
+                    </div>
+                </div>
+                <p class="slideIn pc"><span class="big">Z</span>ipsum dolor sit amet, consectetur adipiscing elit.
+                    Praesent
+                    at cursus
+                    magna, at dap bus eros. Aliquam tincidunt tortor eu placerat vehicula. Curabitur feugiat faucibus
+                    mauris id ullamcorper. </p>
+            </div>
+            <div class="photo">
+                <img src="assets/img/collections/cl3.jpg" class="slideIn slideIn2" alt="">
+                <div class="underline-btn-container">
+                    <a href="#" class="underline-btn slideIn slideIn2">buy art.</a>
+                    <a href="#" class="underline-btn slideIn pc">read more.</a>
+                </div>
+            </div>
+            <p class="slideIn mobile"><span class="big">Z</span>ipsum dolor sit amet, consectetur adipiscing elit.
+                Praesent
+                at cursus
+                magna, at dap bus eros. Aliquam tincidunt tortor eu placerat vehicula. Curabitur feugiat faucibus
+                mauris id ullamcorper.</p>
+            <div class="underline-btn-container mobile">
+                <a href="#" class="underline-btn slideIn">read more.</a>
+            </div>
+        </div>
+    </div>
+    <div id="collection4" class="container collection-tab-content">
         <div class="collection_flex first">
             <div class="texts">
                 <div class="ball slideIn slideIn2">
@@ -814,6 +1120,7 @@ require './app/db.php';
 <script src="assets/js/jquery.parallax.js"></script>
 <script src="assets/js/preloader.js"></script>
 <script src="assets/js/parallax.js"></script>
+<script src="assets/js/collections.js"></script>
 <script src="assets/js/slideIn.js"></script>
 <script src="assets/js/filters.js"></script>
 <script src="assets/js/menu.js"></script>
