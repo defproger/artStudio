@@ -25,6 +25,9 @@ methodButtons.forEach(btn => {
         const formData = new FormData(form);
         formData.append('method', this.dataset.method);
 
+        const urlParams = new URLSearchParams(window.location.search);
+        formData.append('art_id', urlParams.get('id'));
+
         const response = await fetch('app/payment.php', {
             method: 'POST',
             body: formData
