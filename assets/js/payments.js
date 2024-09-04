@@ -23,7 +23,7 @@ methodButtons.forEach(btn => {
         this.style.backgroundColor = 'black';
 
         const formData = new FormData(form);
-        formData.append('payment_method', this.dataset.method);
+        formData.append('method', this.dataset.method);
 
         const response = await fetch('app/payment.php', {
             method: 'POST',
