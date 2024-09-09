@@ -122,35 +122,18 @@ require './app/db.php';
 
 <div id="author" class="container">
     <div class="slideIn slideIn2">
-        <img src="assets/img/authr.jpg" alt="">
+        <img src="assets/img/authr1.jpg" alt="">
     </div>
     <div class="texts">
         <p class="slideIn">
-            <span class="big">L</span>orem ipsum dolor sit amet, consectetur adipiscing elit. Donec sodales velit eu
-            consequat rhoncus. Nunc rutrum
-            arcu nec maximus sagittis. Nunc at libero sed mi fringilla tristique nec non leo. Donec maximus <span
-                    class="red">accumsan tortor</span>,
-            nec placerat nulla ultrices non. Integer eget enim ac purus rhoncus lacinia. In lorem eros, sollicitudin sed
-            scelerisque nec, pellentesque quis sem.
-        </p>
-        <p class="slideIn">
-            Pellentesque in felis in tellus. ccumsan imperdiet. Duis magna arcu, pharetra sit amet lectus ut, tincidunt
-            commodo sapien. Aliquam blandit feugiat magna, id <span class="green">lobortis felis interdum id</span>.
-            Vivamus
-            iaculis tincidunt enim, in
-            volutpat urna blandit ac.
-        </p>
-        <p class="slideIn">
-            Praesent eu tortor pharetra, consequat tortor sed, pharetra odio. Quisque <span class="yellow">pellentesque lorem vitae</span>
-            consequat
-            condimentum. Ut venenatis porttitor eros, eu auctor nisi vehicula at. Suspendisse id porta velit. Sed
-            efficitur,
-            libero id efficitur lacinia, velit nunc mollis elit, nec bibendum orci felis quis nibh. <span
-                    class="purple">Integer et</span>
-            rhoncus
-            turpis.
-            Phas
-        </p>
+    <span class="big">E</span>lena Salova is a Ukrainian-born artist living in Spain, known for her innovative painting technique called <span class="red">"Multilayered Veil"</span>, developed in 2014. This technique emerged spontaneously before a major exhibition in Kyiv, where Elena, pressed for time, layered translucent oil paints to reveal hidden figures through delicate lines. It is a deeply intuitive process, likened to <span class="yellow">"developing a photograph"</span>.
+</p>
+<p class="slideIn">
+    Elena studied monumental painting at the National Academy of Fine Arts in Kyiv and gained recognition with her 2013 show <span class="green">"Illusion"</span>. Her works have appeared in galleries across Europe, including Moscow, Ukraine, and the UK. In 2023, she exhibited at the <span class="purple">Hotel Alfonso XIII</span> in Seville, where her pieces were acquired by Italian collectors.
+</p>
+<p class="slideIn">
+    The war in Ukraine forced Elena to leave her home, finding solace in meditation and art. In Spain, she revived her passion for painting using her unique technique. She eventually opened a gallery in Seville, near the largest Gothic cathedral, where she restored antique masterpieces and showcased her own works, including pieces by <span class="red">Dalí</span>, <span class="green">Miró</span>, and <span class="yellow">Goya</span>.
+</p>
 
         <div class="underline-btn-container">
             <a href="#" class="underline-btn slideIn">view gallery</a>
@@ -692,7 +675,7 @@ require './app/db.php';
             </li>
         </ul>
         <div class="quote_container">
-            <img src="assets/img/quote.png" class="slideIn slideIn2" alt="">
+            <img src="assets/img/quote1.png" class="slideIn slideIn2" alt="">
             <div class="texts">
                 <p class="quote slideIn slideIn2">Art is something that blooms just a second before it evaporates
                     forever.</p>
@@ -889,9 +872,9 @@ require './app/db.php';
                         <textarea name="message" placeholder="MESSAGE:"></textarea>
                     </div>
                     <p>
-                        <span class="big">Z</span>ipsum dolor sit amet, consectetur adipiscing elit. Praesent at cursus
-                        magna, at dap bus eros.
-                        Aliquam tincidunt tortor eu placerat vehicula. Curabitur feugiat faucibus mauris id ullamcorper.
+                        <span class="big">L</span>eave your email to connect with Elena, then click "Next" to send a
+                        personal message. Share your thoughts on her art or
+                            request something unique created just for you! A portrait or memorable place can be captured forever.
                     </p>
                 </form>
             </div>
@@ -957,7 +940,7 @@ require './app/db.php';
                     <textarea name="message" placeholder="MESSAGE:"></textarea>
                 </div>
                 <p>
-                    Lipsum dolor sit amet, consectetur adipiscing elit. Praesent at cursus magna,
+                    You can order a painting in her author's style right now!
                 </p>
             </form>
         </div>
@@ -981,7 +964,7 @@ require './app/db.php';
 
             <div class="contact-data adress">
                 <a href="tel:34627327237">+34 627 327 237</a>
-                <span>Curabitur feugiat faudcibus mauris id unt tortor eu placerat. </span>
+                <span>Spain, Sevilla Pl. del Cabildo, 41001</span>
             </div>
 
         </div>
@@ -991,11 +974,11 @@ require './app/db.php';
 
             <div class="contact-data">
                 <div class="underline-btn-container">
-                    <a href="#" class="underline-btn slideIn">my instagram.</a>
-                    <a href="#" class="underline-btn slideIn">my saatchi.</a>
+                    <a target="_blank" href="https://www.instagram.com/elena.art.studio.es/" class="underline-btn slideIn">my instagram.</a>
+                    <a target="_blank" href="#" class="underline-btn slideIn">my saatchi.</a>
                 </div>
                 <div class="underline-btn-container">
-                    <a href="#" class="underline-btn slideIn">my whatsapp.</a>
+                    <a target="_blank" href="#" class="underline-btn slideIn">my whatsapp.</a>
                 </div>
             </div>
         </div>
@@ -1040,7 +1023,7 @@ require './app/db.php';
                 <textarea name="message" placeholder="MESSAGE:"></textarea>
             </div>
             <p>
-                Lipsum dolor sit amet, consectetur adipiscing elit. Praesent at cursus magna,
+               It's time for art, order something you've been wanting for a long time.
             </p>
         </form>
     </div>
@@ -1060,8 +1043,8 @@ require './app/db.php';
             <span>2024</span>
         </div>
         <div class="footer_texts">
-            <span>Designed and Developed by <br>PavLo Chsitiakov  and  Andrii Bondarenko</span>
-            <button>totop</button>
+            <span>Designed and Developed by <br>Pavlo Chistiakov  and  Andrii Bondarenko</span>
+            <button>sirius</button>
         </div>
     </div>
 </footer>

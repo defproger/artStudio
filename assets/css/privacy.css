@@ -1,11 +1,72 @@
-.container{
-	    font-family: "Goudy Old Style", sans-serif;
-	width: 95%;
-	padding: 5% 2%;
-	text-align: center;
-	margin: 0 auto;
+/* General styles for all devices */
+.container {
+    font-family: "Goudy Old Style", sans-serif;
+    width: 95%;
+    padding: 5% 2%;
+    text-align: center;
+    margin: 0 auto;
 }
 
-.title-privacy{
-	font-weight: bold;
+.title-privacy {
+    font-weight: bold;
+}
+
+/* Media queries for different screen sizes */
+
+/* Small screens (mobile devices) */
+@media (max-width: 600px) {
+    .container {
+        padding: 10% 5%; /* More padding for better readability on small screens */
+    }
+
+    h1 {
+        font-size: 1.8em; /* Smaller title on mobile */
+    }
+
+    p {
+        font-size: 1em; /* Adjust paragraph text size for readability */
+    }
+
+    .title-privacy {
+        font-size: 1.1em; /* Slightly smaller for mobile */
+    }
+}
+
+/* Medium screens (tablets) */
+@media (min-width: 601px) and (max-width: 1024px) {
+    .container {
+        padding: 8% 3%; /* Moderate padding for tablets */
+    }
+
+    h1 {
+        font-size: 2.2em; /* Medium font size for heading on tablet screens */
+    }
+
+    p {
+        font-size: 1.1em; /* Slight increase in paragraph size for better readability */
+    }
+
+    .title-privacy {
+        font-size: 1.2em; /* Adjusted title for medium-sized screens */
+    }
+}
+
+/* Large screens (desktops) */
+@media (min-width: 1025px) {
+    .container {
+        width: 80%; /* Reduced container width for larger screens */
+        padding: 5% 2%;
+    }
+
+    h1 {
+        font-size: 2.5em; /* Larger title for bigger screens */
+    }
+
+    p {
+        font-size: 1.2em; /* Slightly larger paragraph text */
+    }
+
+    .title-privacy {
+        font-size: 1.3em; /* Adjust title size */
+    }
 }

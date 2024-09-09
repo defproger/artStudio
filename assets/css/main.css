@@ -609,8 +609,10 @@ header a {
 }
 
 header h1 {
+    font-weight: 100;
     font-size: 24px;
-    letter-spacing: 5px;
+    letter-spacing: 8px;
+    font-family: 'Goudy Old Style', serif;
 }
 
 header nav {
@@ -1544,11 +1546,13 @@ header nav a:hover {
     display: block;
     float: right;
 
+    font-family: 'Goudy Old Style', serif;
+
     font-size: 20px;
     line-height: 24px;
     color: #fff;
     font-weight: 700;
-    letter-spacing: 1.06em;
+    letter-spacing: 1.3em;
     text-align: left;
 
     max-width: 320px;
@@ -1993,7 +1997,7 @@ header nav a:hover {
 
 .contact-data.email a {
     font-size: 64px;
-    font-style: italic;
+    font-style: none;
     font-weight: 400;
     line-height: 76.81px;
     color: #fff;
@@ -2154,14 +2158,15 @@ footer nav a:hover {
     font-size: 24px;
     font-weight: 400;
     line-height: 23.61px;
-    letter-spacing: -0.1em;
+    letter-spacing: -0.01em;
 
-    color: #E2E2E2;
+    color: #888888;
 }
 
 .footer_texts button {
-    color: #E2E2E2;
+    color: #bababa;
     background: none;
     border: none;
     text-decoration: underline;
 }
+

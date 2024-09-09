@@ -29,7 +29,7 @@ if (!$art) {
         <a class="arrow-link" href="artwork_info.php?id=<?= $art['id'] ?>">
             <img class="arrow-button" src="assets/img/arrow-left.png" alt="<-">
         </a>
-        <a href="#" class="back-to-gallery">Back to Gallery</a>
+        <a href="index.php" class="back-to-gallery">Back to Gallery</a>
     </div>
     <h2 class="artist-name">&nbsp;Payment</h2>
     <div class="content">
@@ -109,9 +109,9 @@ if (!$art) {
         <a class="arrow-link-footer" href="#">
             <img class="arrow-button" src="assets/img/arrow-white.png" alt="<-">
         </a>
-        <a href="#" class="back-to-gallery footer-back-addition">Back to Gallery</a>
+        <a href="index.php" class="back-to-gallery footer-back-addition">Back to Gallery</a>
     </div>
-    <a href="#" class="privacy-policy">Privacy</a>
+    <a href="privacy.html" class="privacy-policy">Privacy</a>
     <p>All Rights Reserved</p>
     <p>© 2024</p>
 </footer>

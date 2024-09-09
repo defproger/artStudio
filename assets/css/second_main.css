@@ -26,18 +26,18 @@ body {
 .black-square {
     position: absolute;
     width: 100%;
-    height: 40%;
+    height: 48%;
     background-color: black;
     top: 50%;
     left: 50%;
-    transform: translate(-25%, -89%);
+    transform: translate(-25%, -76%);
     z-index: 0;
     transition: 2s;
 }
 
 /* Общий класс для анимации */
 .moved {
-   transform: translate(-45%, -89%);
+   transform: translate(-50%, -77%);
 }
 
 
@@ -107,7 +107,7 @@ body {
 .artist-name {
     position: relative;
     margin-top: 6%;
-    padding-bottom: 5%;
+    padding-bottom: 6%;
     text-transform: uppercase;
     font-size: 0.7em;
     letter-spacing: 20px;
@@ -170,7 +170,7 @@ body {
     margin: 3% 0;
 }
 .painting-title:hover {
-    margin-right: 4%;
+    /*margin-right: 4%;*/
 }
 
 .painting-medium{
@@ -190,13 +190,12 @@ body {
     font-size: 1.3em;
     margin-bottom: 6%;
     transition: 1s ease;
-    padding: 2% 0% 2% 2%;
+    padding: 2% 1% 2% 2%;
 }
 
 .painting-description:hover{
     background-color: #fff;
     color: #000;
-    padding: 2% 2% 2% 2%;
 }
 
 .painting-status{
@@ -235,7 +234,7 @@ body {
 }
 
 .confirm-button:hover{
-    letter-spacing: 70px;
+    letter-spacing: 40px;
 }
 
 
@@ -254,9 +253,50 @@ body {
 
 
 
+/*.more-like-this {*/
+/*    display: flex;*/
+/*    margin-top: 15%;*/
+/*    align-items: center;*/
+/*}*/
+
+/*.see-more{*/
+/*    width: 40%;*/
+/*    text-transform: uppercase;*/
+/*    font-size: 0.7em;*/
+/*    letter-spacing: 17px;*/
+/*    font-weight: normal;*/
+/*}*/
+
+/*.similar-paintings {*/
+/*    width: 60%;*/
+/*    display: flex;*/
+/*    justify-content: space-around;*/
+/*    !*margin-top: 20px;*!*/
+/*}*/
+
+/*.similar-painting {*/
+/*    width: 30%;*/
+/*    text-decoration: none;*/
+/*    color: #000;*/
+/*    border-bottom: 0px;*/
+
+/*    text-align: center;*/
+/*    transition: .1s ease;*/
+/*    height: 10%;*/
+/*}*/
+
+/*.similar-painting:hover{*/
+/*    transform: translate(0px, -10px);*/
+/*}*/
+
+/*.similar-painting img {*/
+/*    height: 10%;*/
+/*}*/
+
+
 .more-like-this {
     display: flex;
-    margin-top: 15%;
+    margin-top: 17%;
     align-items: center;
 }
 
@@ -266,32 +306,38 @@ body {
     font-size: 0.7em;
     letter-spacing: 17px;
     font-weight: normal;
+    text-align: center;
 }
 
 .similar-paintings {
     width: 60%;
     display: flex;
     justify-content: space-around;
-    margin-top: 20px;
+    align-items: center;
 }
 
 .similar-painting {
+    width: 30%;
     text-decoration: none;
     color: #000;
-    border-bottom: 0px;
-
     text-align: center;
-    max-height: 55%;
     transition: .1s ease;
 }
 
-.similar-painting:hover{
-    transform: translate(0px, -10px);
+.similar-painting img {
+    width: 100%; /* Ensure images take full width */
+    height: auto; /* Maintain aspect ratio */
+    display: block; /* Prevent inline gap */
 }
 
-.similar-painting img {
-    max-height: 70%;
-    height: auto;
+.similar-painting .sub-title {
+    margin-top: 5%; /* Space between image and title */
+    font-size: 1em;
+    text-align: center; /* Center text */
+}
+
+.similar-painting:hover {
+    transform: translateY(-10px); /* Lift on hover */
 }
 
 

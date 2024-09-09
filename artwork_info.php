@@ -21,7 +21,7 @@ shuffle($arts);
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Art Gallery</title>
+    <title>Artwork Information</title>
     <link rel="stylesheet" href="assets/css/second_main.css">
     <link rel="stylesheet" href="assets/css/fonts.css">
     <link rel="stylesheet" href="assets/css/second_mobile.css">
@@ -35,7 +35,7 @@ shuffle($arts);
             <a class="arrow-link" href="#">
                 <img class="arrow-button" src="assets/img/arrow-left.png" alt="<-">
             </a>
-            <a href="#" class="back-to-gallery">Back to Gallery</a>
+            <a href="index.php" class="back-to-gallery">Back to Gallery</a>
         </div>
 
         <h1 class="artist-name">&nbsp;Elena Salova</h1>
@@ -85,9 +85,9 @@ shuffle($arts);
             <a class="arrow-link-footer" href="#">
                 <img class="arrow-button" src="assets/img/arrow-white.png" alt="<-">
             </a>
-            <a href="#" class="back-to-gallery footer-back-addition">Back to Gallery</a>
+            <a href="index.php" class="back-to-gallery footer-back-addition">Back to Gallery</a>
         </div>
-        <a href="#" class="privacy-policy">Privacy</a>
+        <a href="privacy.html" class="privacy-policy">Privacy</a>
         <p>All Rights Reserved</p>
         <p> © 2024</p>
     </footer>
