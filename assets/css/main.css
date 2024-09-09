@@ -868,7 +868,7 @@ header nav a:hover {
 
     transform: rotate(-23.24deg);
 
-    top: 540px;
+    top: 570px;
     right: -20%;
 }
 
@@ -1563,8 +1563,12 @@ header nav a:hover {
 .gallery_image_container {
     position: relative;
     margin-bottom: 70px;
-    max-width: 95%;
+    max-width: 100%;
     cursor: none;
+    padding: 0 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .gallery_block .magnifier {

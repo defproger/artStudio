@@ -191,7 +191,7 @@
     }
 
     .gallery_block.even-visible button {
-        transform: translateX(calc((50vw - 590px)));
+        transform: translateX(calc((50vw - 290px)));
     }
 
     .gallery {
