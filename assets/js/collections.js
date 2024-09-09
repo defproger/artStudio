@@ -4,9 +4,11 @@ $(document).ready(function () {
 
         $(".collection-tab-button").removeClass("active");
         $(".collection-tab-content").removeClass("active");
+        $(".collection-prev-text").removeClass("active");
 
         $(this).addClass("active");
         $("#" + tabId).addClass("active");
+        $("#" + tabId + '_text').addClass("active");
 
         var newImage = "big.png";
         switch (tabId) {

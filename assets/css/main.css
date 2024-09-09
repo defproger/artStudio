@@ -765,11 +765,23 @@ header nav a:hover {
     height: 256px;
     position: relative;
     overflow: hidden;
+    transition: .3s;
 }
 
 .pattern-block picture img {
     position: absolute;
     height: auto;
+
+    opacity: .5;
+    transition: .3s;
+}
+
+.pattern-block picture img:hover {
+    opacity: .75;
+}
+
+.pattern-block.active > picture img {
+    opacity: 1;
 }
 
 .pattern-block:nth-child(1) > picture img {
@@ -834,6 +846,15 @@ header nav a:hover {
 
 .collection_serie p {
     margin-left: 35px;
+}
+
+.collection-prev-text {
+    display: none;
+    transition: .3s;
+}
+
+.collection-prev-text.active {
+    display: block;
 }
 
 

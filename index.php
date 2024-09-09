@@ -126,14 +126,26 @@ require './app/db.php';
     </div>
     <div class="texts">
         <p class="slideIn">
-    <span class="big">E</span>lena Salova is a Ukrainian-born artist living in Spain, known for her innovative painting technique called <span class="red">"Multilayered Veil"</span>, developed in 2014. This technique emerged spontaneously before a major exhibition in Kyiv, where Elena, pressed for time, layered translucent oil paints to reveal hidden figures through delicate lines. It is a deeply intuitive process, likened to <span class="yellow">"developing a photograph"</span>.
-</p>
-<p class="slideIn">
-    Elena studied monumental painting at the National Academy of Fine Arts in Kyiv and gained recognition with her 2013 show <span class="green">"Illusion"</span>. Her works have appeared in galleries across Europe, including Moscow, Ukraine, and the UK. In 2023, she exhibited at the <span class="purple">Hotel Alfonso XIII</span> in Seville, where her pieces were acquired by Italian collectors.
-</p>
-<p class="slideIn">
-    The war in Ukraine forced Elena to leave her home, finding solace in meditation and art. In Spain, she revived her passion for painting using her unique technique. She eventually opened a gallery in Seville, near the largest Gothic cathedral, where she restored antique masterpieces and showcased her own works, including pieces by <span class="red">Dalí</span>, <span class="green">Miró</span>, and <span class="yellow">Goya</span>.
-</p>
+            <span class="big">E</span>lena Salova is a Ukrainian-born artist living in Spain, known for her innovative
+            painting technique called <span class="red">"Multilayered Veil"</span>, developed in 2014. This technique
+            emerged spontaneously before a major exhibition in Kyiv, where Elena, pressed for time, layered translucent
+            oil paints to reveal hidden figures through delicate lines. It is a deeply intuitive process, likened to
+            <span class="yellow">"developing a photograph"</span>.
+        </p>
+        <p class="slideIn">
+            Elena studied monumental painting at the National Academy of Fine Arts in Kyiv and gained recognition with
+            her 2013 show <span class="green">"Illusion"</span>. Her works have appeared in galleries across Europe,
+            including Moscow, Ukraine, and the UK. In 2023, she exhibited at the <span
+                    class="purple">Hotel Alfonso XIII</span> in Seville, where her pieces were acquired by Italian
+            collectors.
+        </p>
+        <p class="slideIn">
+            The war in Ukraine forced Elena to leave her home, finding solace in meditation and art. In Spain, she
+            revived her passion for painting using her unique technique. She eventually opened a gallery in Seville,
+            near the largest Gothic cathedral, where she restored antique masterpieces and showcased her own works,
+            including pieces by <span class="red">Dalí</span>, <span class="green">Miró</span>, and <span
+                    class="yellow">Goya</span>.
+        </p>
 
         <div class="underline-btn-container">
             <a href="#" class="underline-btn slideIn">view gallery</a>
@@ -148,7 +160,7 @@ require './app/db.php';
             <span class="mobile">COLLE CTIONS</span></h1>
 
         <div class="patterns">
-            <div class="pattern-block slideIn slideLeft collection-tab-button" data-tab="collection1">
+            <div class="pattern-block slideIn slideLeft collection-tab-button active" data-tab="collection1">
                 <picture>
                     <source media="(max-width: 1199px)" srcset="assets/img/patterns/pt1_mobile.png">
                     <img src="assets/img/patterns/pt1.png" alt="Pattern"/>
@@ -174,14 +186,54 @@ require './app/db.php';
             </div>
         </div>
 
-        <div class="collection_name collection_serie slideIn">
-            <h2 class="heading_text">MUDRAS</h2>
-            <p>S E R I E</p>
+        <div class="collection-prev-text active" id="collection1_text">
+            <div class="collection_name collection_serie slideIn">
+                <h2 class="heading_text">MUDRAS</h2>
+                <p>S E R I E</p>
+            </div>
+            <p class="collection__under_text slideIn">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent
+                at
+                cursus
+                magna, at dapibus eros. Aliquam tincidunt tortor eu placerat vehicula. Curabitur feugiat faucibus mauris
+                id
+                ullamcorper. </p>
         </div>
-        <p class="collection__under_text slideIn">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent at
-            cursus
-            magna, at dapibus eros. Aliquam tincidunt tortor eu placerat vehicula. Curabitur feugiat faucibus mauris id
-            ullamcorper. </p>
+        <div class="collection-prev-text" id="collection2_text">
+            <div class="collection_name collection_serie slideIn">
+                <h2 class="heading_text">DUPAS</h2>
+                <p>S E R I E</p>
+            </div>
+            <p class="collection__under_text slideIn">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent
+                at
+                cursus
+                magna, at dapibus eros. Aliquam tincidunt tortor eu placerat vehicula. Curabitur feugiat faucibus mauris
+                id
+                ullamcorper. </p>
+        </div>
+        <div class="collection-prev-text" id="collection3_text">
+            <div class="collection_name collection_serie slideIn">
+                <h2 class="heading_text">PIDURAS</h2>
+                <p>S E R I E</p>
+            </div>
+            <p class="collection__under_text slideIn">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent
+                at
+                cursus
+                magna, at dapibus eros. Aliquam tincidunt tortor eu placerat vehicula. Curabitur feugiat faucibus mauris
+                id
+                ullamcorper. </p>
+        </div>
+        <div class="collection-prev-text" id="collection4_text">
+            <div class="collection_name collection_serie slideIn">
+                <h2 class="heading_text">COLLECTION</h2>
+                <p>S E R I E</p>
+            </div>
+            <p class="collection__under_text slideIn">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent
+                at
+                cursus
+                magna, at dapibus eros. Aliquam tincidunt tortor eu placerat vehicula. Curabitur feugiat faucibus mauris
+                id
+                ullamcorper. </p>
+        </div>
     </div>
 
     <div class="pattern_line">
@@ -874,7 +926,8 @@ require './app/db.php';
                     <p>
                         <span class="big">L</span>eave your email to connect with Elena, then click "Next" to send a
                         personal message. Share your thoughts on her art or
-                            request something unique created just for you! A portrait or memorable place can be captured forever.
+                        request something unique created just for you! A portrait or memorable place can be captured
+                        forever.
                     </p>
                 </form>
             </div>
@@ -974,7 +1027,8 @@ require './app/db.php';
 
             <div class="contact-data">
                 <div class="underline-btn-container">
-                    <a target="_blank" href="https://www.instagram.com/elena.art.studio.es/" class="underline-btn slideIn">my instagram.</a>
+                    <a target="_blank" href="https://www.instagram.com/elena.art.studio.es/"
+                       class="underline-btn slideIn">my instagram.</a>
                     <a target="_blank" href="#" class="underline-btn slideIn">my saatchi.</a>
                 </div>
                 <div class="underline-btn-container">
@@ -1023,7 +1077,7 @@ require './app/db.php';
                 <textarea name="message" placeholder="MESSAGE:"></textarea>
             </div>
             <p>
-               It's time for art, order something you've been wanting for a long time.
+                It's time for art, order something you've been wanting for a long time.
             </p>
         </form>
     </div>
