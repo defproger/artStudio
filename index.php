@@ -37,10 +37,10 @@ require './app/db.php';
             <h1 class="mobile">Elena S.</h1>
         </a>
         <nav class="pc">
-            <a href="#">collections.</a>
-            <a href="#">gallery.</a>
-            <a href="#">draw for me.</a>
-            <a href="#">contacts.</a>
+            <a href="#collections" class="link">collections.</a>
+            <a href="#gallery" class="link">gallery.</a>
+            <a href="#drawForMe" class="link">draw for me.</a>
+            <a href="#contacts" class="link">contacts.</a>
         </nav>
     </div>
     <span class="animhr"></span>
