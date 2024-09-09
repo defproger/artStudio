@@ -1732,6 +1732,10 @@ header nav a:hover {
 
     color: #fff;
     width: 860px;
+
+    max-width: 860px;
+    min-width: 860px;
+    max-height: 200px;
 }
 
 
@@ -1956,6 +1960,10 @@ header nav a:hover {
 .form.black .hidden_input textarea {
     color: black;
     width: 560px;
+
+    max-width: 560px;
+    min-width: 560px;
+    max-height: 200px;
 }
 
 #drawForMe .callback-form {
