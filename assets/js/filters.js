@@ -15,7 +15,7 @@ document.addEventListener('DOMContentLoaded', function () {
     const itemsPerPage = 4;
     let currentPage = 1;
 
-    showGalleryPage(currentPage, false);
+    showGalleryPage(currentPage);
     updateEvenVisibleClasses();
 
     function updateEvenVisibleClasses() {
@@ -33,7 +33,7 @@ document.addEventListener('DOMContentLoaded', function () {
         });
     }
 
-    function showGalleryPage(page, scrollToTop = true) {
+    function showGalleryPage(page, scrollToTop = false) {
         galleryBlocks.forEach((block) => {
             block.style.display = 'none';
         });
@@ -55,7 +55,7 @@ document.addEventListener('DOMContentLoaded', function () {
         if (scrollToTop) {
             $('html, body').animate({
                 'scrollTop': $(filterButton).offset().top - 100
-            }, 1000)
+            }, 1000);
         }
     }
 
@@ -68,7 +68,7 @@ document.addEventListener('DOMContentLoaded', function () {
             prevControl.innerHTML = `<div class="control"><span>PREVIOUS PAGE</span></div>`;
             prevControl.addEventListener('click', () => {
                 currentPage--;
-                showGalleryPage(currentPage);
+                showGalleryPage(currentPage, true);
             });
             controlsContainer.appendChild(prevControl);
         }
@@ -79,7 +79,7 @@ document.addEventListener('DOMContentLoaded', function () {
             nextControl.innerHTML = `<div class="control"><span>NEXT PAGE</span></div>`;
             nextControl.addEventListener('click', () => {
                 currentPage++;
-                showGalleryPage(currentPage);
+                showGalleryPage(currentPage, true);
             });
             controlsContainer.appendChild(nextControl);
         }
