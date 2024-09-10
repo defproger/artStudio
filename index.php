@@ -200,7 +200,7 @@ require './app/db.php';
         </div>
         <div class="collection-prev-text" id="collection2_text">
             <div class="collection_name collection_serie slideIn">
-                <h2 class="heading_text">DUPAS</h2>
+                <h2 class="heading_text">DUDRAS</h2>
                 <p>S E R I E</p>
             </div>
             <p class="collection__under_text slideIn">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent
@@ -212,7 +212,7 @@ require './app/db.php';
         </div>
         <div class="collection-prev-text" id="collection3_text">
             <div class="collection_name collection_serie slideIn">
-                <h2 class="heading_text">PIDURAS</h2>
+                <h2 class="heading_text">GUDRAS</h2>
                 <p>S E R I E</p>
             </div>
             <p class="collection__under_text slideIn">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent
