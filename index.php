@@ -854,7 +854,7 @@ require './app/db.php';
             <div class="gallery">
                 <?php
                 $arts = db_getAll('gallery');
-                shuffle($arts); // перемешивает картины что бы каждый раз отображались в рандомном пордке
+                shuffle($arts);
                 foreach ($arts as $art):?>
                     <div class="gallery_block" data-id="<?= $art['id'] ?>" data-status="<?= $art['status'] ?>">
                         <div class="gallery_image_container">
@@ -1149,6 +1149,18 @@ require './app/db.php';
         <a href="#" class="link">draw for me.</a>
         <a href="#" class="link">contacts.</a>
     </nav>
+</div>
+
+<div id="galleryImagePopup">
+    <div class="galleryImagePopup_wrapper">
+        <div class="galleryImagePopup_container">
+            <img src="" alt="">
+            <button class="close-button" id="closeGalleryPopupButton">
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </div>
 </div>
 
 

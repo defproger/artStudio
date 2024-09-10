@@ -208,3 +208,16 @@ document.querySelectorAll('.gallery_image_container').forEach(block => {
         magnifier.style.top = `${e.clientY - rect.top - 77}px`;
     });
 });
+
+
+$(document).ready(function () {
+    $('.gallery_image_container').click(function () {
+        let imgSrc = $(this).find('img').attr('src');
+        $('#galleryImagePopup img').attr('src', imgSrc);
+        $('#galleryImagePopup').fadeIn(300);
+    });
+
+    $('#closeGalleryPopupButton').click(function () {
+        $('#galleryImagePopup').fadeOut(300);
+    });
+});
