@@ -150,7 +150,7 @@ require './app/db.php';
         </p>
 
         <div class="underline-btn-container">
-            <a href="#" class="underline-btn slideIn">view gallery</a>
+            <a href="#gallery" class="underline-btn slideIn link">view gallery</a>
         </div>
     </div>
 </div>
@@ -249,7 +249,7 @@ require './app/db.php';
                 <img class="slideIn" src="assets/img/works/cl1.jpg" alt="">
                 <div class="underline-btn-container">
                     <span class="slideIn slideIn2">SOLD</span>
-                    <a href="artwork_info.php?id=31" class="underline-btn slideIn pc">read more.</a>
+                    <a href="artwork_info.php?id=31" target="_blank" class="underline-btn slideIn pc">read more.</a>
                 </div>
             </div>
             <p class="slideIn mobile"><span class="big">T</span>his painting masterfully balances contrasts and
@@ -258,14 +258,14 @@ require './app/db.php';
                 detailed, elegant lines, highlighted by light, sharply contrast with the blurred, abstract background,
                 evoking tension and mystery.</p>
             <div class="underline-btn-container mobile">
-                <a href="artwork_info.php?id=31" class="underline-btn slideIn">read more.</a>
+                <a href="artwork_info.php?id=31" target="_blank" class="underline-btn slideIn">read more.</a>
             </div>
 
         </div>
 
         <div class="collection_flex right">
             <div class="underline-btn-container mobile">
-                <a href="artwork_info.php?id=32" class="underline-btn slideIn">read more.</a>
+                <a href="artwork_info.php?id=32" target="_blank" class="underline-btn slideIn">read more.</a>
             </div>
             <p class="slideIn mobile"><span class="big">T</span>his painting is filled with subtle symbolism and a sense
                 of incompleteness. At the center of the composition is a golden hand, raised in a gesture that can be
@@ -275,7 +275,7 @@ require './app/db.php';
             <div class="photo">
                 <img src="assets/img/works/cl2.jpg" class="slideIn slideIn2" alt="">
                 <div class="underline-btn-container">
-                    <a href="artwork_info.php?id=32" class="underline-btn slideIn pc">read more.</a>
+                    <a href="artwork_info.php?id=32" target="_blank" class="underline-btn slideIn pc">read more.</a>
                     <span class="yellow slideIn slideIn2">IN PRIVATE<br>COLLECTION</span>
                 </div>
             </div>
@@ -355,7 +355,7 @@ require './app/db.php';
                 <img class="slideIn" src="assets/img/works/w4.jpg" alt="">
                 <div class="underline-btn-container">
                     <span class="slideIn slideIn2">SOLD</span>
-                    <a href="artwork_info.php?id=22" class="underline-btn slideIn pc">read more.</a>
+                    <a href="artwork_info.php?id=22" target="_blank" class="underline-btn slideIn pc">read more.</a>
                 </div>
             </div>
             <p class="slideIn mobile"><span class="big">I</span>n the silence of the evening twilight, as the last rays
@@ -364,14 +364,14 @@ require './app/db.php';
                 from the embrace of the water. Light patterns playing on the water create a whimsical interplay of light
                 and shadow, giving the painting a mystical depth and enigma.</p>
             <div class="underline-btn-container mobile">
-                <a href="artwork_info.php?id=22" class="underline-btn slideIn">read more.</a>
+                <a href="artwork_info.php?id=22" target="_blank" class="underline-btn slideIn">read more.</a>
             </div>
 
         </div>
 
         <div class="collection_flex right">
             <div class="underline-btn-container mobile">
-                <a href="artwork_info.php?id=22" class="underline-btn slideIn">buy art.</a>
+                <a href="artwork_info.php?id=22" target="_blank" class="underline-btn slideIn">buy art.</a>
             </div>
             <p class="slideIn mobile"><span class="big">E</span>ach raindrop is a metaphor for a feeling that cannot be
                 expressed. She gazes into the distance, but her eyes do not penetrate through the window. Her gaze is
@@ -382,7 +382,7 @@ require './app/db.php';
             <div class="photo">
                 <img src="assets/img/works/w2.png" class="slideIn slideIn2" alt="">
                 <div class="underline-btn-container">
-                    <a href="artwork_info.php?id=22" class="underline-btn slideIn pc">buy art.</a>
+                    <a href="artwork_info.php?id=22" target="_blank" class="underline-btn slideIn pc">buy art.</a>
                     <span class="yellow slideIn slideIn2">AVAILABLE</span>
                 </div>
             </div>
@@ -426,8 +426,8 @@ require './app/db.php';
             <div class="photo">
                 <img src="assets/img/works/w1.png" class="slideIn slideIn2" alt="">
                 <div class="underline-btn-container">
-                    <a href="payment.php?id=23" class="underline-btn slideIn slideIn2">buy art.</a>
-                    <a href="artwork_info.php?id=23" class="underline-btn slideIn pc">read more.</a>
+                    <a href="payment.php?id=23" target="_blank" class="underline-btn slideIn slideIn2">buy art.</a>
+                    <a href="artwork_info.php?id=23" target="_blank" class="underline-btn slideIn pc">read more.</a>
                 </div>
             </div>
             <p class="slideIn mobile"><span class="big">T</span>he woman gazes through a window covered in raindrops, as
@@ -437,7 +437,7 @@ require './app/db.php';
                 Her gaze is not directed at us, but inward, beyond reflections and memories. It is filled with an
                 indescribable calm, yet it carries the depth of untold stories.</p>
             <div class="underline-btn-container mobile">
-                <a href="artwork_info.php?id=23" class="underline-btn slideIn">read more.</a>
+                <a href="artwork_info.php?id=23" target="_blank" class="underline-btn slideIn">read more.</a>
             </div>
         </div>
     </div>
@@ -465,7 +465,7 @@ require './app/db.php';
                 <img class="slideIn" src="assets/img/works/c1.png" alt="">
                 <div class="underline-btn-container">
                     <span class="slideIn slideIn2">AVAILABLE</span>
-                    <a href="artwork_info.php?id=25" class="underline-btn slideIn pc">buy.</a>
+                    <a href="artwork_info.php?id=25" target="_blank" class="underline-btn slideIn pc">buy.</a>
                 </div>
             </div>
             <p class="slideIn mobile"><span class="big">T</span>he central figure is the head of a leopard, symbolizing
@@ -477,14 +477,14 @@ require './app/db.php';
                 snakes and their patterns point to wisdom and hidden danger, while the human figures perhaps reflect the
                 spiritual essence within the context of nature.</p>
             <div class="underline-btn-container mobile">
-                <a href="artwork_info.php?id=25" class="underline-btn slideIn">buy.</a>
+                <a href="artwork_info.php?id=25" target="_blank" class="underline-btn slideIn">buy.</a>
             </div>
 
         </div>
 
         <div class="collection_flex right">
             <div class="underline-btn-container mobile">
-                <a href="artwork_info.php?id=28" class="underline-btn slideIn">buy.</a>
+                <a href="artwork_info.php?id=28" target="_blank" class="underline-btn slideIn">buy.</a>
             </div>
             <p class="slideIn mobile"><span class="big">T</span>he painting conveys a sense of movement and energy, with
                 elements seemingly merging into one another, creating a harmonious and vibrant canvas. This artwork
@@ -493,7 +493,7 @@ require './app/db.php';
             <div class="photo">
                 <img src="assets/img/works/c7.png" class="slideIn slideIn2" alt="">
                 <div class="underline-btn-container">
-                    <a href="artwork_info.php?id=28" class="underline-btn slideIn pc">buy.</a>
+                    <a href="artwork_info.php?id=28" target="_blank" class="underline-btn slideIn pc">buy.</a>
                     <span class="yellow slideIn slideIn2">AVAILABLE</span>
                 </div>
             </div>
@@ -533,8 +533,8 @@ require './app/db.php';
             <div class="photo">
                 <img src="assets/img/works/c3.png" class="slideIn slideIn2" alt="">
                 <div class="underline-btn-container">
-                    <a href="payment.php?id=27" class="underline-btn slideIn slideIn2">buy art.</a>
-                    <a href="artwork_info.php?id=27" class="underline-btn slideIn pc">read more.</a>
+                    <a href="payment.php?id=27" target="_blank" class="underline-btn slideIn slideIn2">buy art.</a>
+                    <a href="artwork_info.php?id=27" target="_blank" class="underline-btn slideIn pc">read more.</a>
                 </div>
             </div>
             <p class="slideIn mobile"><span class="big">A</span>t the center of the composition stands a mysterious
@@ -542,7 +542,7 @@ require './app/db.php';
                 Surrounding this central figure is a whole world of mythological and classical characters. Muscular
                 human forms and possibly deities, immersed in dynamic poses, create a sense of movement and energy.</p>
             <div class="underline-btn-container mobile">
-                <a href="artwork_info.php?id=27" class="underline-btn slideIn">read more.</a>
+                <a href="artwork_info.php?id=27" target="_blank" class="underline-btn slideIn">read more.</a>
             </div>
         </div>
     </div>
@@ -571,7 +571,7 @@ require './app/db.php';
                 <img class="slideIn" src="assets/img/works/adream.jpg" alt="">
                 <div class="underline-btn-container">
                     <span class="slideIn slideIn2">AVAILABLE</span>
-                    <a href="artwork_info.php?id=13" class="underline-btn slideIn pc">read more.</a>
+                    <a href="artwork_info.php?id=13" target="_blank" class="underline-btn slideIn pc">read more.</a>
                 </div>
             </div>
             <p class="slideIn mobile"><span class="big">T</span>his painting exudes a dreamlike quality, blending
@@ -584,14 +584,14 @@ require './app/db.php';
                 significance. The painting mixes fluid brushstrokes with more defined forms, creating a layered,
                 atmospheric effect, invoking themes of faith, memory, and identity.</p>
             <div class="underline-btn-container mobile">
-                <a href="artwork_info.php?id=13" class="underline-btn slideIn">read more.</a>
+                <a href="artwork_info.php?id=13" target="_blank" class="underline-btn slideIn">read more.</a>
             </div>
 
         </div>
 
         <div class="collection_flex right">
             <div class="underline-btn-container mobile">
-                <a href="artwork_info.php?id=11" class="underline-btn slideIn">read more.</a>
+                <a href="artwork_info.php?id=11" target="_blank" class="underline-btn slideIn">read more.</a>
             </div>
             <p class="slideIn mobile"><span class="big">T</span>his painting blends classical biblical themes with
                 modern artistic techniques. At the center, Adam and Eve stand nude, holding the apple—a symbol of
@@ -605,7 +605,7 @@ require './app/db.php';
             <div class="photo">
                 <img src="assets/img/works/adamandeva.jpg" class="slideIn slideIn2" alt="">
                 <div class="underline-btn-container">
-                    <a href="artwork_info.php?id=11" class="underline-btn slideIn pc">read more.</a>
+                    <a href="artwork_info.php?id=11" target="_blank" class="underline-btn slideIn pc">read more.</a>
                     <span class="yellow slideIn slideIn2">AVAILABLE</span>
                 </div>
             </div>
@@ -648,15 +648,15 @@ require './app/db.php';
             <div class="photo">
                 <img src="assets/img/works/wind.jpg" class="slideIn slideIn2" alt="">
                 <div class="underline-btn-container">
-                    <a href="payment.php?id=17" class="underline-btn slideIn slideIn2">buy art.</a>
-                    <a href="artwork_info.php?id=17" class="underline-btn slideIn pc">read more.</a>
+                    <a href="payment.php?id=17" target="_blank" class="underline-btn slideIn slideIn2">buy art.</a>
+                    <a href="artwork_info.php?id=17" target="_blank" class="underline-btn slideIn pc">read more.</a>
                 </div>
             </div>
             <p class="slideIn mobile"><span class="big">S</span>it amet, consectetur adipiscing elit. Praesent at cursus
                 magna, at dapibus eros. Aliquam tincidunt tortor eu placerat vehicula. Curabitur feugiat faucibus mauris
                 id ullamcorper.</p>
             <div class="underline-btn-container mobile">
-                <a href="artwork_info.php?id=17" class="underline-btn slideIn">read more.</a>
+                <a href="artwork_info.php?id=17" target="_blank" class="underline-btn slideIn">read more.</a>
             </div>
         </div>
     </div>
@@ -748,7 +748,7 @@ require './app/db.php';
         </div>
         <div class="underline-btn-container">
             <p class="slideIn slideIn2">WANT MORE<br>COLLECTIONS?</p>
-            <a href="#" class="underline-btn slideIn">watch more.</a>
+            <a href="#gallery" class="underline-btn slideIn link">watch more.</a>
         </div>
         <div class="dots" data-num="5"></div>
 
@@ -1113,14 +1113,14 @@ require './app/db.php';
 
 <footer>
     <nav>
-        <a href="#" class="link">collections.</a>
-        <a href="#" class="link">gallery.</a>
-        <a href="#" class="link">draw for me.</a>
-        <a href="#" class="link">contacts.</a>
+        <a href="#collections" class="link">collections.</a>
+        <a href="#gallery" class="link">gallery.</a>
+        <a href="#drawForMe" class="link">draw for me.</a>
+        <a href="#contacts" class="link">contacts.</a>
     </nav>
     <div class="footer_body">
         <div class="footer_texts">
-            <a href="privacy.html">Privacy</a>
+            <a href="privacy.html" target="_blank">Privacy</a>
             <span>All Rights Reserved</span>
             <span>2024</span>
         </div>
@@ -1172,10 +1172,10 @@ require './app/db.php';
         </button>
     </div>
     <nav>
-        <a href="#" class="link">collections.</a>
-        <a href="#" class="link">gallery.</a>
-        <a href="#" class="link">draw for me.</a>
-        <a href="#" class="link">contacts.</a>
+        <a href="#collections" class="link">collections.</a>
+        <a href="#gallery" class="link">gallery.</a>
+        <a href="#drawForMe" class="link">draw for me.</a>
+        <a href="#contacts" class="link">contacts.</a>
     </nav>
 </div>
 
