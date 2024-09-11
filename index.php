@@ -15,6 +15,8 @@ require './app/db.php';
     <link rel="stylesheet" href="./assets/css/mobile.css">
     <link rel="stylesheet" href="assets/css/swiper-bundle.min.css">
     <link rel="stylesheet" href="assets/css/jquery-ui.css">
+
+    <link rel="icon" href="/path/to/favicon.png" type="image/png">
 </head>
 <body class="fixed">
 <div id="preloader">
@@ -191,48 +193,34 @@ require './app/db.php';
                 <h2 class="heading_text">MUDRAS</h2>
                 <p>S E R I E</p>
             </div>
-            <p class="collection__under_text slideIn">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent
-                at
-                cursus
-                magna, at dapibus eros. Aliquam tincidunt tortor eu placerat vehicula. Curabitur feugiat faucibus mauris
-                id
-                ullamcorper. </p>
+            <p class="collection__under_text slideIn">The works from the Mudras collection depict elegant gestures of
+                golden hands against abstract contrasts, symbolizing inner strength, power, and the balance between the
+                physical and spiritual.</p>
         </div>
         <div class="collection-prev-text" id="collection2_text">
             <div class="collection_name collection_serie slideIn">
-                <h2 class="heading_text">DUDRAS</h2>
+                <h2 class="heading_text">WATER</h2>
                 <p>S E R I E</p>
             </div>
-            <p class="collection__under_text slideIn">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent
-                at
-                cursus
-                magna, at dapibus eros. Aliquam tincidunt tortor eu placerat vehicula. Curabitur feugiat faucibus mauris
-                id
-                ullamcorper. </p>
+            <p class="collection__under_text slideIn">The Edge Between Reality and Dream, where figures dissolve in the
+                play of light and water, creating the illusion of continuous movement and harmony</p>
         </div>
         <div class="collection-prev-text" id="collection3_text">
             <div class="collection_name collection_serie slideIn">
-                <h2 class="heading_text">GUDRAS</h2>
+                <h2 class="heading_text">CIRCLES</h2>
                 <p>S E R I E</p>
             </div>
-            <p class="collection__under_text slideIn">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent
-                at
-                cursus
-                magna, at dapibus eros. Aliquam tincidunt tortor eu placerat vehicula. Curabitur feugiat faucibus mauris
-                id
-                ullamcorper. </p>
+            <p class="collection__under_text slideIn">Nature and Man in Unity, where each work on a circular canvas
+                reflects the relationship between nature and human existence.</p>
         </div>
         <div class="collection-prev-text" id="collection4_text">
             <div class="collection_name collection_serie slideIn">
-                <h2 class="heading_text">COLLECTION</h2>
+                <h2 class="heading_text">DIMENSIONS</h2>
                 <p>S E R I E</p>
             </div>
-            <p class="collection__under_text slideIn">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent
-                at
-                cursus
-                magna, at dapibus eros. Aliquam tincidunt tortor eu placerat vehicula. Curabitur feugiat faucibus mauris
-                id
-                ullamcorper. </p>
+            <p class="collection__under_text slideIn">Infinite intersections of nature and man, where on each canvas
+                different worlds connect, revealing a multi-layered reality, where man and nature intertwine in a dance
+                of forms and energies.</p>
         </div>
     </div>
 
@@ -251,44 +239,43 @@ require './app/db.php';
                         <p><span>1’3’’</span> X<span>1’6’’</span></p>
                     </div>
                 </div>
-                <p class="slideIn pc"><span class="big">G</span>ipsum dolor sit amet, consectetur adipiscing elit.
-                    Praesent
-                    at cursus
-                    magna, at dap bus eros. Aliquam tincidunt tortor eu placerat vehicula. Curabitur feugiat faucibus
-                    mauris id ullamcorper. Praesent elit arcu, venenatis ac finibus sit amet, lacinia nec nulla.
-                    Pellentesque cursus nibh eu ante lacinia, nec fringilla magna varius. </p>
+                <p class="slideIn pc"><span class="big">T</span>his painting masterfully balances contrasts and
+                    symbolism. The artist draws attention to the golden hand, illuminated against a dark, abstract
+                    backdrop. The hand feels more than just a physical object — it suggests power, control, or inner
+                    strength. Its detailed, elegant lines, highlighted by light, sharply contrast with the blurred,
+                    abstract background, evoking tension and mystery.</p>
             </div>
             <div class="photo">
-                <img class="slideIn" src="assets/img/collections/cl1.jpg" alt="">
+                <img class="slideIn" src="assets/img/works/cl1.jpg" alt="">
                 <div class="underline-btn-container">
                     <span class="slideIn slideIn2">SOLD</span>
-                    <a href="#" class="underline-btn slideIn pc">read more.</a>
+                    <a href="artwork_info.php?id=31" class="underline-btn slideIn pc">read more.</a>
                 </div>
             </div>
-            <p class="slideIn mobile"><span class="big">G</span>ipsum dolor sit amet, consectetur adipiscing elit.
-                Praesent
-                at cursus
-                magna, at dap bus eros. Aliquam tincidunt tortor eu placerat vehicula. Curabitur feugiat faucibus
-                mauris id ullamcorper. Praesent elit arcu, venenatis ac finibus sit amet, lacinia nec nulla.
-                Pellentesque cursus nibh eu ante lacinia, nec fringilla magna varius. </p>
+            <p class="slideIn mobile"><span class="big">T</span>his painting masterfully balances contrasts and
+                symbolism. The artist draws attention to the golden hand, illuminated against a dark, abstract backdrop.
+                The hand feels more than just a physical object — it suggests power, control, or inner strength. Its
+                detailed, elegant lines, highlighted by light, sharply contrast with the blurred, abstract background,
+                evoking tension and mystery.</p>
             <div class="underline-btn-container mobile">
-                <a href="#" class="underline-btn slideIn">read more.</a>
+                <a href="artwork_info.php?id=31" class="underline-btn slideIn">read more.</a>
             </div>
 
         </div>
 
         <div class="collection_flex right">
             <div class="underline-btn-container mobile">
-                <a href="#" class="underline-btn slideIn">read more.</a>
+                <a href="artwork_info.php?id=32" class="underline-btn slideIn">read more.</a>
             </div>
-            <p class="slideIn mobile"><span class="big">V</span>ipsum dolor sit amet, consectetur adipiscing elit.
-                Praesent at cursus
-                magna, at dap bus eros. Aliquam tincidunt tortor eu placerat vehicula. Curabitur feugiat faucibus
-                mauris id ullamcorper. </p>
+            <p class="slideIn mobile"><span class="big">T</span>his painting is filled with subtle symbolism and a sense
+                of incompleteness. At the center of the composition is a golden hand, raised in a gesture that can be
+                interpreted as a sign of approval, control, or inner harmony. The metallic texture of the hand gives it
+                an artificial yet majestic quality, as if it were part of an ancient statue or artifact possessing
+                special power.</p>
             <div class="photo">
-                <img src="assets/img/collections/cl2.jpg" class="slideIn slideIn2" alt="">
+                <img src="assets/img/works/cl2.jpg" class="slideIn slideIn2" alt="">
                 <div class="underline-btn-container">
-                    <a href="#" class="underline-btn slideIn pc">read more.</a>
+                    <a href="artwork_info.php?id=32" class="underline-btn slideIn pc">read more.</a>
                     <span class="yellow slideIn slideIn2">IN PRIVATE<br>COLLECTION</span>
                 </div>
             </div>
@@ -302,10 +289,11 @@ require './app/db.php';
                         <p>1’3’’X1’6’’</p>
                     </div>
                 </div>
-                <p class="slideIn pc"><span class="big">V</span>ipsum dolor sit amet, consectetur adipiscing elit.
-                    Praesent at cursus
-                    magna, at dap bus eros. Aliquam tincidunt tortor eu placerat vehicula. Curabitur feugiat faucibus
-                    mauris id ullamcorper. </p>
+                <p class="slideIn pc"><span class="big">T</span>his painting is filled with subtle symbolism and a sense
+                    of incompleteness. At the center of the composition is a golden hand, raised in a gesture that can
+                    be interpreted as a sign of approval, control, or inner harmony. The metallic texture of the hand
+                    gives it an artificial yet majestic quality, as if it were part of an ancient statue or artifact
+                    possessing special power.</p>
             </div>
         </div>
 
@@ -319,26 +307,30 @@ require './app/db.php';
                         <p>1’3’’X1’6’’</p>
                     </div>
                 </div>
-                <p class="slideIn pc"><span class="big">Z</span>ipsum dolor sit amet, consectetur adipiscing elit.
-                    Praesent
-                    at cursus
-                    magna, at dap bus eros. Aliquam tincidunt tortor eu placerat vehicula. Curabitur feugiat faucibus
-                    mauris id ullamcorper. </p>
+                <p class="slideIn pc"><span class="big">T</span>his painting represents a combination of realism and
+                    abstraction. The central element of the composition is a hand extended forward, holding an unusual
+                    object that resembles a stylized pomegranate or flower. The hand is depicted in a highly realistic
+                    manner, with attention to light and shadow, emphasizing its three-dimensionality and texture.
+                    Surrounding the hand are abstract, broad brushstrokes in various shades of brown, beige, and black,
+                    creating a sense of movement and adding dynamism. These strokes give the painting a modern,
+                    expressive quality.</p>
             </div>
             <div class="photo">
-                <img src="assets/img/collections/cl3.jpg" class="slideIn slideIn2" alt="">
+                <img src="assets/img/works/cl3.jpg" class="slideIn slideIn2" alt="">
                 <div class="underline-btn-container">
-                    <a href="#" class="underline-btn slideIn slideIn2">buy art.</a>
-                    <a href="#" class="underline-btn slideIn pc">read more.</a>
+                    <a target="_blank" href="payment.php?id=33" class="underline-btn slideIn slideIn2">buy art.</a>
+                    <a target="_blank" href="artwork_info.php?id=33" class="underline-btn slideIn pc">read more.</a>
                 </div>
             </div>
-            <p class="slideIn mobile"><span class="big">Z</span>ipsum dolor sit amet, consectetur adipiscing elit.
-                Praesent
-                at cursus
-                magna, at dap bus eros. Aliquam tincidunt tortor eu placerat vehicula. Curabitur feugiat faucibus
-                mauris id ullamcorper.</p>
+            <p class="slideIn mobile"><span class="big">T</span>his painting represents a combination of realism and
+                abstraction. The central element of the composition is a hand extended forward, holding an unusual
+                object that resembles a stylized pomegranate or flower. The hand is depicted in a highly realistic
+                manner, with attention to light and shadow, emphasizing its three-dimensionality and texture.
+                Surrounding the hand are abstract, broad brushstrokes in various shades of brown, beige, and black,
+                creating a sense of movement and adding dynamism. These strokes give the painting a modern, expressive
+                quality.</p>
             <div class="underline-btn-container mobile">
-                <a href="#" class="underline-btn slideIn">read more.</a>
+                <a target="_blank" href="artwork_info.php?id=33" class="underline-btn slideIn">read more.</a>
             </div>
         </div>
     </div>
@@ -347,67 +339,70 @@ require './app/db.php';
             <div class="texts">
                 <div class="ball slideIn slideIn2">
                     <div class="collection_name">
-                        <h2>Open</h2>
+                        <h2>Swimmer</h2>
                         <h3>oil on canvas</h3>
-                        <p>40 X 5<span>0</span></p>
-                        <p><span>1’3’’</span> X<span>1’6’’</span></p>
+                        <p>155 X 10<span>0</span></p>
+                        <p><span>5’08’’</span> X<span>3’45’’</span></p>
                     </div>
                 </div>
-                <p class="slideIn pc"><span class="big">G</span>ipsum dolor sit amet, consectetur adipiscing elit.
-                    Praesent
-                    at cursus
-                    magna, at dap bus eros. Aliquam tincidunt tortor eu placerat vehicula. Curabitur feugiat faucibus
-                    mauris id ullamcorper. Praesent elit arcu, venenatis ac finibus sit amet, lacinia nec nulla.
-                    Pellentesque cursus nibh eu ante lacinia, nec fringilla magna varius. </p>
+                <p class="slideIn pc"><span class="big">I</span>n the silence of the evening twilight, as the last rays
+                    of the sun touch the surface of the water, a mysterious figure emerges, submerged in the watery
+                    depths. Only the upper part of the body and hands are visible above the surface, as if striving to
+                    break free from the embrace of the water. Light patterns playing on the water create a whimsical
+                    interplay of light and shadow, giving the painting a mystical depth and enigma.</p>
             </div>
             <div class="photo">
-                <img class="slideIn" src="assets/img/collections/cl1.jpg" alt="">
+                <img class="slideIn" src="assets/img/works/w4.jpg" alt="">
                 <div class="underline-btn-container">
                     <span class="slideIn slideIn2">SOLD</span>
-                    <a href="#" class="underline-btn slideIn pc">read more.</a>
+                    <a href="artwork_info.php?id=22" class="underline-btn slideIn pc">read more.</a>
                 </div>
             </div>
-            <p class="slideIn mobile"><span class="big">G</span>ipsum dolor sit amet, consectetur adipiscing elit.
-                Praesent
-                at cursus
-                magna, at dap bus eros. Aliquam tincidunt tortor eu placerat vehicula. Curabitur feugiat faucibus
-                mauris id ullamcorper. Praesent elit arcu, venenatis ac finibus sit amet, lacinia nec nulla.
-                Pellentesque cursus nibh eu ante lacinia, nec fringilla magna varius. </p>
+            <p class="slideIn mobile"><span class="big">I</span>n the silence of the evening twilight, as the last rays
+                of the sun touch the surface of the water, a mysterious figure emerges, submerged in the watery depths.
+                Only the upper part of the body and hands are visible above the surface, as if striving to break free
+                from the embrace of the water. Light patterns playing on the water create a whimsical interplay of light
+                and shadow, giving the painting a mystical depth and enigma.</p>
             <div class="underline-btn-container mobile">
-                <a href="#" class="underline-btn slideIn">read more.</a>
+                <a href="artwork_info.php?id=22" class="underline-btn slideIn">read more.</a>
             </div>
 
         </div>
 
         <div class="collection_flex right">
             <div class="underline-btn-container mobile">
-                <a href="#" class="underline-btn slideIn">read more.</a>
+                <a href="artwork_info.php?id=22" class="underline-btn slideIn">buy art.</a>
             </div>
-            <p class="slideIn mobile"><span class="big">V</span>ipsum dolor sit amet, consectetur adipiscing elit.
-                Praesent at cursus
-                magna, at dap bus eros. Aliquam tincidunt tortor eu placerat vehicula. Curabitur feugiat faucibus
-                mauris id ullamcorper. </p>
+            <p class="slideIn mobile"><span class="big">E</span>ach raindrop is a metaphor for a feeling that cannot be
+                expressed. She gazes into the distance, but her eyes do not penetrate through the window. Her gaze is
+                not directed outside, but inward—into the space of her own consciousness. The blue tones and soft light
+                create an atmosphere of melancholy and solitude. The car, perhaps, is not just a vehicle, but a symbol
+                of a journey through memories and reflections. Despite the glass separating her from the outside world,
+                her image remains clear and strong, highlighting the depth and complexity of her inner state.</p>
             <div class="photo">
-                <img src="assets/img/collections/cl2.jpg" class="slideIn slideIn2" alt="">
+                <img src="assets/img/works/w2.png" class="slideIn slideIn2" alt="">
                 <div class="underline-btn-container">
-                    <a href="#" class="underline-btn slideIn pc">read more.</a>
-                    <span class="yellow slideIn slideIn2">IN PRIVATE<br>COLLECTION</span>
+                    <a href="artwork_info.php?id=22" class="underline-btn slideIn pc">buy art.</a>
+                    <span class="yellow slideIn slideIn2">AVAILABLE</span>
                 </div>
             </div>
             <div class="dots" data-num="10"></div>
             <div class="texts">
                 <div class="ball slideIn slideIn2">
                     <div class="collection_name">
-                        <h2 class="heading_text">Hope</h2>
+                        <h2 class="heading_text">Moment</h2>
                         <h3 class="heading_text">oil on canvas</h3>
-                        <p>40 X 50</p>
-                        <p>1’3’’X1’6’’</p>
+                        <p>120 x 80</p>
+                        <p>3’9’’X2’6’’</p>
                     </div>
                 </div>
-                <p class="slideIn pc"><span class="big">V</span>ipsum dolor sit amet, consectetur adipiscing elit.
-                    Praesent at cursus
-                    magna, at dap bus eros. Aliquam tincidunt tortor eu placerat vehicula. Curabitur feugiat faucibus
-                    mauris id ullamcorper. </p>
+                <p class="slideIn pc"><span class="big">E</span>ach raindrop is a metaphor for a feeling that cannot be
+                    expressed. She gazes into the distance, but her eyes do not penetrate through the window. Her gaze
+                    is not directed outside, but inward—into the space of her own consciousness. The blue tones and soft
+                    light create an atmosphere of melancholy and solitude. The car, perhaps, is not just a vehicle, but
+                    a symbol of a journey through memories and reflections. Despite the glass separating her from the
+                    outside world, her image remains clear and strong, highlighting the depth and complexity of her
+                    inner state.</p>
             </div>
         </div>
 
@@ -415,32 +410,34 @@ require './app/db.php';
             <div class="texts">
                 <div class="ball slideIn slideIn2">
                     <div class="collection_name">
-                        <h2 class="heading_text">Gate</h2>
+                        <h2 class="heading_text">Alice</h2>
                         <h3 class="heading_text">oil on canvas</h3>
-                        <p>40 X 50</p>
-                        <p>1’3’’X1’6’’</p>
+                        <p>160 X 60</p>
+                        <p>5’2’’X3’2’’</p>
                     </div>
                 </div>
-                <p class="slideIn pc"><span class="big">Z</span>ipsum dolor sit amet, consectetur adipiscing elit.
-                    Praesent
-                    at cursus
-                    magna, at dap bus eros. Aliquam tincidunt tortor eu placerat vehicula. Curabitur feugiat faucibus
-                    mauris id ullamcorper. </p>
+                <p class="slideIn pc"><span class="big">T</span>he woman gazes through a window covered in raindrops, as
+                    if her thoughts and emotions are also drops—sliding down the glass, unable to escape.The raindrops
+                    seem to divide her from the outside world. They create a barrier that distorts and blurs her
+                    features, reminding us of how often our own feelings, fears, and dreams become hazy and impenetrable
+                    to others. Her gaze is not directed at us, but inward, beyond reflections and memories. It is filled
+                    with an indescribable calm, yet it carries the depth of untold stories.</p>
             </div>
             <div class="photo">
-                <img src="assets/img/collections/cl3.jpg" class="slideIn slideIn2" alt="">
+                <img src="assets/img/works/w1.png" class="slideIn slideIn2" alt="">
                 <div class="underline-btn-container">
-                    <a href="#" class="underline-btn slideIn slideIn2">buy art.</a>
-                    <a href="#" class="underline-btn slideIn pc">read more.</a>
+                    <a href="payment.php?id=23" class="underline-btn slideIn slideIn2">buy art.</a>
+                    <a href="artwork_info.php?id=23" class="underline-btn slideIn pc">read more.</a>
                 </div>
             </div>
-            <p class="slideIn mobile"><span class="big">Z</span>ipsum dolor sit amet, consectetur adipiscing elit.
-                Praesent
-                at cursus
-                magna, at dap bus eros. Aliquam tincidunt tortor eu placerat vehicula. Curabitur feugiat faucibus
-                mauris id ullamcorper.</p>
+            <p class="slideIn mobile"><span class="big">T</span>he woman gazes through a window covered in raindrops, as
+                if her thoughts and emotions are also drops—sliding down the glass, unable to escape.The raindrops seem
+                to divide her from the outside world. They create a barrier that distorts and blurs her features,
+                reminding us of how often our own feelings, fears, and dreams become hazy and impenetrable to others.
+                Her gaze is not directed at us, but inward, beyond reflections and memories. It is filled with an
+                indescribable calm, yet it carries the depth of untold stories.</p>
             <div class="underline-btn-container mobile">
-                <a href="#" class="underline-btn slideIn">read more.</a>
+                <a href="artwork_info.php?id=23" class="underline-btn slideIn">read more.</a>
             </div>
         </div>
     </div>
@@ -449,67 +446,71 @@ require './app/db.php';
             <div class="texts">
                 <div class="ball slideIn slideIn2">
                     <div class="collection_name">
-                        <h2>Open</h2>
+                        <h2>Wild</h2>
                         <h3>oil on canvas</h3>
-                        <p>40 X 5<span>0</span></p>
-                        <p><span>1’3’’</span> X<span>1’6’’</span></p>
+                        <p>60 cm</p>
+                        <p>2’6’’</p>
                     </div>
                 </div>
-                <p class="slideIn pc"><span class="big">G</span>ipsum dolor sit amet, consectetur adipiscing elit.
-                    Praesent
-                    at cursus
-                    magna, at dap bus eros. Aliquam tincidunt tortor eu placerat vehicula. Curabitur feugiat faucibus
-                    mauris id ullamcorper. Praesent elit arcu, venenatis ac finibus sit amet, lacinia nec nulla.
-                    Pellentesque cursus nibh eu ante lacinia, nec fringilla magna varius. </p>
+                <p class="slideIn pc"><span class="big">T</span>he central figure is the head of a leopard, symbolizing
+                    the primal power hidden within every living being. Its eyes are full of wisdom and instinct,
+                    piercing through space as if opening a doorway to the natural world. Around it unfolds a whirlwind
+                    of fantasies: images of horses, snakes, and human faces intertwine into a harmonious whole,
+                    symbolizing the interconnectedness of all forms of life. Every detail here is not just part of the
+                    background, but something alive, significant, as if everything is coming to life in a unified flow
+                    of existence. The snakes and their patterns point to wisdom and hidden danger, while the human
+                    figures perhaps reflect the spiritual essence within the context of nature.</p>
             </div>
             <div class="photo">
-                <img class="slideIn" src="assets/img/collections/cl1.jpg" alt="">
+                <img class="slideIn" src="assets/img/works/c1.png" alt="">
                 <div class="underline-btn-container">
-                    <span class="slideIn slideIn2">SOLD</span>
-                    <a href="#" class="underline-btn slideIn pc">read more.</a>
+                    <span class="slideIn slideIn2">AVAILABLE</span>
+                    <a href="artwork_info.php?id=25" class="underline-btn slideIn pc">buy.</a>
                 </div>
             </div>
-            <p class="slideIn mobile"><span class="big">G</span>ipsum dolor sit amet, consectetur adipiscing elit.
-                Praesent
-                at cursus
-                magna, at dap bus eros. Aliquam tincidunt tortor eu placerat vehicula. Curabitur feugiat faucibus
-                mauris id ullamcorper. Praesent elit arcu, venenatis ac finibus sit amet, lacinia nec nulla.
-                Pellentesque cursus nibh eu ante lacinia, nec fringilla magna varius. </p>
+            <p class="slideIn mobile"><span class="big">T</span>he central figure is the head of a leopard, symbolizing
+                the primal power hidden within every living being. Its eyes are full of wisdom and instinct, piercing
+                through space as if opening a doorway to the natural world. Around it unfolds a whirlwind of fantasies:
+                images of horses, snakes, and human faces intertwine into a harmonious whole, symbolizing the
+                interconnectedness of all forms of life. Every detail here is not just part of the background, but
+                something alive, significant, as if everything is coming to life in a unified flow of existence. The
+                snakes and their patterns point to wisdom and hidden danger, while the human figures perhaps reflect the
+                spiritual essence within the context of nature.</p>
             <div class="underline-btn-container mobile">
-                <a href="#" class="underline-btn slideIn">read more.</a>
+                <a href="artwork_info.php?id=25" class="underline-btn slideIn">buy.</a>
             </div>
 
         </div>
 
         <div class="collection_flex right">
             <div class="underline-btn-container mobile">
-                <a href="#" class="underline-btn slideIn">read more.</a>
+                <a href="artwork_info.php?id=28" class="underline-btn slideIn">buy.</a>
             </div>
-            <p class="slideIn mobile"><span class="big">V</span>ipsum dolor sit amet, consectetur adipiscing elit.
-                Praesent at cursus
-                magna, at dap bus eros. Aliquam tincidunt tortor eu placerat vehicula. Curabitur feugiat faucibus
-                mauris id ullamcorper. </p>
+            <p class="slideIn mobile"><span class="big">T</span>he painting conveys a sense of movement and energy, with
+                elements seemingly merging into one another, creating a harmonious and vibrant canvas. This artwork
+                invites the viewer to immerse themselves in a world of fantasies and interpretations, where each person
+                can see something unique and feel a connection to nature and its endless motion.</p>
             <div class="photo">
-                <img src="assets/img/collections/cl2.jpg" class="slideIn slideIn2" alt="">
+                <img src="assets/img/works/c7.png" class="slideIn slideIn2" alt="">
                 <div class="underline-btn-container">
-                    <a href="#" class="underline-btn slideIn pc">read more.</a>
-                    <span class="yellow slideIn slideIn2">IN PRIVATE<br>COLLECTION</span>
+                    <a href="artwork_info.php?id=28" class="underline-btn slideIn pc">buy.</a>
+                    <span class="yellow slideIn slideIn2">AVAILABLE</span>
                 </div>
             </div>
             <div class="dots" data-num="10"></div>
             <div class="texts">
                 <div class="ball slideIn slideIn2">
                     <div class="collection_name">
-                        <h2 class="heading_text">Hope</h2>
+                        <h2 class="heading_text">Creation</h2>
                         <h3 class="heading_text">oil on canvas</h3>
-                        <p>40 X 50</p>
-                        <p>1’3’’X1’6’’</p>
+                        <p>50 cm</p>
+                        <p>1’6’’</p>
                     </div>
                 </div>
-                <p class="slideIn pc"><span class="big">V</span>ipsum dolor sit amet, consectetur adipiscing elit.
-                    Praesent at cursus
-                    magna, at dap bus eros. Aliquam tincidunt tortor eu placerat vehicula. Curabitur feugiat faucibus
-                    mauris id ullamcorper. </p>
+                <p class="slideIn pc"><span class="big">T</span>he painting conveys a sense of movement and energy, with
+                    elements seemingly merging into one another, creating a harmonious and vibrant canvas. This artwork
+                    invites the viewer to immerse themselves in a world of fantasies and interpretations, where each
+                    person can see something unique and feel a connection to nature and its endless motion.</p>
             </div>
         </div>
 
@@ -517,32 +518,31 @@ require './app/db.php';
             <div class="texts">
                 <div class="ball slideIn slideIn2">
                     <div class="collection_name">
-                        <h2 class="heading_text">Gate</h2>
+                        <h2 class="heading_text">Enigma</h2>
                         <h3 class="heading_text">oil on canvas</h3>
-                        <p>40 X 50</p>
-                        <p>1’3’’X1’6’’</p>
+                        <p>60 cm</p>
+                        <p>2’6’’</p>
                     </div>
                 </div>
-                <p class="slideIn pc"><span class="big">Z</span>ipsum dolor sit amet, consectetur adipiscing elit.
-                    Praesent
-                    at cursus
-                    magna, at dap bus eros. Aliquam tincidunt tortor eu placerat vehicula. Curabitur feugiat faucibus
-                    mauris id ullamcorper. </p>
+                <p class="slideIn pc"><span class="big">A</span>t the center of the composition stands a mysterious
+                    figure, partially obscured by a beige rectangle, possibly added to preserve secrecy or privacy.
+                    Surrounding this central figure is a whole world of mythological and classical characters. Muscular
+                    human forms and possibly deities, immersed in dynamic poses, create a sense of movement and energy.
+                </p>
             </div>
             <div class="photo">
-                <img src="assets/img/collections/cl3.jpg" class="slideIn slideIn2" alt="">
+                <img src="assets/img/works/c3.png" class="slideIn slideIn2" alt="">
                 <div class="underline-btn-container">
-                    <a href="#" class="underline-btn slideIn slideIn2">buy art.</a>
-                    <a href="#" class="underline-btn slideIn pc">read more.</a>
+                    <a href="payment.php?id=27" class="underline-btn slideIn slideIn2">buy art.</a>
+                    <a href="artwork_info.php?id=27" class="underline-btn slideIn pc">read more.</a>
                 </div>
             </div>
-            <p class="slideIn mobile"><span class="big">Z</span>ipsum dolor sit amet, consectetur adipiscing elit.
-                Praesent
-                at cursus
-                magna, at dap bus eros. Aliquam tincidunt tortor eu placerat vehicula. Curabitur feugiat faucibus
-                mauris id ullamcorper.</p>
+            <p class="slideIn mobile"><span class="big">A</span>t the center of the composition stands a mysterious
+                figure, partially obscured by a beige rectangle, possibly added to preserve secrecy or privacy.
+                Surrounding this central figure is a whole world of mythological and classical characters. Muscular
+                human forms and possibly deities, immersed in dynamic poses, create a sense of movement and energy.</p>
             <div class="underline-btn-container mobile">
-                <a href="#" class="underline-btn slideIn">read more.</a>
+                <a href="artwork_info.php?id=27" class="underline-btn slideIn">read more.</a>
             </div>
         </div>
     </div>
@@ -551,67 +551,83 @@ require './app/db.php';
             <div class="texts">
                 <div class="ball slideIn slideIn2">
                     <div class="collection_name">
-                        <h2>Open</h2>
-                        <h3>oil on canvas</h3>
-                        <p>40 X 5<span>0</span></p>
-                        <p><span>1’3’’</span> X<span>1’6’’</span></p>
+                        <h2>Andalusian Dream</h2>
+                        <h3>OIL and SPRAY ON CANVAS</h3>
+                        <p>100 x 8<span>0</span></p>
+                        <p><span>4’</span> X<span>2.7’’</span></p>
                     </div>
                 </div>
-                <p class="slideIn pc"><span class="big">G</span>ipsum dolor sit amet, consectetur adipiscing elit.
-                    Praesent
-                    at cursus
-                    magna, at dap bus eros. Aliquam tincidunt tortor eu placerat vehicula. Curabitur feugiat faucibus
-                    mauris id ullamcorper. Praesent elit arcu, venenatis ac finibus sit amet, lacinia nec nulla.
-                    Pellentesque cursus nibh eu ante lacinia, nec fringilla magna varius. </p>
+                <p class="slideIn pc"><span class="big">T</span>his painting exudes a dreamlike quality, blending
+                    religious and cultural symbolism. The central figure appears to be a serene Madonna holding a child,
+                    reminiscent of classical Christian iconography. Around her, other figures and symbols emerge softly,
+                    as if from a hazy memory. The prominent white flowers, possibly magnolias, add a sense of purity and
+                    grace, contrasting with the earth-toned palette. A man in the lower left corner smokes a cigar,
+                    dressed in what looks like traditional attire, bringing an element of modernity and cultural
+                    identity to the composition. A heart held by one of the figures on the right could symbolize deep
+                    emotional or spiritual significance. The painting mixes fluid brushstrokes with more defined forms,
+                    creating a layered, atmospheric effect, invoking themes of faith, memory, and identity.</p>
             </div>
             <div class="photo">
-                <img class="slideIn" src="assets/img/collections/cl1.jpg" alt="">
+                <img class="slideIn" src="assets/img/works/adream.jpg" alt="">
                 <div class="underline-btn-container">
-                    <span class="slideIn slideIn2">SOLD</span>
-                    <a href="#" class="underline-btn slideIn pc">read more.</a>
+                    <span class="slideIn slideIn2">AVAILABLE</span>
+                    <a href="artwork_info.php?id=13" class="underline-btn slideIn pc">read more.</a>
                 </div>
             </div>
-            <p class="slideIn mobile"><span class="big">G</span>ipsum dolor sit amet, consectetur adipiscing elit.
-                Praesent
-                at cursus
-                magna, at dap bus eros. Aliquam tincidunt tortor eu placerat vehicula. Curabitur feugiat faucibus
-                mauris id ullamcorper. Praesent elit arcu, venenatis ac finibus sit amet, lacinia nec nulla.
-                Pellentesque cursus nibh eu ante lacinia, nec fringilla magna varius. </p>
+            <p class="slideIn mobile"><span class="big">T</span>his painting exudes a dreamlike quality, blending
+                religious and cultural symbolism. The central figure appears to be a serene Madonna holding a child,
+                reminiscent of classical Christian iconography. Around her, other figures and symbols emerge softly, as
+                if from a hazy memory. The prominent white flowers, possibly magnolias, add a sense of purity and grace,
+                contrasting with the earth-toned palette. A man in the lower left corner smokes a cigar, dressed in what
+                looks like traditional attire, bringing an element of modernity and cultural identity to the
+                composition. A heart held by one of the figures on the right could symbolize deep emotional or spiritual
+                significance. The painting mixes fluid brushstrokes with more defined forms, creating a layered,
+                atmospheric effect, invoking themes of faith, memory, and identity.</p>
             <div class="underline-btn-container mobile">
-                <a href="#" class="underline-btn slideIn">read more.</a>
+                <a href="artwork_info.php?id=13" class="underline-btn slideIn">read more.</a>
             </div>
 
         </div>
 
         <div class="collection_flex right">
             <div class="underline-btn-container mobile">
-                <a href="#" class="underline-btn slideIn">read more.</a>
+                <a href="artwork_info.php?id=11" class="underline-btn slideIn">read more.</a>
             </div>
-            <p class="slideIn mobile"><span class="big">V</span>ipsum dolor sit amet, consectetur adipiscing elit.
-                Praesent at cursus
-                magna, at dap bus eros. Aliquam tincidunt tortor eu placerat vehicula. Curabitur feugiat faucibus
-                mauris id ullamcorper. </p>
+            <p class="slideIn mobile"><span class="big">T</span>his painting blends classical biblical themes with
+                modern artistic techniques. At the center, Adam and Eve stand nude, holding the apple—a symbol of
+                temptation and original sin. Their figures are depicted in a realistic, Renaissance-like style,
+                contrasting with the vibrant, abstract background of bold brushstrokes. Surrounding them are various
+                faces and creatures, including a Christ-like figure in the upper left, an owl, and other mystical
+                beings. These elements deepen the metaphorical narrative of temptation and consequence. Unexpectedly, a
+                French bulldog sits in the bottom right, adding a surreal and contemporary touch. The piece feels like a
+                fusion of time periods, exploring timeless themes through a multi-layered, visually complex composition.
+            </p>
             <div class="photo">
-                <img src="assets/img/collections/cl2.jpg" class="slideIn slideIn2" alt="">
+                <img src="assets/img/works/adamandeva.jpg" class="slideIn slideIn2" alt="">
                 <div class="underline-btn-container">
-                    <a href="#" class="underline-btn slideIn pc">read more.</a>
-                    <span class="yellow slideIn slideIn2">IN PRIVATE<br>COLLECTION</span>
+                    <a href="artwork_info.php?id=11" class="underline-btn slideIn pc">read more.</a>
+                    <span class="yellow slideIn slideIn2">AVAILABLE</span>
                 </div>
             </div>
             <div class="dots" data-num="10"></div>
             <div class="texts">
                 <div class="ball slideIn slideIn2">
                     <div class="collection_name">
-                        <h2 class="heading_text">Hope</h2>
-                        <h3 class="heading_text">oil on canvas</h3>
-                        <p>40 X 50</p>
-                        <p>1’3’’X1’6’’</p>
+                        <h2 class="heading_text">Adam Eva</h2>
+                        <h3 class="heading_text">OIL and ACRYLIC ON CANVAS</h3>
+                        <p>100 х 72</p>
+                        <p>3’2’’X2’4’’</p>
                     </div>
                 </div>
-                <p class="slideIn pc"><span class="big">V</span>ipsum dolor sit amet, consectetur adipiscing elit.
-                    Praesent at cursus
-                    magna, at dap bus eros. Aliquam tincidunt tortor eu placerat vehicula. Curabitur feugiat faucibus
-                    mauris id ullamcorper. </p>
+                <p class="slideIn pc"><span class="big">T</span>his painting blends classical biblical themes with
+                    modern artistic techniques. At the center, Adam and Eve stand nude, holding the apple—a symbol of
+                    temptation and original sin. Their figures are depicted in a realistic, Renaissance-like style,
+                    contrasting with the vibrant, abstract background of bold brushstrokes. Surrounding them are various
+                    faces and creatures, including a Christ-like figure in the upper left, an owl, and other mystical
+                    beings. These elements deepen the metaphorical narrative of temptation and consequence.
+                    Unexpectedly, a French bulldog sits in the bottom right, adding a surreal and contemporary touch.
+                    The piece feels like a fusion of time periods, exploring timeless themes through a multi-layered,
+                    visually complex composition.</p>
             </div>
         </div>
 
@@ -619,32 +635,28 @@ require './app/db.php';
             <div class="texts">
                 <div class="ball slideIn slideIn2">
                     <div class="collection_name">
-                        <h2 class="heading_text">Gate</h2>
+                        <h2 class="heading_text">The Wind</h2>
                         <h3 class="heading_text">oil on canvas</h3>
-                        <p>40 X 50</p>
-                        <p>1’3’’X1’6’’</p>
+                        <p>100 X 73</p>
+                        <p>3’3’’X2’4’’</p>
                     </div>
                 </div>
-                <p class="slideIn pc"><span class="big">Z</span>ipsum dolor sit amet, consectetur adipiscing elit.
-                    Praesent
-                    at cursus
-                    magna, at dap bus eros. Aliquam tincidunt tortor eu placerat vehicula. Curabitur feugiat faucibus
-                    mauris id ullamcorper. </p>
+                <p class="slideIn pc"><span class="big">S</span>it amet, consectetur adipiscing elit. Praesent at cursus
+                    magna, at dapibus eros. Aliquam tincidunt tortor eu placerat vehicula. Curabitur feugiat faucibus
+                    mauris id ullamcorper.</p>
             </div>
             <div class="photo">
-                <img src="assets/img/collections/cl3.jpg" class="slideIn slideIn2" alt="">
+                <img src="assets/img/works/wind.jpg" class="slideIn slideIn2" alt="">
                 <div class="underline-btn-container">
-                    <a href="#" class="underline-btn slideIn slideIn2">buy art.</a>
-                    <a href="#" class="underline-btn slideIn pc">read more.</a>
+                    <a href="payment.php?id=17" class="underline-btn slideIn slideIn2">buy art.</a>
+                    <a href="artwork_info.php?id=17" class="underline-btn slideIn pc">read more.</a>
                 </div>
             </div>
-            <p class="slideIn mobile"><span class="big">Z</span>ipsum dolor sit amet, consectetur adipiscing elit.
-                Praesent
-                at cursus
-                magna, at dap bus eros. Aliquam tincidunt tortor eu placerat vehicula. Curabitur feugiat faucibus
-                mauris id ullamcorper.</p>
+            <p class="slideIn mobile"><span class="big">S</span>it amet, consectetur adipiscing elit. Praesent at cursus
+                magna, at dapibus eros. Aliquam tincidunt tortor eu placerat vehicula. Curabitur feugiat faucibus mauris
+                id ullamcorper.</p>
             <div class="underline-btn-container mobile">
-                <a href="#" class="underline-btn slideIn">read more.</a>
+                <a href="artwork_info.php?id=17" class="underline-btn slideIn">read more.</a>
             </div>
         </div>
     </div>
@@ -940,28 +952,38 @@ require './app/db.php';
     <div class="dots" data-num="15"></div>
     <div class="container">
         <h1>Draw<br>for me</h1>
-        <p><span class="big">V</span>ipsum dolor sit amet, consectetur adipiscing elit. Praesent at cursus magna, at dap
-            bus
-            eros. Aliquam tincidunt tortor eu placerat vehicula. Curabitur feugiat faucibus mauris id ullamcorper. </p>
-        <p><span class="big">Z</span>ipsum dolor sit amet, consectetur adipiscing elit. Praesent at cursus magna, at dap
-            bus
-            eros. Aliquam tincidunt tortor eu placerat vehicula. Curabitur feugiat faucibus mauris id unt tortor eu
-            placerat
-            vehicula. Curabitur feugiat faucibus mauris id ullamcorper. </p>
+        <p><span class="big">T</span>he "Multilayered Veil" technique, created by Elena Salova, is a unique painting
+            process where the image gradually emerges through multiple layers of paint. The artist applies translucent
+            layers of oil or watercolor, creating a soft, misty effect. With each new layer, parts of the painting seem
+            to appear as if they were hidden beneath the surface, much like a photograph developing in a darkroom. Elena
+            uses fine brushes to "reveal" hidden shapes, figures, and stories, as though they already exist on the
+            canvas, waiting to be discovered.</p>
+        <p><span class="big">A</span> painting in this technique consists of various interconnected parts, each adding
+            depth and new elements to the overall composition. Each work is one-of-a-kind, as it is created intuitively
+            without a predetermined plan. If you are interested in commissioning a work in the "Multilayered Veil"
+            technique, please leave your email and a message below. You will be contacted via email.</p>
 
 
         <div class="slider-wrapper">
             <div class="white-block"></div>
             <div class="text-container">
-                <div class="text-slide active"><span class="big">Т</span>екст для первого слайда. Lorem ipsum dolor sit
-                    amet, consectetur
-                    adipiscing
-                    elit. Praesent at cursus magna, at dapibus eros.
+                <div class="text-slide active"><span class="big">T</span>he first part depicts a bull adorned with an
+                    intricate decorative mask, with a striking red accent that emphasizes its power and enigma. The
+                    surrounding figures are ghostly, as if hovering on the edge of dream and reality. Doves fly above
+                    the bull, symbolizing peace and spiritual ascension.
                 </div>
-                <div class="text-slide"><span class="big">Т</span>екст для второго слайда. Aliquam tincidunt tortor eu
-                    placerat vehicula.
-                    Curabitur
-                    feugiat faucibus mauris id ullamcorper.
+                <div class="text-slide"><span class="big">T</span>he second part focuses on Cupid, a small boy with a
+                    bow, poised to release an arrow. His figure expresses both concentration and tenderness. Behind him
+                    unfolds an ethereal landscape, where shapes seem to dissolve into space.
+                </div>
+                <div class="text-slide"><span class="big">T</span>he third part complements the previous elements with
+                    dragons and fantastical creatures, writhing among soft strokes of paint. A rainbow cuts through the
+                    mist, symbolizing hope and the promise of harmony after struggle.
+                </div>
+                <div class="text-slide"><span class="big">T</span>hese three sections, representing parts of a larger
+                    painting, intertwine elements of reality and mythology, blending them into a mystical harmony. All
+                    three fragments are united by a sense of flowing energy: the bull represents strength, Cupid
+                    symbolizes passion.
                 </div>
             </div>
 
@@ -969,10 +991,16 @@ require './app/db.php';
                 <div class="swiper-container">
                     <div class="swiper-wrapper">
                         <div class="swiper-slide">
-                            <img src="/assets/img/slide.jpg" alt="Image 1">
+                            <img src="/assets/img/slide1.jpg" alt="Image 1">
                         </div>
                         <div class="swiper-slide">
-                            <img src="/assets/img/slide.jpg" alt="Image 2">
+                            <img src="/assets/img/slide2.jpg" alt="Image 2">
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="/assets/img/slide4.jpg" alt="Image 2">
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="/assets/img/slide3.jpg" alt="Image 2">
                         </div>
                     </div>
                     <div class="swiper-button-next"></div>
