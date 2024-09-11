@@ -16,7 +16,7 @@ require './app/db.php';
     <link rel="stylesheet" href="assets/css/swiper-bundle.min.css">
     <link rel="stylesheet" href="assets/css/jquery-ui.css">
 
-    <link rel="icon" href="/path/to/favicon.png" type="image/png">
+    <link rel="icon" href="favicon.png" type="image/png">
 </head>
 <body class="fixed">
 <div id="preloader">
