@@ -872,6 +872,10 @@ header nav a:hover {
     display: block;
 }
 
+.collection_flex .photo img {
+    max-width: 685px;
+}
+
 .pattern_line {
     position: relative;
     width: 100%;
