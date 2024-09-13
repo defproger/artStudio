@@ -106,7 +106,7 @@ document.addEventListener('DOMContentLoaded', function () {
     galleryBlocks.forEach(function (block) {
         block.querySelector('button').addEventListener('click', function () {
             const artId = block.getAttribute('data-id');
-            window.location.href = `artwork_info.php?id=${artId}`;
+            window.open(`artwork_info.php?id=${artId}`, '_blank');
         });
     });
 
