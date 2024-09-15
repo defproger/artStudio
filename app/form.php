@@ -1,5 +1,5 @@
 <?php
-$botToken = 'your_bot_token';
+require_once 'init.php';
 if (isset($_POST['email']) && isset($_POST['name'])) {
     $data = [
         'email' => $_POST['email'],
@@ -10,6 +10,5 @@ if (isset($_POST['email']) && isset($_POST['name'])) {
     file_get_contents("https://api.telegram.org/bot{$botToken}/sendMessage?chat_id=1&text={$text}");
     echo 'Data sent';
 } else {
-    //выводим сообщение об ошибке
     echo 'Data not sent';
 }

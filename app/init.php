@@ -15,3 +15,5 @@ const SETTINGS = [
 
     'domain' => 'localhost:8080',
 ];
+
+$botToken = '123';

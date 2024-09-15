@@ -1,56 +1,63 @@
-const form = document.getElementById('payment-form');
-const methodButtons = document.querySelectorAll('.method-btn');
-const confirmBtn = document.getElementById('paybtn');
-let paymentUrl = '';
+document.addEventListener('DOMContentLoaded', function () {
+    const form = document.getElementById('payment-form');
+    const payBtn = document.getElementById('paybtn');
+    const emailInput = document.getElementById('email');
+    const nameInput = document.getElementById('name');
+    const phoneInput = document.getElementById('phone');
+    const addressInput = document.getElementById('address');
 
-function checkFormCompletion() {
-    const allFieldsFilled = Array.from(form.elements).every((input) => {
-        return input.required ? input.value.trim() !== '' : true;
-    });
+    function checkFormValidity() {
+        if (emailInput.value.trim() !== '' &&
+            nameInput.value.trim() !== '' &&
+            phoneInput.value.trim() !== '' &&
+            addressInput.value.trim() !== '' &&
+            validateEmail(emailInput.value) &&
+            validatePhone(phoneInput.value)) {
+            payBtn.style.pointerEvents = 'auto';
+            payBtn.classList.add('active');
+        } else {
+            payBtn.style.pointerEvents = 'none';
+            payBtn.classList.remove('active');
+        }
+    }
 
-    methodButtons.forEach(btn => {
-        btn.disabled = !allFieldsFilled;
-        btn.style.pointerEvents = allFieldsFilled ? 'auto' : 'none';
-    });
-}
+    function validateEmail(email) {
+        const re = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+        return re.test(String(email).toLowerCase());
+    }
 
-form.addEventListener('input', checkFormCompletion);
+    function validatePhone(phone) {
+        const re = /^\+?\d{10,15}$/;
+        return re.test(String(phone));
+    }
 
-methodButtons.forEach(btn => {
-    btn.addEventListener('click', async function (event) {
+    payBtn.addEventListener('click', function (event) {
         event.preventDefault();
-        methodButtons.forEach(button => button.style.backgroundColor = '');
-        this.style.backgroundColor = 'black';
+        if (payBtn.style.pointerEvents === 'auto') {
+            const formData = new FormData(form);
 
-        const formData = new FormData(form);
-        formData.append('method', this.dataset.method);
-
-        const urlParams = new URLSearchParams(window.location.search);
-        formData.append('art_id', urlParams.get('id'));
-
-        const response = await fetch('app/payment.php', {
-            method: 'POST',
-            body: formData
-        });
-
-        const result = await response.json();
-        paymentUrl = result.payment_url;
-
-        if (paymentUrl) {
-            confirmBtn.style.pointerEvents = 'auto';
+            fetch('app/createPayment.php', {
+                method: 'POST',
+                body: formData
+            })
+                .then(response => response.json())
+                .then(data => {
+                    if (data.payment_url) {
+                        window.location.href = data.payment_url;
+                    } else {
+                        alert('Payment failed. Please try again.');
+                    }
+                })
+                .catch(error => {
+                    console.error('Error:', error);
+                });
         }
     });
-});
 
-confirmBtn.addEventListener('click', (event) => {
-    if (paymentUrl) {
-        window.location.href = paymentUrl;
-    } else {
-        event.preventDefault();
-    }
-});
+    emailInput.addEventListener('input', checkFormValidity);
+    nameInput.addEventListener('input', checkFormValidity);
+    phoneInput.addEventListener('input', checkFormValidity);
+    addressInput.addEventListener('input', checkFormValidity);
 
-methodButtons.forEach(btn => {
-    btn.disabled = true;
-    btn.style.pointerEvents = 'none';
+    checkFormValidity();
 });

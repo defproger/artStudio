@@ -40,7 +40,7 @@ if (!$art) {
             <p class="sizes-payment"><?= $art['size'] ?></p>
             <p class="text-payment"><?= $art['description'] ?></p>
             <div class="price-group-head">
-                <p class="price"><?= $art['price'] ?> </p>
+                <p class="price"><?= $art['price'] ?></p>
                 <p class="euro">EURO</p>
             </div>
 
@@ -49,6 +49,7 @@ if (!$art) {
         <div class="payment-form">
 
             <form id="payment-form">
+                <input type="hidden" name="art_id" value="<?= $art['id'] ?>">
                 <div class="input-group">
                     <label for="email"><span class="red-xmast">*</span>YOUR EMAIL</label>
                     <input type="email" id="email" name="email" required>
@@ -74,14 +75,6 @@ if (!$art) {
                 <div class="input-group">
                     <label for="message">MESSAGE</label>
                     <textarea id="message" maxlength="110" cols="10" name="message"></textarea>
-                </div>
-
-                <div class="payment-method">
-                    <p class="button-text"><span class="red-xmast">*</span>METHOD</p>
-                    <div class="methods">
-                        <a href="#" id="paypal_pay" type="button" class="method-btn" data-method="paypal" disabled>PayPal</a>
-                        <a href="#" id="card_pay" type="button" class="method-btn" data-method="card" disabled>Card</a>
-                    </div>
                 </div>
             </form>
         </div>
