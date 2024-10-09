@@ -22,6 +22,8 @@ if (!$art) {
     <title>Painting Payment Page</title>
     <link rel="stylesheet" href="assets/css/main_payment.css">
     <link rel="stylesheet" href="assets/css/mobile_payment.css">
+
+    <link rel="icon" href="favicon.png" type="image/png">
 </head>
 <body>
 <div class="container">
