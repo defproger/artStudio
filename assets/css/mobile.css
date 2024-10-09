@@ -197,7 +197,7 @@
     }
 
     .collection_flex:nth-child(1) {
-        margin-top: -2600px;
+        margin-top: -2750px;
     }
 
     .collection_flex .collection_name h2 {
@@ -293,6 +293,8 @@
     #quote {
         position: relative;
         margin-top: -470px;
+        overflow: hidden;
+        width: 100%;
     }
 
     .quote {
@@ -700,6 +702,7 @@
         width: 100%;
         overflow: hidden;
         position: relative;
+        z-index: -1;
     }
 
     #callbackForm h1 {
@@ -782,7 +785,7 @@
     }
 
     .contact-data .underline-btn {
-        font-size: 23.5px;
+        font-size: 20.5px;
     }
 
     #drawForMe {
