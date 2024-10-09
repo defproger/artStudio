@@ -371,7 +371,7 @@ require './app/db.php';
 
         <div class="collection_flex right">
             <div class="underline-btn-container mobile">
-                <a href="artwork_info.php?id=22" target="_blank" class="underline-btn slideIn">buy art.</a>
+                <a href="artwork_info.php?id=24" target="_blank" class="underline-btn slideIn">read more.</a>
             </div>
             <p class="slideIn mobile"><span class="big">E</span>ach raindrop is a metaphor for a feeling that cannot be
                 expressed. She gazes into the distance, but her eyes do not penetrate through the window. Her gaze is
@@ -382,7 +382,7 @@ require './app/db.php';
             <div class="photo">
                 <img src="assets/img/works/w2.png" class="slideIn slideIn2" alt="">
                 <div class="underline-btn-container">
-                    <a href="artwork_info.php?id=22" target="_blank" class="underline-btn slideIn pc">buy art.</a>
+                    <a href="artwork_info.php?id=24" target="_blank" class="underline-btn slideIn pc">read more.</a>
                     <span class="yellow slideIn slideIn2">AVAILABLE</span>
                 </div>
             </div>
@@ -484,7 +484,7 @@ require './app/db.php';
 
         <div class="collection_flex right">
             <div class="underline-btn-container mobile">
-                <a href="artwork_info.php?id=28" target="_blank" class="underline-btn slideIn">buy.</a>
+                <a href="artwork_info.php?id=28" target="_blank" class="underline-btn slideIn">read more.</a>
             </div>
             <p class="slideIn mobile"><span class="big">T</span>he painting conveys a sense of movement and energy, with
                 elements seemingly merging into one another, creating a harmonious and vibrant canvas. This artwork
@@ -493,7 +493,7 @@ require './app/db.php';
             <div class="photo">
                 <img src="assets/img/works/c7.png" class="slideIn slideIn2" alt="">
                 <div class="underline-btn-container">
-                    <a href="artwork_info.php?id=28" target="_blank" class="underline-btn slideIn pc">buy.</a>
+                    <a href="artwork_info.php?id=28" target="_blank" class="underline-btn slideIn pc">read more.</a>
                     <span class="yellow slideIn slideIn2">AVAILABLE</span>
                 </div>
             </div>
