@@ -22,7 +22,7 @@ shuffle($arts);
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Artwork Information</title>
-    <link rel="stylesheet" href="assets/css/fonts.css">
+    <link rel="stylesheet" href="./assets/css/fonts.css">
     <link rel="stylesheet" href="assets/css/second_main.css">
     <link rel="stylesheet" href="assets/css/second_mobile.css">
     <link rel="icon" href="favicon.png" type="image/png">
@@ -88,7 +88,7 @@ shuffle($arts);
             </a>
             <a href="index.php" class="back-to-gallery footer-back-addition">Back to Gallery</a>
         </div>
-        <a href="privacy.html" class="privacy-policy">Privacy</a>
+        <a href="privacy.html" target="_blank" class="privacy-policy">Privacy</a>
         <p>All Rights Reserved</p>
         <p> © 2024</p>
     </footer>

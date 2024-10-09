@@ -28,7 +28,7 @@ body {
     width: 100%;
     height: 48%;
     background-color: black;
-    top: 50%;
+    top: 51%;
     left: 50%;
     -webkit-transform: translate(-25%, -76%);
     -ms-transform: translate(-25%, -76%);
@@ -254,6 +254,7 @@ body {
 }
 
 .confirm-button {
+    margin-left: 4%;
     padding: 2% 4%;
     text-decoration: none;
     font-size: 2em;

@@ -641,17 +641,7 @@ require './app/db.php';
                         <p>3’3’’X2’4’’</p>
                     </div>
                 </div>
-                <p class="slideIn pc"><span class="big">T</span>his delicate painting, rendered in soft, flowing shades
-                    of blue and green, creates a dreamlike atmosphere, evoking a sense of fluidity and motion. Figures
-                    and
-                    animals seem to merge and dissolve into one another, symbolizing the interconnectedness of life and
-                    the
-                    blurred boundaries between human and nature. The use of transparent washes of color gives the work
-                    an
-                    ethereal, almost meditative quality, inviting the viewer to contemplate the transient and fleeting
-                    nature of existence. This piece would add a calming yet thought-provoking presence to any space,
-                    perfect
-                    for those who appreciate art that communicates both serenity and depth.</p>
+                <p class="slideIn pc"><span class="big">T</span>his delicate painting, rendered in soft, flowing shades of blue and green, creates a dreamlike atmosphere, evoking a sense of fluidity and motion. Figures and animals seem to merge and dissolve into one another, symbolizing the interconnectedness of life and the blurred boundaries between human and nature. The use of transparent washes of color gives the work an ethereal, almost meditative quality, inviting the viewer to contemplate the transient and fleeting nature of existence. This piece would add a calming yet thought-provoking presence to any space, perfect for those who appreciate art that communicates both serenity and depth.</p>
             </div>
             <div class="photo">
                 <img src="assets/img/works/wind.jpg" class="slideIn slideIn2" alt="">
@@ -660,13 +650,7 @@ require './app/db.php';
                     <a href="artwork_info.php?id=17" target="_blank" class="underline-btn slideIn pc">read more.</a>
                 </div>
             </div>
-            <p class="slideIn mobile"><span class="big">T</span>his delicate painting, rendered in soft, flowing shades
-                of blue and green, creates a dreamlike atmosphere, evoking a sense of fluidity and motion. Figures and
-                animals seem to merge and dissolve into one another, symbolizing the interconnectedness of life and the
-                blurred boundaries between human and nature. The use of transparent washes of color gives the work an
-                ethereal, almost meditative quality, inviting the viewer to contemplate the transient and fleeting
-                nature of existence. This piece would add a calming yet thought-provoking presence to any space, perfect
-                for those who appreciate art that communicates both serenity and depth.</p>
+            <p class="slideIn mobile"><span class="big">T</span>his delicate painting, rendered in soft, flowing shades of blue and green, creates a dreamlike atmosphere, evoking a sense of fluidity and motion. Figures and animals seem to merge and dissolve into one another, symbolizing the interconnectedness of life and the blurred boundaries between human and nature. The use of transparent washes of color gives the work an ethereal, almost meditative quality, inviting the viewer to contemplate the transient and fleeting nature of existence. This piece would add a calming yet thought-provoking presence to any space, perfect for those who appreciate art that communicates both serenity and depth.</p>
             <div class="underline-btn-container mobile">
                 <a href="artwork_info.php?id=17" target="_blank" class="underline-btn slideIn">read more.</a>
             </div>
@@ -1069,65 +1053,60 @@ require './app/db.php';
                 <div class="underline-btn-container">
                     <a target="_blank" href="https://www.instagram.com/elena.art.studio.es/"
                        class="underline-btn slideIn">my instagram.</a>
-                    <a target="_blank" href="#" class="underline-btn slideIn">my saatchi.</a>
+                    <a target="_blank" href="#" class="underline-btn slideIn">my platforms.</a>
                 </div>
                 <div class="underline-btn-container">
-                    <a target="_blank" href="#" class="underline-btn slideIn">my whatsapp.</a>
+                    <a target="_blank" href="https://t.me/Elenagreatart47" class="underline-btn slideIn">my telegram.</a>
                 </div>
             </div>
         </div>
     </div>
 </div>
-
 <div class="callbackFormContainer">
-    <div id="callbackForm" class="container">
-        <h1>
-            ELENA
-            <span>SALOVA</span>
-        </h1>
-        <div class="callback-form">
-            <ul id="callback_form_slinky">
-                <li class="layer" data-depth="0.11">
-                    <svg width="2146" height="619" viewBox="0 0 2146 619" fill="none"
-                         xmlns="http://www.w3.org/2000/svg">
-                        <path opacity="0.544444"
-                              d="M2143.96 50.4013C1688.31 -31.1283 642.628 -71.4514 105.149 419.494C-432.331 910.438 1240.41 377.992 2143.96 50.4013Z"
-                              stroke="#B4B4B4"/>
-                    </svg>
-                </li>
-                <li class="layer" data-depth="0.0404">
-                    <svg width="2147" height="619" viewBox="0 0 2147 619" fill="none"
-                         xmlns="http://www.w3.org/2000/svg">
-                        <path opacity="0.466667"
-                              d="M2144.21 50.495C1688.56 -31.0346 642.883 -71.3576 105.403 419.587C-432.077 910.532 1240.66 378.086 2144.21 50.495Z"
-                              stroke="#417E78"/>
-                    </svg>
-                </li>
-                <li class="layer" data-depth="-0.0404">
-                    <svg width="2147" height="620" viewBox="0 0 2147 620" fill="none"
-                         xmlns="http://www.w3.org/2000/svg">
-                        <path opacity="0.388889"
-                              d="M2144.47 50.5888C1688.82 -30.9408 643.138 -71.2639 105.658 419.681C-431.822 910.626 1240.92 378.18 2144.47 50.5888Z"
-                              stroke="#5E94AF"/>
-                    </svg>
-                </li>
-            </ul>
-            <form class="form black">
-                <div class="input">
-                    <input type="email" name="mail" placeholder="YOUR EMAIL">
-                    <button type="button" class="next-btn">next.</button>
-                </div>
-                <div class="hidden_input">
-                    <textarea name="message" placeholder="MESSAGE:"></textarea>
-                </div>
-                <p>
-                    It's time for art, order something you've been wanting for a long time.
-                </p>
-            </form>
-        </div>
+<div id="callbackForm" class="container">
+    <h1>
+        ELENA
+        <span>SALOVA</span>
+    </h1>
+    <div class="callback-form">
+        <ul id="callback_form_slinky">
+            <li class="layer" data-depth="0.11">
+                <svg width="2146" height="619" viewBox="0 0 2146 619" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path opacity="0.544444"
+                          d="M2143.96 50.4013C1688.31 -31.1283 642.628 -71.4514 105.149 419.494C-432.331 910.438 1240.41 377.992 2143.96 50.4013Z"
+                          stroke="#B4B4B4"/>
+                </svg>
+            </li>
+            <li class="layer" data-depth="0.0404">
+                <svg width="2147" height="619" viewBox="0 0 2147 619" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path opacity="0.466667"
+                          d="M2144.21 50.495C1688.56 -31.0346 642.883 -71.3576 105.403 419.587C-432.077 910.532 1240.66 378.086 2144.21 50.495Z"
+                          stroke="#417E78"/>
+                </svg>
+            </li>
+            <li class="layer" data-depth="-0.0404">
+                <svg width="2147" height="620" viewBox="0 0 2147 620" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path opacity="0.388889"
+                          d="M2144.47 50.5888C1688.82 -30.9408 643.138 -71.2639 105.658 419.681C-431.822 910.626 1240.92 378.18 2144.47 50.5888Z"
+                          stroke="#5E94AF"/>
+                </svg>
+            </li>
+        </ul>
+        <form class="form black">
+            <div class="input">
+                <input type="email" name="mail" placeholder="YOUR EMAIL">
+                <button type="button" class="next-btn">next.</button>
+            </div>
+            <div class="hidden_input">
+                <textarea name="message" placeholder="MESSAGE:"></textarea>
+            </div>
+            <p>
+                It's time for art, order something you've been wanting for a long time.
+            </p>
+        </form>
     </div>
 </div>
-
+</div>
 <footer>
     <nav>
         <a href="#collections" class="link">collections.</a>
