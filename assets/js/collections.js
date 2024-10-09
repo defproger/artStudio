@@ -30,9 +30,9 @@ $(document).ready(function () {
 
         var screenWidth = $(window).width();
         if (screenWidth < 1200) {
-            var target = $("#" + tabId).offset().top - 100;
+            var target = $("#" + tabId + '_text').offset().top - 100;
             $('html, body').animate({
-                'scrollTop': $target.offset().top
+                'scrollTop': target
             }, 1000)
         }
     });
