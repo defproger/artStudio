@@ -17,3 +17,4 @@ const SETTINGS = [
 ];
 
 $botToken = '123';
+$chatIds = [];
