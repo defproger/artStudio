@@ -27,5 +27,13 @@ $(document).ready(function () {
         }
 
         $(".pattern_line img").attr("src", "assets/img/patterns/" + newImage);
+
+        var screenWidth = $(window).width();
+        if (screenWidth < 1200) {
+            var target = $("#" + tabId).offset().top - 100;
+            $('html, body').animate({
+                'scrollTop': $target.offset().top
+            }, 1000)
+        }
     });
 });
