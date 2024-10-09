@@ -166,7 +166,7 @@ Address of the payer: {$_POST['paymentData']['purchase_units']['shipping']['addr
 ---------------------------\n
 Order ID: {$_POST['paymentData']['id']}\n
 ";
-    $text = urldecode($text);
+    $text = urlencode($text);
     foreach ($chatIds as $chatId) {
         file_get_contents("https://api.telegram.org/bot{$botToken}/sendMessage?chat_id={$chatId}&text={$text}");
     }
