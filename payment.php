@@ -20,6 +20,7 @@ if (!$art) {
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Painting Payment Page</title>
+    <link rel="stylesheet" href="./assets/css/fonts.css">
     <link rel="stylesheet" href="assets/css/main_payment.css">
     <link rel="stylesheet" href="assets/css/mobile_payment.css">
 
