@@ -641,9 +641,17 @@ require './app/db.php';
                         <p>3’3’’X2’4’’</p>
                     </div>
                 </div>
-                <p class="slideIn pc"><span class="big">S</span>it amet, consectetur adipiscing elit. Praesent at cursus
-                    magna, at dapibus eros. Aliquam tincidunt tortor eu placerat vehicula. Curabitur feugiat faucibus
-                    mauris id ullamcorper.</p>
+                <p class="slideIn pc"><span class="big">T</span>his delicate painting, rendered in soft, flowing shades
+                    of blue and green, creates a dreamlike atmosphere, evoking a sense of fluidity and motion. Figures
+                    and
+                    animals seem to merge and dissolve into one another, symbolizing the interconnectedness of life and
+                    the
+                    blurred boundaries between human and nature. The use of transparent washes of color gives the work
+                    an
+                    ethereal, almost meditative quality, inviting the viewer to contemplate the transient and fleeting
+                    nature of existence. This piece would add a calming yet thought-provoking presence to any space,
+                    perfect
+                    for those who appreciate art that communicates both serenity and depth.</p>
             </div>
             <div class="photo">
                 <img src="assets/img/works/wind.jpg" class="slideIn slideIn2" alt="">
@@ -652,9 +660,13 @@ require './app/db.php';
                     <a href="artwork_info.php?id=17" target="_blank" class="underline-btn slideIn pc">read more.</a>
                 </div>
             </div>
-            <p class="slideIn mobile"><span class="big">S</span>it amet, consectetur adipiscing elit. Praesent at cursus
-                magna, at dapibus eros. Aliquam tincidunt tortor eu placerat vehicula. Curabitur feugiat faucibus mauris
-                id ullamcorper.</p>
+            <p class="slideIn mobile"><span class="big">T</span>his delicate painting, rendered in soft, flowing shades
+                of blue and green, creates a dreamlike atmosphere, evoking a sense of fluidity and motion. Figures and
+                animals seem to merge and dissolve into one another, symbolizing the interconnectedness of life and the
+                blurred boundaries between human and nature. The use of transparent washes of color gives the work an
+                ethereal, almost meditative quality, inviting the viewer to contemplate the transient and fleeting
+                nature of existence. This piece would add a calming yet thought-provoking presence to any space, perfect
+                for those who appreciate art that communicates both serenity and depth.</p>
             <div class="underline-btn-container mobile">
                 <a href="artwork_info.php?id=17" target="_blank" class="underline-btn slideIn">read more.</a>
             </div>
