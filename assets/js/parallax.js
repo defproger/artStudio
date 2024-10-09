@@ -13,29 +13,6 @@ $(window).on('scroll', function () {
     $('.pattern_line').css('transform', 'translate3d(0px, -' + (scrollTop - wHeight) * coefficient + 'px , 0px)');
 });
 
-function smoothScrollTo(element, duration) {
-    const targetPosition = element.getBoundingClientRect().top;
-    const startPosition = window.pageYOffset;
-    let startTime = null;
-
-    function animation(currentTime) {
-        if (startTime === null) startTime = currentTime;
-        const timeElapsed = currentTime - startTime;
-        const run = ease(timeElapsed, startPosition, targetPosition, duration);
-        window.scrollTo(0, run);
-        if (timeElapsed < duration) requestAnimationFrame(animation);
-    }
-
-    function ease(t, b, c, d) {
-        t /= d / 2;
-        if (t < 1) return c / 2 * t * t + b;
-        t--;
-        return -c / 2 * (t * (t - 2) - 1) + b;
-    }
-
-    requestAnimationFrame(animation);
-}
-
 function longLoad() {
     $('.link').on('click', function () {
         var target = this.hash,
@@ -49,11 +26,10 @@ function longLoad() {
 
 longLoad();
 
-// Функция для замедления скролла
 function slowScroll(event) {
     event.preventDefault();
 
-    const scrollMultiplier = 0.35;
+    const scrollMultiplier = 0.45;
     const scrollY = window.scrollY;
     const newScrollY = scrollY + event.deltaY * scrollMultiplier;
     window.scrollTo({

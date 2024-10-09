@@ -31,12 +31,21 @@ a {
     color: white !important;
 }
 
+html {
+    overflow: -moz-scrollbars-none;
+    -ms-overflow-style: none;
+}
+
+body::-webkit-scrollbar {
+    display: none;
+}
+
 body {
     background: #000;
     color: #fff;
     font-family: 'Goudy Old Style', sans-serif;
     width: 100%;
-    overflow: hidden;
+    overflow-x: hidden;
     min-height: 100vh;
 }
 
