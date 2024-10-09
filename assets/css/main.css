@@ -2943,6 +2943,12 @@ header nav a:hover {
     margin-top: 400px;
 }
 
+.callbackFormContainer {
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+}
+
 #callbackForm h1 {
     font-family: Engravers MT;
     font-size: 160px;
