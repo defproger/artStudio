@@ -30,59 +30,83 @@ body {
     background-color: black;
     top: 50%;
     left: 50%;
+    -webkit-transform: translate(-25%, -76%);
+    -ms-transform: translate(-25%, -76%);
     transform: translate(-25%, -76%);
     z-index: 0;
+    -webkit-transition: 2s;
+    -o-transition: 2s;
     transition: 2s;
 }
 
 /* Общий класс для анимации */
 .moved {
-   transform: translate(-50%, -77%);
+    -webkit-transform: translate(-50%, -77%);
+    -ms-transform: translate(-50%, -77%);
+    transform: translate(-50%, -77%);
 }
 
 
 /*ASSETS TOP and BACK*/
 
 
-
-
-
-
 .back-button-group {
     text-decoration: none;
     border: 0px;
     position: relative;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
     align-items: center; /* Vertically center the items */
+    -webkit-transition: 1s ease;
+    -o-transition: 1s ease;
     transition: 1s ease;
 }
 
-.back-button-group:hover{
+.back-button-group:hover {
+    -webkit-transition: .5s ease;
+    -o-transition: .5s ease;
     transition: .5s ease;
+    -webkit-transform: translate(-10px);
+    -ms-transform: translate(-10px);
     transform: translate(-10px);
 }
 
 .arrow-link {
     width: 3%; /* Занимает всю доступную ширину */
+    display: -webkit-inline-box;
+    display: -ms-inline-flexbox;
     display: inline-flex; /* Внутренний элемент также flex, чтобы автоматически подстроить размер */
+    -webkit-box-align: center;
+    -ms-flex-align: center;
     align-items: center; /* Выравнивание по центру */
     margin-right: 1%; /* Adds space between the image and the link */
 }
 
-.arrow-link-footer{
+.arrow-link-footer {
     width: 20%; /* Занимает всю доступную ширину */
+    display: -webkit-inline-box;
+    display: -ms-inline-flexbox;
     display: inline-flex; /* Внутренний элемент также flex, чтобы автоматически подстроить размер */
+    -webkit-box-align: center;
+    -ms-flex-align: center;
     align-items: center; /* Выравнивание по центру */
     margin-right: 8%; /* Adds space between the image and the link */
 }
 
 .arrow-button {
     width: 100%;
+    -webkit-transition: .5s ease;
+    -o-transition: .5s ease;
     transition: .5s ease;
 }
 
-.arrow-button:hover{
+.arrow-button:hover {
     color: #4A4A4A;
+    -webkit-transform: translate(5px);
+    -ms-transform: translate(5px);
     transform: translate(5px);
 }
 
@@ -96,11 +120,15 @@ body {
     color: #000000;
     text-decoration: none;
     font-weight: bold;
+    -webkit-transition: .5s ease;
+    -o-transition: .5s ease;
     transition: .5s ease;
 }
 
- .back-to-gallery:hover{
+.back-to-gallery:hover {
     color: #4A4A4A;
+    -webkit-transform: translate(-5px);
+    -ms-transform: translate(-5px);
     transform: translate(-5px);
 }
 
@@ -112,32 +140,35 @@ body {
     font-size: 0.7em;
     letter-spacing: 20px;
     font-weight: normal;
+    -webkit-transition: 1s ease;
+    -o-transition: 1s ease;
     transition: 1s ease;
 }
 
-.artist-name:hover{
+.artist-name:hover {
     letter-spacing: 22px;
 }
 
 
-.footer-back-addition{
+.footer-back-addition {
     color: #fff;
     width: 100%;
 }
 
 
-
 /*MAIN*/
-
-
-
-
 
 
 .main-content {
     position: relative;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
     align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
     justify-content: center;
     margin-top: 20px;
 
@@ -162,6 +193,8 @@ body {
     margin-top: 0;
     font-size: 3.5em;
     margin-bottom: 7%;
+    -webkit-transition: .5s ease;
+    -o-transition: .5s ease;
     transition: .5s ease;
 }
 
@@ -169,36 +202,39 @@ body {
 .painting-medium, .painting-dimensions, .painting-description, .painting-status {
     margin: 3% 0;
 }
+
 .painting-title:hover {
     /*margin-right: 4%;*/
 }
 
-.painting-medium{
+.painting-medium {
     font-family: "Girassol", serif;
     font-size: 1.2em;
     text-transform: uppercase;
 }
 
-.painting-dimensions{
+.painting-dimensions {
     letter-spacing: 3px;
     font-size: .8em;
     margin-bottom: 7%;
 }
 
-.painting-description{
+.painting-description {
     position: relative;
     font-size: 1.3em;
     margin-bottom: 6%;
+    -webkit-transition: 1s ease;
+    -o-transition: 1s ease;
     transition: 1s ease;
     padding: 2% 1% 2% 2%;
 }
 
-.painting-description:hover{
+.painting-description:hover {
     background-color: #fff;
     color: #000;
 }
 
-.painting-status{
+.painting-status {
     text-transform: uppercase;
     font-size: 0.7em;
     letter-spacing: 16px;
@@ -206,10 +242,12 @@ body {
     display: inline-block;
     border-bottom: 2px solid #fff;
     text-decoration: none;
+    -webkit-transition: 1s ease;
+    -o-transition: 1s ease;
     transition: 1s ease;
 }
 
-.painting-status:hover{
+.painting-status:hover {
     cursor: not-allowed;
     text-decoration: line-through;
     border-bottom: 2px solid #000;
@@ -225,15 +263,21 @@ body {
 
     text-transform: uppercase;
 
+    background: -webkit-gradient(linear, left top, right top, from(#BEA052), color-stop(#AF4947), to(#264A7A));
+
+    background: -o-linear-gradient(left, #BEA052, #AF4947, #264A7A);
+
     background: linear-gradient(to right, #BEA052, #AF4947, #264A7A);
     -webkit-background-clip: text;
     color: transparent;
     position: relative;
     letter-spacing: 20px;
+    -webkit-transition: .2s ease;
+    -o-transition: .2s ease;
     transition: .2s ease;
 }
 
-.confirm-button:hover{
+.confirm-button:hover {
     letter-spacing: 40px;
 }
 
@@ -249,8 +293,6 @@ body {
 } */
 
 /*RECOMENDATIONS*/
-
-
 
 
 /*.more-like-this {*/
@@ -295,12 +337,16 @@ body {
 
 
 .more-like-this {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
     margin-top: 17%;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
     align-items: center;
 }
 
-.see-more{
+.see-more {
     width: 40%;
     text-transform: uppercase;
     font-size: 0.7em;
@@ -311,8 +357,13 @@ body {
 
 .similar-paintings {
     width: 60%;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -ms-flex-pack: distribute;
     justify-content: space-around;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
     align-items: center;
 }
 
@@ -321,6 +372,8 @@ body {
     text-decoration: none;
     color: #000;
     text-align: center;
+    -webkit-transition: .1s ease;
+    -o-transition: .1s ease;
     transition: .1s ease;
 }
 
@@ -337,14 +390,13 @@ body {
 }
 
 .similar-painting:hover {
+    -webkit-transform: translateY(-10px);
+    -ms-transform: translateY(-10px);
     transform: translateY(-10px); /* Lift on hover */
 }
 
 
-
 /*FOOTER*/
-
-
 
 
 footer {
@@ -352,9 +404,15 @@ footer {
     background-color: #000;
     color: #fff;
     position: relative;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
     margin-top: 40px;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
     justify-content: space-between;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
     align-items: center;
 }
 
@@ -363,11 +421,12 @@ footer {
     color: #fff;
     text-decoration: none;
     font-weight: bold;
+    -webkit-transition: .2s ease;
+    -o-transition: .2s ease;
     transition: .2s ease;
 }
 
-.privacy-policy:hover{
+.privacy-policy:hover {
     color: #999;
 }
-
 

@@ -6,12 +6,19 @@
     }
 
     p {
+        -webkit-margin-before: 0em;
         margin-block-start: 0em;
+        -webkit-margin-after: 0em;
         margin-block-end: 0em;
     }
 
     .container {
+        display: -webkit-box;
+        display: -ms-flexbox;
         display: flex;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: column;
         flex-direction: column;
         padding: 1% 3.5%;
         position: relative;
@@ -30,8 +37,15 @@
     }
 
     .content {
+        display: -webkit-box;
+        display: -ms-flexbox;
         display: flex;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: column;
         flex-direction: column;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
         align-items: center;
         width: 100%;
         margin-top: 1%;
@@ -39,34 +53,49 @@
 
     .painting-info {
         width: 100%;
+        display: -webkit-box;
+        display: -ms-flexbox;
         display: flex;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: column;
         flex-direction: column;
+        -webkit-box-align: right;
+        -ms-flex-align: right;
         align-items: right;
         text-align: center;
     }
 
-    .text-payment{
-            position: relative;
+    .text-payment {
+        position: relative;
         font-size: 1.3em;
         margin-bottom: 6%;
+        -webkit-transition: 1s ease;
+        -o-transition: 1s ease;
         transition: 1s ease;
         padding: 2% 0% 2% 2%;
-       margin-bottom: 8%; 
-       text-align: right;
-       transition: .2s ease;
-    }
-
-    .material-payment{
-        font-family: "Girassol", serif;
-        font-size: 1.2em;
-        text-transform: uppercase;
+        margin-bottom: 8%;
+        text-align: right;
+        -webkit-transition: .2s ease;
+        -o-transition: .2s ease;
         transition: .2s ease;
     }
 
-    .sizes-payment{
+    .material-payment {
+        font-family: "Girassol", serif;
+        font-size: 1.2em;
+        text-transform: uppercase;
+        -webkit-transition: .2s ease;
+        -o-transition: .2s ease;
+        transition: .2s ease;
+    }
+
+    .sizes-payment {
         letter-spacing: 3px;
         font-size: 1em;
         margin-bottom: 5%;
+        -webkit-transition: .2s ease;
+        -o-transition: .2s ease;
         transition: .2s ease;
     }
 
@@ -79,8 +108,9 @@
     }
 
 
-
     .payment-form {
+        -webkit-transform: translate(0%);
+        -ms-transform: translate(0%);
         transform: translate(0%);
         padding: 15% 5% 0% 5%;
         background-color: #E9E9E9;
@@ -101,8 +131,7 @@
     }
 
 
-
-    .price-group{
+    .price-group {
         display: none;
     }
 
@@ -117,7 +146,12 @@
     }
 
     .payment-form form {
+        display: -webkit-box;
+        display: -ms-flexbox;
         display: flex;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: column;
         flex-direction: column;
     }
 
@@ -167,23 +201,38 @@
     }
 
     .confirmation {
+        display: -webkit-box;
+        display: -ms-flexbox;
         display: flex;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: column;
         flex-direction: column;
+        -webkit-box-align: start;
+        -ms-flex-align: start;
         align-items: flex-start;
         margin-top: 5%;
+        -webkit-transform: translate(-4%);
+        -ms-transform: translate(-4%);
         transform: translate(-4%);
     }
 
-    .btn-back{
+    .btn-back {
         overflow: hidden;
         padding: 15% 7%;
     }
 
-    .price-group-head{
+    .price-group-head {
         width: 100%;
+        display: -webkit-box;
+        display: -ms-flexbox;
         display: flex;
         text-align: center;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
         justify-content: center;
+        -webkit-box-align: stretch;
+        -ms-flex-align: stretch;
         align-items: stretch;
         padding: 5% 0% 8% 0%;
     }
@@ -203,6 +252,8 @@
         padding: 2% 4%;
         font-size: 1.5em;
         font-weight: bold;
+        background: -webkit-gradient(linear, left top, right top, from(#BEA052), color-stop(#AF4947), to(#264A7A));
+        background: -o-linear-gradient(left, #BEA052, #AF4947, #264A7A);
         background: linear-gradient(to right, #BEA052, #AF4947, #264A7A);
         -webkit-background-clip: text;
         color: transparent;
@@ -216,15 +267,23 @@
         content: '';
         display: block;
         height: 2px;
+        background: -webkit-gradient(linear, left top, right top, from(#BEA052), color-stop(#AF4947), to(#264A7A));
+        background: -o-linear-gradient(left, #BEA052, #AF4947, #264A7A);
         background: linear-gradient(to right, #BEA052, #AF4947, #264A7A);
         position: absolute;
         left: 4%;
         width: 135px;
+        -webkit-transition: .2s ease;
+        -o-transition: .2s ease;
         transition: .2s ease;
     }
 
     .certificate {
+        display: -webkit-box;
+        display: -ms-flexbox;
         display: flex;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
         justify-content: center;
         margin-top: 15%;
         margin-bottom: 10%;
@@ -232,6 +291,8 @@
 
     .certificate input {
         margin-right: 3%;
+        -webkit-transform: scale(1.5);
+        -ms-transform: scale(1.5);
         transform: scale(1.5);
     }
 
@@ -245,7 +306,12 @@
 
     footer {
         padding: 10% 5%;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: column;
         flex-direction: column;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
         align-items: center;
         text-align: center;
     }
@@ -259,8 +325,11 @@
     .privacy-policy {
         margin-bottom: 10px;
     }
-    .btn-back:hover{
-    transform: translate(0%);
-    background-color: #F4F4F4;
-}
+
+    .btn-back:hover {
+        -webkit-transform: translate(0%);
+        -ms-transform: translate(0%);
+        transform: translate(0%);
+        background-color: #F4F4F4;
+    }
 }
