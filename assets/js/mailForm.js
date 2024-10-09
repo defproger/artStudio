@@ -2,10 +2,10 @@ $(document).ready(function () {
     $('.form').each(function () {
         const form = $(this);
         const emailInputs = form.find('input[name="mail"]');
-        const messageInputs = form.find('input[name="message"]');
+        const messageInputs = form.find('textarea[name="message"]');
         const nextButton = form.find('.next-btn');
         const hiddenInput = form.find('.hidden_input');
-        const afterText = form.find('p')
+        const afterText = form.find('p');
 
         emailInputs.on('input', function () {
             const value = $(this).val();
@@ -25,26 +25,27 @@ $(document).ready(function () {
                 const emailValue = emailInputs.val();
                 if (validateEmail(emailValue)) {
                     hiddenInput.show('fold', {horizFirst: false}, 600);
-                    afterText.css('margin-top', '30px')
+                    afterText.css('margin-top', '30px');
+
+                    nextButton.prop('disabled', true);
 
                     animateButtonText($(this), "send.").then(() => {
                         buttonType = 2;
+                        nextButton.prop('disabled', false);
                     });
                 }
             } else if (buttonType === 2) {
-                nextButton.on('click', function (event) {
-                    event.preventDefault();
+                const msg = messageInputs.val();
+                if (msg !== '') {
+                    nextButton.prop('disabled', true);
 
-                    const msg = messageInputs.val();
-                    if (msg != '') {
-                        animateButtonText($(this), "sent.").then(() => {
-                            sendFormData(form);
-                            buttonType = 0;
-                        });
-                    }
-                });
+                    animateButtonText($(this), "sent.").then(() => {
+                        sendFormData(form);
+                        buttonType = 0;
+                        nextButton.prop('disabled', true);
+                    });
+                }
             }
-
         });
     });
 
@@ -56,20 +57,17 @@ $(document).ready(function () {
     function animateButtonText(button, newText) {
         return new Promise((resolve) => {
             const originalText = button.text();
-            button.html(''); // Очищаем текст кнопки
+            button.html('');
 
-            // Стираем текст
             let i = originalText.length;
-            let typingSpeed = 50; // Скорость печати
+            const typingSpeed = 50;
 
-            // Анимация стирания текста
             (function deleteText() {
                 if (i > 0) {
                     button.text(originalText.substring(0, i - 1));
                     i--;
                     setTimeout(deleteText, typingSpeed);
                 } else {
-                    // Начинаем печатать новый текст
                     typeWriter(button, newText, resolve);
                 }
             })();
@@ -78,7 +76,7 @@ $(document).ready(function () {
 
     function typeWriter(button, text, callback) {
         let j = 0;
-        let typingSpeed = 100; // Скорость печати
+        const typingSpeed = 100;
 
         (function type() {
             if (j < text.length) {
@@ -86,7 +84,7 @@ $(document).ready(function () {
                 j++;
                 setTimeout(type, typingSpeed);
             } else if (callback) {
-                callback(); // Вызовем колбэк после завершения печати
+                callback();
             }
         })();
     }
