@@ -10,9 +10,39 @@ window.requestAnimFrame = (function () {
 })();
 
 $(document).ready(function () {
-    var creationAllowed = true; // Переменная для контроля создания новых шариков
-    var startTime = Date.now(); // Запоминаем время начала
-    var animId; // ID анимации
+    var preloaderDate = localStorage.getItem('preloaderDate');
+    var today = new Date().toDateString();
+
+    if (preloaderDate === today) {
+        // Preloader has already run today
+        // Remove the preloader element
+        $("#preloader").remove();
+        $("body").removeClass("fixed");
+
+        // Initialize any elements or functions that need to run after the preloader
+        $("#slinky svg").each(function (index) {
+            let delay = ($("#slinky svg").length - 1 - index) * 0.2;
+            let animationName = "slinkyStart" + (index + 1);
+            $(this).css({
+                "animation": "5s " + delay + "s forwards " + animationName,
+                "animation-timing-function": "ease"
+            });
+        });
+
+        setTimeout(function () {
+            $('#slinky').parallax();
+        }, 1000); // Adjust the timeout as needed
+    } else {
+        // Preloader has not run today
+        // Proceed with the preloader code
+        runPreloader();
+    }
+});
+
+function runPreloader() {
+    var creationAllowed = true; // Control variable for creating new particles
+    var startTime = Date.now(); // Record the start time
+    var animId; // Animation ID
 
     var settings = {};
     let screenWidth = $(window).width();
@@ -76,8 +106,7 @@ $(document).ready(function () {
         };
     }
 
-
-    // Запрет на создание новых шариков через 5 секунд
+    // Stop creating new particles after a certain time
     setTimeout(function () {
         creationAllowed = false;
     }, settings.endTime * 1000);
@@ -241,16 +270,16 @@ $(document).ready(function () {
         ctx.canvas.width = screenWidth;
         ctx.canvas.height = $(window).height();
     }
+
     (function animloop() {
         animId = requestAnimFrame(animloop);
         ctx.fillStyle = "rgba(0,0,0,1)";
         ctx.fillRect(0, 0, 1000, 1000);
 
-        // Проверяем время
         var elapsedTime = (Date.now() - startTime) / 1000;
 
         if (currentParticles < settings.particles && creationAllowed) {
-            currentParticles += 1; // Постепенно увеличиваем количество частиц
+            currentParticles += 1; // Gradually increase the number of particles
         }
 
         for (i = 0; i < currentParticles; i++) {
@@ -273,17 +302,17 @@ $(document).ready(function () {
 
     const bar = document.getElementById('preloader_bar');
 
-    // время заполнения прогресс-бара
+    // Set the progress bar filling time
     bar.style.transition = 'width 5.5s ease-in';
     bar.style.width = '100%';
 
-    // время спрятать прогресс-бар
+    // Hide the progress bar after it's filled
     bar.addEventListener('transitionend', () => {
         bar.style.transition = 'bottom 1s ease';
         bar.style.bottom = '-8px';
     });
 
-    // Останавливаем анимацию и очищаем контекст через 10 секунд
+    // Stop the animation and clear the context after a certain time
     setTimeout(function () {
         cancelAnimationFrame(animId);
         ctx.clearRect(0, 0, 1000, 1000);
@@ -302,5 +331,9 @@ $(document).ready(function () {
         setTimeout(function () {
             $('#slinky').parallax();
         }, 6000);
+
+        // Store today's date in localStorage
+        var today = new Date().toDateString();
+        localStorage.setItem('preloaderDate', today);
     }, settings.deleteTime * 1000);
-});
+}
