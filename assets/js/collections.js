@@ -28,12 +28,9 @@ $(document).ready(function () {
 
         $(".pattern_line img").attr("src", "assets/img/patterns/" + newImage);
 
-        var screenWidth = $(window).width();
-        if (screenWidth < 1200) {
-            var target = $("#" + tabId + '_text').offset().top - 100;
-            $('html, body').animate({
-                'scrollTop': target
-            }, 1000)
-        }
+        var target = $("#" + tabId + '_text').offset().top - 100;
+        $('html, body').animate({
+            'scrollTop': target
+        }, 1000)
     });
 });
