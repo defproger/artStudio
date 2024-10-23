@@ -115,14 +115,30 @@ document.addEventListener('DOMContentLoaded', function () {
         setTimeout(() => {
             filterPopup.classList.add('open');
         }, 50);
+        // Add event listener for clicks outside the popup
+        setTimeout(() => {
+            document.addEventListener('click', handleClickOutsidePopup);
+        }, 100); // Slight delay to prevent immediate closure when opening
     });
 
     closeButton.addEventListener('click', function () {
+        closeFilterPopup();
+    });
+
+    function handleClickOutsidePopup(event) {
+        if (!filterPopup.contains(event.target) && event.target !== filterButton) {
+            closeFilterPopup();
+        }
+    }
+
+    function closeFilterPopup() {
         filterPopup.classList.remove('open');
         setTimeout(() => {
             filterPopup.classList.add('closed');
         }, 500);
-    });
+        // Remove event listener since the popup is closed
+        document.removeEventListener('click', handleClickOutsidePopup);
+    }
 
     filterCheckboxes.forEach(function (checkbox) {
         checkbox.addEventListener('change', function () {
@@ -136,19 +152,19 @@ document.addEventListener('DOMContentLoaded', function () {
     });
 
     function addFilter(value) {
-        const filterButton = document.createElement('button');
-        filterButton.className = 'chosen_filter';
-        filterButton.innerHTML = `<div class="cross"></div><span>${value}</span>`;
-        filterButton.addEventListener('click', function () {
+        const filterButtonElement = document.createElement('button');
+        filterButtonElement.className = 'chosen_filter';
+        filterButtonElement.innerHTML = `<div class="cross"></div><span>${value}</span>`;
+        filterButtonElement.addEventListener('click', function () {
             removeFilter(value);
-            filterButton.classList.add('removing');
+            filterButtonElement.classList.add('removing');
             setTimeout(() => {
-                filterButton.remove();
+                filterButtonElement.remove();
                 document.querySelector(`${checkBoxElement}[value="${value}."]`).checked = false;
                 filterGallery();
             }, 500);
         });
-        chosenFilters.appendChild(filterButton);
+        chosenFilters.appendChild(filterButtonElement);
         filterGallery();
     }
 
@@ -166,7 +182,6 @@ document.addEventListener('DOMContentLoaded', function () {
         });
     }
 });
-
 
 const ballColors = ['#417E78', '#FE76AC', '#264A7A', '#C4A556'];
 
@@ -208,7 +223,6 @@ document.querySelectorAll('.gallery_image_container').forEach(block => {
         magnifier.style.top = `${e.clientY - rect.top - 77}px`;
     });
 });
-
 
 $(document).ready(function () {
     $('.gallery_image_container').click(function () {
