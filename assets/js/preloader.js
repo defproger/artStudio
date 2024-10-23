@@ -20,24 +20,39 @@ $(document).ready(function () {
         $("body").removeClass("fixed");
 
         // Initialize any elements or functions that need to run after the preloader
-        $("#slinky svg").each(function (index) {
-            let delay = ($("#slinky svg").length - 1 - index) * 0.2;
-            let animationName = "slinkyStart" + (index + 1);
-            $(this).css({
-                "animation": "5s " + delay + "s forwards " + animationName,
-                "animation-timing-function": "ease"
-            });
-        });
-
-        setTimeout(function () {
-            $('#slinky').parallax();
-        }, 1000); // Adjust the timeout as needed
+        initializeAnimations(false); // Pass 'false' to indicate preloader was not shown
     } else {
         // Preloader has not run today
         // Proceed with the preloader code
         runPreloader();
     }
 });
+
+function initializeAnimations(preloaderShown) {
+    // Adjust the animation delays for elements if preloader is not shown
+    if (!preloaderShown) {
+        // Elements with delayed animations
+        $('#mainscreen h1').css('animation-delay', '0s');
+        $('.dots').css('animation-delay', '0s');
+        $('header').css('animation-delay', '0s');
+        // Adjust any other elements with hardcoded animation delays
+    }
+
+    // Initialize slinky animations
+    $("#slinky svg").each(function (index) {
+        let delay = ($("#slinky svg").length - 1 - index) * (preloaderShown ? 0.2 : 0);
+        let animationName = "slinkyStart" + (index + 1);
+        $(this).css({
+            "animation": "5s " + delay + "s forwards " + animationName,
+            "animation-timing-function": "ease"
+        });
+    });
+
+    // Initialize parallax after animations are set
+    setTimeout(function () {
+        $('#slinky').parallax();
+    }, preloaderShown ? 6000 : 1000); // Adjust the timeout as needed
+}
 
 function runPreloader() {
     var creationAllowed = true; // Control variable for creating new particles
@@ -48,61 +63,61 @@ function runPreloader() {
     let screenWidth = $(window).width();
     if (screenWidth > 1200) {
         settings = {
-            travel_time: 3, // Время прохождения от левого до правого края в секундах
-            speed_multiplier: 0.69, // Множитель скорости
-            narrow_width: 1.4, // Ширина для заужения краев
-            narrow_factor: 5.2, // Фактор заужения (чем больше, тем сильнее заужение)
-            velocity_x: 0, // горизонтальная скорость
-            y_center: 300, // вертикальная координата центра
-            velocity_y: 2, // вертикальная скорость
-            particles: 200, // количество частиц
-            maxradius: 6, // максимальный радиус
-            irregColors: true, // использование нерегулярных цветов
-            decay: true, // включение угасания
-            growth: true, // включение роста
-            velocity_xSeed: 4.5, // случайная величина для горизонтальной скорости
-            velocity_ySeed: 5, // случайная величина для вертикальной скорости
-            opacMax: 0.42, // максимальная непрозрачность
-            opacMin: 0.01, // минимальная непрозрачность
-            opacSeed: 74, // случайная величина для непрозрачности
-            colorPct: 10, // количество цветов
-            parabola_h: 557, // вершина параболы по горизонтали
-            parabola_a: -0.001, // форма параболы
-            parabola_offset_range: 150, // диапазон отклонения параболы
-            initial_particles: -5, // начальное количество частиц
-            endTime: 5.5, // время окончания
-            deleteTime: 6.5, // время удаления
-            fade_start_pct: 0.8, // процент пути, с которого начинается угасание непрозрачности
-            fade_duration: 0.5 // время потери непрозрачности в секундах
+            travel_time: 3, // Time for particles to travel across the screen in seconds
+            speed_multiplier: 0.69,
+            narrow_width: 1.4,
+            narrow_factor: 5.2,
+            velocity_x: 0,
+            y_center: 300,
+            velocity_y: 2,
+            particles: 200,
+            maxradius: 6,
+            irregColors: true,
+            decay: true,
+            growth: true,
+            velocity_xSeed: 4.5,
+            velocity_ySeed: 5,
+            opacMax: 0.42,
+            opacMin: 0.01,
+            opacSeed: 74,
+            colorPct: 10,
+            parabola_h: 557,
+            parabola_a: -0.001,
+            parabola_offset_range: 150,
+            initial_particles: -5,
+            endTime: 5.5,
+            deleteTime: 6.5,
+            fade_start_pct: 0.8,
+            fade_duration: 0.5
         };
     } else {
         settings = {
-            travel_time: 3, // Время прохождения от левого до правого края в секундах
-            speed_multiplier: 0.69, // Множитель скорости
-            narrow_width: 1.6, // Ширина для заужения краев
-            narrow_factor: 5, // Фактор заужения (чем больше, тем сильнее заужение)
-            velocity_x: 0, // горизонтальная скорость
-            y_center: 480, // вертикальная координата центра
-            velocity_y: 2, // вертикальная скорость
-            particles: 200, // количество частиц
-            maxradius: 6, // максимальный радиус
-            irregColors: true, // использование нерегулярных цветов
-            decay: true, // включение угасания
-            growth: true, // включение роста
-            velocity_xSeed: 4.5, // случайная величина для горизонтальной скорости
-            velocity_ySeed: 5, // случайная величина для вертикальной скорости
-            opacMax: 0.42, // максимальная непрозрачность
-            opacMin: 0.01, // минимальная непрозрачность
-            opacSeed: 74, // случайная величина для непрозрачности
-            colorPct: 10, // количество цветов
-            parabola_h: 700, // вершина параболы по горизонтали
-            parabola_a: -0.001, // форма параболы
-            parabola_offset_range: 100, // диапазон отклонения параболы
-            initial_particles: -5, // начальное количество частиц
-            endTime: 5.5, // время окончания
-            deleteTime: 6.5, // время удаления
-            fade_start_pct: 0.8, // процент пути, с которого начинается угасание непрозрачности
-            fade_duration: 0.5 // время потери непрозрачности в секундах
+            travel_time: 3,
+            speed_multiplier: 0.69,
+            narrow_width: 1.6,
+            narrow_factor: 5,
+            velocity_x: 0,
+            y_center: 480,
+            velocity_y: 2,
+            particles: 200,
+            maxradius: 6,
+            irregColors: true,
+            decay: true,
+            growth: true,
+            velocity_xSeed: 4.5,
+            velocity_ySeed: 5,
+            opacMax: 0.42,
+            opacMin: 0.01,
+            opacSeed: 74,
+            colorPct: 10,
+            parabola_h: 700,
+            parabola_a: -0.001,
+            parabola_offset_range: 100,
+            initial_particles: -5,
+            endTime: 5.5,
+            deleteTime: 6.5,
+            fade_start_pct: 0.8,
+            fade_duration: 0.5
         };
     }
 
@@ -132,16 +147,16 @@ function runPreloader() {
     };
 
     star.prototype.init = function () {
-        this.params.x_offset = 0; // Начинаем с левого края
+        this.params.x_offset = 0; // Start from the left edge
         this.params.y_offset = settings.y_center;
         this.params.lifetime = Math.ceil(Math.random() * 3);
-        this.params.velocity_x = 1000 / (settings.travel_time * 60); // Скорость, основанная на времени прохождения
+        this.params.velocity_x = 1000 / (settings.travel_time * 60);
         this.params.velocity_y = Math.random() * settings.velocity_ySeed;
         this.params.radius = settings.maxradius;
         this.params.opacity =
             Math.round(Math.random() * settings.opacSeed, 2) / 100;
         this.params.parabola_offset =
-            (Math.random() - 0.5) * settings.parabola_offset_range; // Случайное отклонение
+            (Math.random() - 0.5) * settings.parabola_offset_range;
 
         if (settings.decay) {
             this.params.decay =
@@ -195,14 +210,13 @@ function runPreloader() {
         this.offset += 1;
         var t = this.offset;
 
-        // Уравнение параболы: y = a(x - h)^2 + k + offset
-        // где (h, k) - вершина параболы
-        var h = settings.parabola_h; // вершина параболы
+        // Parabola equation: y = a(x - h)^2 + k + offset
+        var h = settings.parabola_h;
         var k = settings.y_center;
-        var a = settings.parabola_a; // форма параболы
-        var offset = this.params.parabola_offset; // Отклонение параболы
+        var a = settings.parabola_a;
+        var offset = this.params.parabola_offset;
 
-        // Добавляем эффект заужения краев
+        // Apply narrowing effect on edges
         var narrowEffect = Math.pow(
             Math.abs(this.x - h) / h,
             settings.narrow_factor
@@ -214,11 +228,16 @@ function runPreloader() {
             t * this.params.velocity_x * settings.speed_multiplier;
         this.y = a * Math.pow(this.x - h, 2) + k + offset * narrowWidth;
 
-        // Проверяем, достиг ли шарик момента начала угасания
+        // Check if the particle should start fading
         var travelPct = this.x / 1000;
         if (travelPct > settings.fade_start_pct) {
-            var fadeProgress = (travelPct - settings.fade_start_pct) / (settings.fade_duration / settings.travel_time);
-            this.params.opacity = Math.max(settings.opacMax * (1 - fadeProgress), settings.opacMin);
+            var fadeProgress =
+                (travelPct - settings.fade_start_pct) /
+                (settings.fade_duration / settings.travel_time);
+            this.params.opacity = Math.max(
+                settings.opacMax * (1 - fadeProgress),
+                settings.opacMin
+            );
         }
 
         if (this.params.opacity > settings.opacMax) {
@@ -319,18 +338,8 @@ function runPreloader() {
         $("#preloader").remove();
         $("body").removeClass("fixed");
 
-        $("#slinky svg").each(function (index) {
-            let delay = ($("#slinky svg").length - 1 - index) * 0.2;
-            let animationName = "slinkyStart" + (index + 1);
-            $(this).css({
-                "animation": "5s " + delay + "s forwards " + animationName,
-                "animation-timing-function": "ease"
-            });
-        });
-
-        setTimeout(function () {
-            $('#slinky').parallax();
-        }, 6000);
+        // Initialize animations
+        initializeAnimations(true); // Pass 'true' to indicate preloader was shown
 
         // Store today's date in localStorage
         var today = new Date().toDateString();
