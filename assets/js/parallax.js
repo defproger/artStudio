@@ -25,3 +25,17 @@ function longLoad() {
 }
 
 longLoad();
+
+function slowScroll(event) {
+    event.preventDefault();
+
+    const scrollMultiplier = 1;
+    const scrollY = window.scrollY;
+    const newScrollY = scrollY + event.deltaY * scrollMultiplier;
+    window.scrollTo({
+        top: newScrollY,
+        behavior: 'auto'
+    });
+}
+
+window.addEventListener('wheel', slowScroll, {passive: false});
